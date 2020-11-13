@@ -37,7 +37,7 @@ jobs:
         run: mvn -B package --file pom.xml
 
       - name: Copy JAR files to new Directory  
-        run: mkdir staging && cp target/${project.artifactId}-${project.version}.jar staging
+        run: mkdir staging && cp target/$(grep -o "<artifactId>.*</artifactId>" pom.xml | head -1 | sed "s#<artifactId>##g" | sed "s#</artifactId>##g")-$(grep -o "<version>.*</version>" pom.xml | head -1 | sed "s#<version>##g" | sed "s#</version>##g").jar staging
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
