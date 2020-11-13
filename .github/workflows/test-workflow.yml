@@ -38,7 +38,7 @@ jobs:
         run: mvn -B package --file pom.xml
 
       - name: Copy JAR files to new Directory  
-        run: mkdir output && cp target/$(grep -o "<artifactId>.*</artifactId>" pom.xml | head -1 | sed "s#<artifactId>##g" | sed "s#</artifactId>##g")-$(grep -o "<version>.*</version>" pom.xml | head -1 | sed "s#<version>##g" | sed "s#</version>##g").jar staging
+        run: mkdir output && cp target/$(grep -o "<artifactId>.*</artifactId>" pom.xml | head -1 | sed "s#<artifactId>##g" | sed "s#</artifactId>##g")-$(grep -o "<version>.*</version>" pom.xml | head -1 | sed "s#<version>##g" | sed "s#</version>##g").jar output
 
       - name: Generate Allure Report
         uses: simple-elf/allure-report-action@master
