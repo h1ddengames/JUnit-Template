@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>xyz.hiddengames</groupId>
+  <artifactId>Project-Template</artifactId>
+  <version>1.0.0</version>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>11</java.version>
+
+    <junit.version>5.7.0</junit.version>
+    <allure.version>2.13.6</allure.version>
+    <slf4j-log4j12.version>1.7.30</slf4j-log4j12.version>
+    <selenium.version>3.141.59</selenium.version>
+    <webdrivermanager.version>4.2.2</webdrivermanager.version>
+    <rest-assured.version>4.3.2</rest-assured.version>
+    <jackson-databind.version>2.11.1</jackson-databind.version>
+    <lombok.version>1.18.16</lombok.version>
+    <aspectj.version>1.9.6</aspectj.version>
+
+    <allure-maven.version>2.10.0</allure-maven.version>
+    <junit-platform-surefire-provider.version>1.3.2</junit-platform-surefire-provider.version>
+    <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+    <maven-surefire-plugin.version>3.0.0-M3</maven-surefire-plugin.version>
+    <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+    <maven-assembly-plugin.version>3.1.1</maven-assembly-plugin.version>
+  </properties>
+
+  <dependencies>
+    <!-- Used to create and run tests. -->
+    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Used to generate test reports. -->
+    <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-junit5 -->
+    <dependency>
+      <groupId>io.qameta.allure</groupId>
+      <artifactId>allure-junit5</artifactId>
+      <version>${allure.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Used for logging. -->
+    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>${slf4j-log4j12.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Used to automate web browsers for UI testing.       -->
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>${selenium.version}</version>
+    </dependency>
+
+    <!-- Used to manage chrome and firefox drivers/versions.       -->
+    <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>${webdrivermanager.version}</version>
+    </dependency>
+
+    <!-- Used to send API calls for API testing.       -->
+    <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <version>${rest-assured.version}</version>
+    </dependency>
+
+    <!-- Used to convert between Map and JSON.       -->
+    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson-databind.version}</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${lombok.version}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+      <resource>
+        <directory>src/main/resources/configurations</directory>
+      </resource>
+      <resource>
+        <directory>src/test/resources</directory>
+      </resource>
+      <resource>
+        <directory>src/test/resources/configurations</directory>
+      </resource>
+    </resources>
+
+    <plugins>
+      <plugin>
+        <groupId>io.qameta.allure</groupId>
+        <artifactId>allure-maven</artifactId>
+        <version>${allure-maven.version}</version>
+      </plugin>
+
+      <!-- Used in order to set the language level of Java. -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${maven-compiler-plugin.version}</version>
+        <configuration>
+          <release>${java.version}</release>
+        </configuration>
+      </plugin>
+
+      <!-- Used in order to run tests within this project during the test phase of maven execution. -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${maven-surefire-plugin.version}</version>
+        <configuration>
+          <properties>
+            <property>
+              <name>listener</name>
+              <value>io.qameta.allure.junit5.AllureJunit5</value>
+            </property>
+          </properties>
+          <includes>
+            <include>**/*Test*.java</include>
+          </includes>
+          <argLine>
+            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+          </argLine>
+          <systemProperties>
+            <property>
+              <name>allure.results.directory</name>
+              <value>${project.basedir}/allure-results</value>
+            </property>
+            <property>
+              <name>junit.jupiter.extensions.autodetection.enabled</name>
+              <value>true</value>
+            </property>
+          </systemProperties>
+          <reportFormat>plain</reportFormat>
+        </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectj.version}</version>
+          </dependency>
+<!--          <dependency>-->
+<!--            <groupId>org.junit.platform</groupId>-->
+<!--            <artifactId>junit-platform-surefire-provider</artifactId>-->
+<!--            <version>${junit-platform-surefire-provider.version}</version>-->
+<!--          </dependency>-->
+          <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+
+      <!-- Used to skip creating the default jar during the package phase of maven execution. -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>${maven-jar-plugin.version}</version>
+        <executions>
+          <execution>
+            <id>default-jar</id>
+            <!-- put the default-jar in the none phase to skip it from being created -->
+            <phase>none</phase>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- Used to create a "fat" jar filled with all the dependencies defined in this pom.xml -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>${maven-assembly-plugin.version}</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>App</mainClass>
+            </manifest>
+          </archive>
+          <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
+          <finalName>${project.artifactId}-${project.version}</finalName>
+          <appendAssemblyId>false</appendAssemblyId>
+        </configuration>
+        <executions>
+          <execution>
+            <id>make-assembly</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
