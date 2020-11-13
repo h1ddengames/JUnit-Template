@@ -38,12 +38,20 @@ jobs:
         run: mvn -B package --file pom.xml
 
       - name: Copy JAR files to new Directory  
-        run: mkdir staging && cp target/$(grep -o "<artifactId>.*</artifactId>" pom.xml | head -1 | sed "s#<artifactId>##g" | sed "s#</artifactId>##g")-$(grep -o "<version>.*</version>" pom.xml | head -1 | sed "s#<version>##g" | sed "s#</version>##g").jar staging
+        run: mkdir output && cp target/$(grep -o "<artifactId>.*</artifactId>" pom.xml | head -1 | sed "s#<artifactId>##g" | sed "s#</artifactId>##g")-$(grep -o "<version>.*</version>" pom.xml | head -1 | sed "s#<version>##g" | sed "s#</version>##g").jar staging
+
+      - name: Generate Allure Report
+        uses: simple-elf/allure-report-action@master
+        if: always()
+        with:
+          allure_results: target/allure-results
+          allure_history: target/allure-history
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
           name: reports+jar
           path: |
-            allure-results
-            staging
+            target/allure-results
+            target/allure-history
+            output
