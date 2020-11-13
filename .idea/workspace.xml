@@ -22,7 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbf3f292-9246-4ad0-aa3f-54da35fa700d" name="Default Changelist" comment="" />
+    <list default="true" id="fbf3f292-9246-4ad0-aa3f-54da35fa700d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/test-workflow.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/test-workflow.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

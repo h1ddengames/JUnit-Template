@@ -9,7 +9,7 @@ on:
   pull_request:
     branches: [ main ]
   schedule:
-    - cron: '5 * * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   build:
@@ -42,5 +42,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
-          name: reports
-          path: allure-results
+          name: reports+jar
+          path: |
+            allure-results
+            staging
