@@ -1,33 +1,17 @@
-# JUnit-Template
+> # JUnit-Template
 JUnit 5 + Allure Reporting template project.
 
-## Dependencies
+> ## Dependencies
 
-JUnit - Testing Framework
-Allure - Reporting Framework
-Slf4j - Logging Framework
-Selenium - Browswer Automation Framework
-WebDriverManager - Setup drivers for Selenium
-Rest-Assured - Rest API Framework
-Jackson-Databind - JSON Manipulation Framework
+- JUnit - Testing Framework
+- Allure - Reporting Framework
+- Slf4j - Logging Framework
+- Selenium - Browswer Automation Framework
+- WebDriverManager - Setup drivers for Selenium
+- Rest-Assured - Rest API Framework
+- Jackson-Databind - JSON Manipulation Framework
 
-## Build Setup
-
-- maven-compiler-plugin: sets the java version.
-- maven-surefire-plugin: runs junit tests and provides results to allure for reporting.
-- maven-jar-plugin: supresses generation of the default jar that is created during the package phase.
-- maven-assembly-plugin: generates a jar with dependencies packed in (fat jar) with the name: ${project.artifactId}-${project.version}.jar (Example: Project-Template-1.0.0.jar)
-- .github/workflows/test-workflow.yml will: 
-    - run on push to main branch, on pull request to main branch, and at 00:00 on Sunday.
-    - checkout your code to a ubuntu server running the latest version of ubuntu.
-    - setup JDK 11.0.6
-    - cache all required maven packages based on pom.xml
-    - build the project with maven using the following command ```mvn -B package --file pom.xml```
-    - copy the generated jar file to a directory called output
-    - generate allure results as json and html files.
-    - package the allure results and the jar file into a zip file called reports+jar that will be put in the artifacts section of the Actions tab on github under "Java CI".
-
-## Project Setup
+> ## Project Setup
 
 1. Download the project from this page by clicking on Code > Download ZIP or with the provided HTTPS or SSH options.
 2. Open the project using an IDE such as Intellij or Eclipse.
@@ -43,3 +27,19 @@ Jackson-Databind - JSON Manipulation Framework
 12. Update the test-workflow.yml based on your situation.
 13. Add the allure folder .allure/allure-2.8.1 to your path in order to be able to call allure executable from anywhere.
 14. In order to generate reports using allure, open a command prompt in the project's main folder. Then run ```allure serve target/allure-results/```
+
+> ## Build Setup
+
+- maven-compiler-plugin: sets the java version.
+- maven-surefire-plugin: runs junit tests and provides results to allure for reporting.
+- maven-jar-plugin: supresses generation of the default jar that is created during the package phase.
+- maven-assembly-plugin: generates a jar with dependencies packed in (fat jar) with the name: ${project.artifactId}-${project.version}.jar (Example: Project-Template-1.0.0.jar)
+- .github/workflows/test-workflow.yml will: 
+    - run on push to main branch, on pull request to main branch, and at 00:00 on Sunday.
+    - checkout your code to a ubuntu server running the latest version of ubuntu.
+    - setup JDK 11.0.6
+    - cache all required maven packages based on pom.xml
+    - build the project with maven using the following command ```mvn -B package --file pom.xml```
+    - copy the generated jar file to a directory called output
+    - generate allure results as json and html files.
+    - package the allure results and the jar file into a zip file called reports+jar that will be put in the artifacts section of the Actions tab on github under "Java CI".
