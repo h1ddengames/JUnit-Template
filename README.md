@@ -1,9 +1,16 @@
-> # **JUnit-Template**
-JUnit 5 + Allure Reporting template project.
+# **Project-Template**
+A Java 11 project template built to quick start new projects with minimal setup time.
+
+<br>
+
+This project should be stored in Intellij by clicking on Tools > Save Project as Template. Then when a new project will be created in Intellij, use this project template under New Project > User-defined.
 
 <br>
 
 > ## **Dependencies**
+
+<details>
+    <summary>Click to expand/collapse</summary>
 
 - JUnit - Testing Framework
 - Allure - Reporting Framework
@@ -12,6 +19,7 @@ JUnit 5 + Allure Reporting template project.
 - WebDriverManager - Setup drivers for Selenium
 - Rest-Assured - Rest API Framework
 - Jackson-Databind - JSON Manipulation Framework
+</details>
 
 <br>
 
