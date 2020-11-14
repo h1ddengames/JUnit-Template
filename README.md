@@ -1,7 +1,8 @@
 > # **JUnit-Template**
 JUnit 5 + Allure Reporting template project.
 
-<br><br>
+<br>
+
 > ## **Dependencies**
 
 - JUnit - Testing Framework
@@ -12,7 +13,7 @@ JUnit 5 + Allure Reporting template project.
 - Rest-Assured - Rest API Framework
 - Jackson-Databind - JSON Manipulation Framework
 
-<br><br>
+<br>
 
 > ## **Project Setup**
 
@@ -35,7 +36,7 @@ JUnit 5 + Allure Reporting template project.
 14. In order to generate reports using allure, open a command prompt in the project's main folder. Then run ```allure serve target/allure-results/```
 </details>
 
-<br><br>
+<br>
 
 > ## **Build Setup**
 
