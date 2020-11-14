@@ -1,7 +1,8 @@
-> # JUnit-Template
+> # **JUnit-Template**
 JUnit 5 + Allure Reporting template project.
 
-> ## Dependencies
+<br><br>
+> ## **Dependencies**
 
 - JUnit - Testing Framework
 - Allure - Reporting Framework
@@ -11,7 +12,12 @@ JUnit 5 + Allure Reporting template project.
 - Rest-Assured - Rest API Framework
 - Jackson-Databind - JSON Manipulation Framework
 
-> ## Project Setup
+<br><br>
+
+> ## **Project Setup**
+
+<details>
+    <summary>Click to expand/collapse</summary>
 
 1. Download the project from this page by clicking on Code > Download ZIP or with the provided HTTPS or SSH options.
 2. Open the project using an IDE such as Intellij or Eclipse.
@@ -27,8 +33,14 @@ JUnit 5 + Allure Reporting template project.
 12. Update the test-workflow.yml based on your situation.
 13. Add the allure folder .allure/allure-2.8.1 to your path in order to be able to call allure executable from anywhere.
 14. In order to generate reports using allure, open a command prompt in the project's main folder. Then run ```allure serve target/allure-results/```
+</details>
 
-> ## Build Setup
+<br><br>
+
+> ## **Build Setup**
+
+<details>
+    <summary>Click to expand/collapse</summary>
 
 - maven-compiler-plugin: sets the java version.
 - maven-surefire-plugin: runs junit tests and provides results to allure for reporting.
@@ -43,3 +55,5 @@ JUnit 5 + Allure Reporting template project.
     - copy the generated jar file to a directory called output
     - generate allure results as json and html files.
     - package the allure results and the jar file into a zip file called reports+jar that will be put in the artifacts section of the Actions tab on github under "Java CI".
+
+</details>
