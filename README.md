@@ -1,4 +1,5 @@
 # **Project-Template**
+
 A Java 11 project template built to quick start new projects with minimal setup time.
 
 <br>
@@ -15,7 +16,7 @@ This project should be stored in Intellij by clicking on Tools > Save Project as
 - JUnit - Testing Framework
 - Allure - Reporting Framework
 - Slf4j - Logging Framework
-- Selenium - Browswer Automation Framework
+- Selenium - Browser Automation Framework
 - WebDriverManager - Setup drivers for Selenium
 - Rest-Assured - Rest API Framework
 - Jackson-Databind - JSON Manipulation Framework
@@ -31,15 +32,15 @@ This project should be stored in Intellij by clicking on Tools > Save Project as
 1. Download the project from this page by clicking on Code > Download ZIP or with the provided HTTPS or SSH options.
 2. Open the project using an IDE such as Intellij or Eclipse.
 3. Once the IDE has opened the project, run ```mvn test```
-4. On first run, the IDE should install all required maven dependencies.
+4. On first run, the IDE should install all required maven dependencies, if not: run ```mvn verify```.
 5. Verify that the results show "Tests run: 3, Failures: 0, Errors: 0, Skipped: 0" and "BUILD SUCCESS"
 6. Open pom.xml then update the group ID to your company domain in reverse domain name notation. (Example if your company domain is found at example.com then the reverse domain name notation would be com.example)
-7. Update the artifactId to be the project you are currently working on.
+7. Update the artifactId to the name of the project you are currently working on.
 8. Update the version according to your situation.
-9. Decide the versions of the libraries in the properties section.
-10. Add or remove libraries according to your situation.
-11. If using a main class that is not App.java then update the pom.xml build/plugin section of the maven-assembly-plugin to the new main class. Then update the final name as required.
-12. Update the test-workflow.yml based on your situation.
+9. Update the versions of the libraries in the pom.xml file.
+10. Add or remove libraries according to your needs.
+11. If you are using a main class that is not entrypoint.App.java then update the pom.xml build/plugin section of the maven-assembly-plugin to the new main class. Then update the final name as required.
+12. Update the test-workflow.yml based on your needs.
 13. Add the allure folder .allure/allure-2.8.1 to your path in order to be able to call allure executable from anywhere.
 14. In order to generate reports using allure, open a command prompt in the project's main folder. Then run ```allure serve target/allure-results/```
 </details>

@@ -194,7 +194,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>App</mainClass>
+              <mainClass>entrypoint.App</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>

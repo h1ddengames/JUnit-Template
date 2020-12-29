@@ -1,3 +1,5 @@
+package managers;
+
 import io.restassured.RestAssured;
 import io.restassured.config.HttpClientConfig;
 import io.restassured.config.RestAssuredConfig;
@@ -10,7 +12,7 @@ public class RestManager {
         // SO_TIMEOUT is 'a maximum period inactivity between two consecutive data packets'.
         return RestAssured.config()
                 .httpClient(HttpClientConfig.httpClientConfig()
-                        .setParam(CoreConnectionPNames.CONNECTION_TIMEOUT, 5000)
-                        .setParam(CoreConnectionPNames.SO_TIMEOUT, 5000));
+                        .setParam(CoreConnectionPNames.CONNECTION_TIMEOUT, 100000)
+                        .setParam(CoreConnectionPNames.SO_TIMEOUT, 100000));
     }
 }
