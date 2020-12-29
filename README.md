@@ -1,3 +1,6 @@
+![build](https://github.com/h1ddengames/Project-Template/workflows/build/badge.svg)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 # **Project-Template**
 
 A Java 11 project template built to quick start new projects with minimal setup time.
