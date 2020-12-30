@@ -1,11 +1,11 @@
 {
-  "uid" : "e5b806f3f058e845",
+  "uid" : "60ad7eeed70bb404",
   "name" : "subtraction()",
   "fullName" : "other.AppTest.subtraction",
   "historyId" : "c5d971b44257b051e74e9f9dc982ca47",
   "time" : {
-    "start" : 1609293363128,
-    "stop" : 1609293363133,
+    "start" : 1609316387890,
+    "stop" : 1609316387895,
     "duration" : 5
   },
   "description" : "Get the value of a number subtracted by another number.",
@@ -28,7 +28,7 @@
     "value" : "DESKTOP-NS5O6HM"
   }, {
     "name" : "thread",
-    "value" : "14044@DESKTOP-NS5O6HM.main(1)"
+    "value" : "21404@DESKTOP-NS5O6HM.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -58,7 +58,15 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ {
-      "uid" : "ed07b7013dbc4cf9",
+      "uid" : "1422b7121e7b9c09",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609293363128,
+        "stop" : 1609293363133,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "537344a825b98ec9",
       "status" : "passed",
       "time" : {
         "start" : 1609292598429,
@@ -66,7 +74,7 @@
         "duration" : 6
       }
     }, {
-      "uid" : "c0a528ab2775ee52",
+      "uid" : "d2177a0e21ef2985",
       "status" : "passed",
       "time" : {
         "start" : 1609292565265,
@@ -80,11 +88,19 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 3,
+        "passed" : 4,
         "unknown" : 0,
-        "total" : 3
+        "total" : 4
       },
       "items" : [ {
+        "uid" : "e5b806f3f058e845",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609293363128,
+          "stop" : 1609293363133,
+          "duration" : 5
+        }
+      }, {
         "uid" : "5133c12228524255",
         "status" : "passed",
         "time" : {
@@ -104,6 +120,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "e5b806f3f058e845.json",
+  "source" : "60ad7eeed70bb404.json",
   "parameterValues" : [ ]
 }

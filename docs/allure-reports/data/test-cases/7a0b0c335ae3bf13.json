@@ -1,12 +1,12 @@
 {
-  "uid" : "1a59633a7d531975",
+  "uid" : "7a0b0c335ae3bf13",
   "name" : "integrationOfAdditionAndSubtraction()",
   "fullName" : "other.AppTest.integrationOfAdditionAndSubtraction",
   "historyId" : "f7ded43b41b0a6321faf2317c71a4c34",
   "time" : {
-    "start" : 1609292565281,
-    "stop" : 1609292565281,
-    "duration" : 0
+    "start" : 1609292598445,
+    "stop" : 1609292598446,
+    "duration" : 1
   },
   "description" : "Get the value of a number subtracted by two numbers added together.",
   "descriptionHtml" : "<p>Get the value of a number subtracted by two numbers added together.</p>\n",
@@ -15,11 +15,11 @@
   "beforeStages" : [ ],
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "epic",
-    "value" : "Arithmetic Operations"
-  }, {
     "name" : "feature",
     "value" : "Addition and Subtraction Features"
+  }, {
+    "name" : "epic",
+    "value" : "Arithmetic Operations"
   }, {
     "name" : "story",
     "value" : "User tries to add two numbers then subtract from a larger number."
@@ -28,7 +28,7 @@
     "value" : "DESKTOP-NS5O6HM"
   }, {
     "name" : "thread",
-    "value" : "8104@DESKTOP-NS5O6HM.main(1)"
+    "value" : "17816@DESKTOP-NS5O6HM.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -59,6 +59,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "1a59633a7d531975.json",
+  "source" : "7a0b0c335ae3bf13.json",
   "parameterValues" : [ ]
 }

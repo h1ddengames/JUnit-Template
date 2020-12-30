@@ -1,28 +1,28 @@
 {
-  "uid" : "ed07b7013dbc4cf9",
-  "name" : "subtraction()",
-  "fullName" : "other.AppTest.subtraction",
-  "historyId" : "c5d971b44257b051e74e9f9dc982ca47",
+  "uid" : "14a8eb19dd7e25c8",
+  "name" : "getMultipleRandomDogImagesTest()",
+  "fullName" : "api.DogAPITest.getMultipleRandomDogImagesTest",
+  "historyId" : "cd37042439e0fdd4e877dd955d5307e1",
   "time" : {
-    "start" : 1609292598429,
-    "stop" : 1609292598435,
-    "duration" : 6
+    "start" : 1609292595978,
+    "stop" : 1609292597883,
+    "duration" : 1905
   },
-  "description" : "Get the value of a number subtracted by another number.",
-  "descriptionHtml" : "<p>Get the value of a number subtracted by another number.</p>\n",
+  "description" : "Get the list of all dog breeds.",
+  "descriptionHtml" : "<p>Get the list of all dog breeds.</p>\n",
   "status" : "passed",
   "flaky" : false,
   "beforeStages" : [ ],
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "epic",
-    "value" : "Arithmetic Operations"
+    "value" : "Dog API"
   }, {
     "name" : "feature",
-    "value" : "Addition and Subtraction Features"
+    "value" : "Data with images"
   }, {
     "name" : "story",
-    "value" : "User tries to subtract two numbers."
+    "value" : "User tries to get all dog breeds."
   }, {
     "name" : "host",
     "value" : "DESKTOP-NS5O6HM"
@@ -37,16 +37,16 @@
     "value" : "java"
   }, {
     "name" : "package",
-    "value" : "other.AppTest"
+    "value" : "api.DogAPITest"
   }, {
     "name" : "testClass",
-    "value" : "other.AppTest"
+    "value" : "api.DogAPITest"
   }, {
     "name" : "testMethod",
-    "value" : "subtraction"
+    "value" : "getMultipleRandomDogImagesTest"
   }, {
     "name" : "suite",
-    "value" : "other.AppTest"
+    "value" : "api.DogAPITest"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -59,6 +59,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "ed07b7013dbc4cf9.json",
+  "source" : "14a8eb19dd7e25c8.json",
   "parameterValues" : [ ]
 }

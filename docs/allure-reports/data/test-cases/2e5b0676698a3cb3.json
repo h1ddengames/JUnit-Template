@@ -1,12 +1,12 @@
 {
-  "uid" : "a213d12c645a0444",
+  "uid" : "2e5b0676698a3cb3",
   "name" : "integrationOfAdditionAndSubtraction()",
   "fullName" : "other.AppTest.integrationOfAdditionAndSubtraction",
   "historyId" : "f7ded43b41b0a6321faf2317c71a4c34",
   "time" : {
-    "start" : 1609293363143,
-    "stop" : 1609293363144,
-    "duration" : 1
+    "start" : 1609316387906,
+    "stop" : 1609316387906,
+    "duration" : 0
   },
   "description" : "Get the value of a number subtracted by two numbers added together.",
   "descriptionHtml" : "<p>Get the value of a number subtracted by two numbers added together.</p>\n",
@@ -28,7 +28,7 @@
     "value" : "DESKTOP-NS5O6HM"
   }, {
     "name" : "thread",
-    "value" : "14044@DESKTOP-NS5O6HM.main(1)"
+    "value" : "21404@DESKTOP-NS5O6HM.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -58,7 +58,15 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ {
-      "uid" : "ed406f898543e483",
+      "uid" : "71e08e0839e0279a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609293363143,
+        "stop" : 1609293363144,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7a0b0c335ae3bf13",
       "status" : "passed",
       "time" : {
         "start" : 1609292598445,
@@ -66,7 +74,7 @@
         "duration" : 1
       }
     }, {
-      "uid" : "1a59633a7d531975",
+      "uid" : "6da426db9726a36c",
       "status" : "passed",
       "time" : {
         "start" : 1609292565281,
@@ -80,11 +88,19 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 3,
+        "passed" : 4,
         "unknown" : 0,
-        "total" : 3
+        "total" : 4
       },
       "items" : [ {
+        "uid" : "a213d12c645a0444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609293363143,
+          "stop" : 1609293363144,
+          "duration" : 1
+        }
+      }, {
         "uid" : "6898cbc3fc6744da",
         "status" : "passed",
         "time" : {
@@ -104,6 +120,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "a213d12c645a0444.json",
+  "source" : "2e5b0676698a3cb3.json",
   "parameterValues" : [ ]
 }
