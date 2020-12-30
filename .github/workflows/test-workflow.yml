@@ -6,8 +6,8 @@ name: build
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
+#  pull_request:
+#    branches: [ main ]
   schedule:
     #- cron: '*/5 * * * *' # Every 5 minutes
     - cron: '0 0 * * 0' # At 00:00 on Sunday.
