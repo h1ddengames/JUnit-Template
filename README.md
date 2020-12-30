@@ -5,7 +5,7 @@
 
 A Java 11 project template built to quick start new projects with minimal setup time.
 
-Please view the javadocs [here](https://h1ddengames.github.io/Project-Template "The javadocs for this project").
+Please view the Javadocs + Allure Reports [here](https://h1ddengames.github.io/Project-Template "The javadocs for this project").
 
 <br>
 
@@ -17,6 +17,16 @@ Please view the javadocs [here](https://h1ddengames.github.io/Project-Template "
     mvn clean package && allure generate docs/allure-results --clean -o docs/allure-reports
     git add . && git commit && git push origin docs
     ```
+  
+  or all at once:
+  ```bash
+  cp -a docs/allure-reports/history/. docs/allure-results/history && \
+   mvn clean package clean && \
+   allure generate docs/allure-results --clean -o docs/allure-reports && \
+   git add . && \
+   git commit && \ 
+   git push origin docs
+  ```
 
 - Why are the above commands important?
     - The first command copies all the history files from one allure report generation task to another.
@@ -24,6 +34,9 @@ Please view the javadocs [here](https://h1ddengames.github.io/Project-Template "
     - The second command will build the project and allure will generate a report based off the new files in docs/allure-history
     - The third command will add all tracked and untracked files to the git history, commit all changes, then push to a side branch.
     - Then login to github in a browser, go to this project, then create a pull request.
+
+
+- If the reports are not displaying recent data, open the dev console in your browser and clear cache (local and session storage)
 
 <br>
 
