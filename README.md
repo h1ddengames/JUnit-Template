@@ -40,7 +40,7 @@ This project should be stored in Intellij by clicking on Tools > Save Project as
 2. Open the project using an IDE such as Intellij or Eclipse.
 3. Once the IDE has opened the project, run ```mvn test```
 4. On first run, the IDE should install all required maven dependencies, if not: run ```mvn verify```.
-5. Verify that the results show "Tests run: 3, Failures: 0, Errors: 0, Skipped: 0" and "BUILD SUCCESS"
+5. Verify that the results show "Tests run: 6, Failures: 0, Errors: 0, Skipped: 0" and "BUILD SUCCESS"
 6. Open pom.xml then update the group ID to your company domain in reverse domain name notation. (Example if your company domain is found at example.com then the reverse domain name notation would be com.example)
 7. Update the artifactId to the name of the project you are currently working on.
 8. Update the version according to your situation.

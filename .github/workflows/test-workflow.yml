@@ -44,8 +44,18 @@ jobs:
         uses: simple-elf/allure-report-action@master
         if: always()
         with:
-          allure_results: target/allure-results
-          allure_history: target/allure-history
+          allure_results: docs/allure-results
+          allure_history: docs/allure-history
+          allure_report: docs/allure-report
+          gh_pages: main
+
+      - name: Deploy report to Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: main
+          PUBLISH_DIR: allure-history
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
