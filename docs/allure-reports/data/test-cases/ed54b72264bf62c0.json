@@ -1,12 +1,12 @@
 {
-  "uid" : "6757485243808932",
+  "uid" : "ed54b72264bf62c0",
   "name" : "addition()",
   "fullName" : "other.AppTest.addition",
   "historyId" : "71431720c18e3597ea23c1af199cb368",
   "time" : {
-    "start" : 1609293363137,
-    "stop" : 1609293363138,
-    "duration" : 1
+    "start" : 1609316387900,
+    "stop" : 1609316387900,
+    "duration" : 0
   },
   "description" : "Get the value of two numbers added together.",
   "descriptionHtml" : "<p>Get the value of two numbers added together.</p>\n",
@@ -15,11 +15,11 @@
   "beforeStages" : [ ],
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "feature",
-    "value" : "Addition and Subtraction Features"
-  }, {
     "name" : "epic",
     "value" : "Arithmetic Operations"
+  }, {
+    "name" : "feature",
+    "value" : "Addition and Subtraction Features"
   }, {
     "name" : "story",
     "value" : "User tries to add two numbers."
@@ -28,7 +28,7 @@
     "value" : "DESKTOP-NS5O6HM"
   }, {
     "name" : "thread",
-    "value" : "14044@DESKTOP-NS5O6HM.main(1)"
+    "value" : "21404@DESKTOP-NS5O6HM.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -58,7 +58,15 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ {
-      "uid" : "c75c9c634578277a",
+      "uid" : "ca9d818c243972a6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609293363137,
+        "stop" : 1609293363138,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f9c23e6a92822c6d",
       "status" : "passed",
       "time" : {
         "start" : 1609292598440,
@@ -66,7 +74,7 @@
         "duration" : 1
       }
     }, {
-      "uid" : "f93c7ef76887e96e",
+      "uid" : "a6b32bfbd016dd62",
       "status" : "passed",
       "time" : {
         "start" : 1609292565275,
@@ -80,11 +88,19 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 3,
+        "passed" : 4,
         "unknown" : 0,
-        "total" : 3
+        "total" : 4
       },
       "items" : [ {
+        "uid" : "6757485243808932",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609293363137,
+          "stop" : 1609293363138,
+          "duration" : 1
+        }
+      }, {
         "uid" : "108b19362deb7833",
         "status" : "passed",
         "time" : {
@@ -104,6 +120,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "6757485243808932.json",
+  "source" : "ed54b72264bf62c0.json",
   "parameterValues" : [ ]
 }

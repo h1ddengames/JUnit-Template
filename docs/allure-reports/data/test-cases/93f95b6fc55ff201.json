@@ -1,28 +1,28 @@
 {
-  "uid" : "f93c7ef76887e96e",
-  "name" : "addition()",
-  "fullName" : "other.AppTest.addition",
-  "historyId" : "71431720c18e3597ea23c1af199cb368",
+  "uid" : "93f95b6fc55ff201",
+  "name" : "getAllDogBreedsTest()",
+  "fullName" : "api.DogAPITest.getAllDogBreedsTest",
+  "historyId" : "1724a74076d38aad621997b12654a9d3",
   "time" : {
-    "start" : 1609292565275,
-    "stop" : 1609292565275,
-    "duration" : 0
+    "start" : 1609292565048,
+    "stop" : 1609292565256,
+    "duration" : 208
   },
-  "description" : "Get the value of two numbers added together.",
-  "descriptionHtml" : "<p>Get the value of two numbers added together.</p>\n",
+  "description" : "Get the list of all dog breeds.",
+  "descriptionHtml" : "<p>Get the list of all dog breeds.</p>\n",
   "status" : "passed",
   "flaky" : false,
   "beforeStages" : [ ],
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "epic",
-    "value" : "Arithmetic Operations"
-  }, {
     "name" : "feature",
-    "value" : "Addition and Subtraction Features"
+    "value" : "Data with images"
+  }, {
+    "name" : "epic",
+    "value" : "Dog API"
   }, {
     "name" : "story",
-    "value" : "User tries to add two numbers."
+    "value" : "User tries to get all dog breeds."
   }, {
     "name" : "host",
     "value" : "DESKTOP-NS5O6HM"
@@ -37,16 +37,16 @@
     "value" : "java"
   }, {
     "name" : "package",
-    "value" : "other.AppTest"
+    "value" : "api.DogAPITest"
   }, {
     "name" : "testClass",
-    "value" : "other.AppTest"
+    "value" : "api.DogAPITest"
   }, {
     "name" : "testMethod",
-    "value" : "addition"
+    "value" : "getAllDogBreedsTest"
   }, {
     "name" : "suite",
-    "value" : "other.AppTest"
+    "value" : "api.DogAPITest"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -59,6 +59,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "f93c7ef76887e96e.json",
+  "source" : "93f95b6fc55ff201.json",
   "parameterValues" : [ ]
 }

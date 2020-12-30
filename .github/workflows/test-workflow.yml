@@ -40,13 +40,13 @@ jobs:
       - name: Copy JAR files to new Directory  
         run: mkdir output && cp target/$(grep -o "<artifactId>.*</artifactId>" pom.xml | head -1 | sed "s#<artifactId>###\g" | sed "s#</artifactId>###\g")-$(grep -o "<version>.*</version>" pom.xml | head -1 | sed "s#<version>###\g" | sed "s#</version>###\g").jar output
 
-      - name: Generate Allure Report
-        uses: simple-elf/allure-report-action@master
-        if: always()
-        with:
-          allure_results: docs/allure-results
-          allure_history: docs/allure-results/history
-          allure_report: docs/allure-report
+#      - name: Generate Allure Report
+#        uses: simple-elf/allure-report-action@master
+#        if: always()
+#        with:
+#          allure_results: docs/allure-results
+#          allure_history: docs/allure-results/history
+#          allure_report: docs/allure-report
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
@@ -55,5 +55,4 @@ jobs:
           path: |
             docs/allure-results
             docs/allure-reports
-            docs/allure-report
             output

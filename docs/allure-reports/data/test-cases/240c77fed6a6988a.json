@@ -1,12 +1,12 @@
 {
-  "uid" : "789d57efb60f2896",
+  "uid" : "240c77fed6a6988a",
   "name" : "getMultipleRandomDogImagesTest()",
   "fullName" : "api.DogAPITest.getMultipleRandomDogImagesTest",
   "historyId" : "cd37042439e0fdd4e877dd955d5307e1",
   "time" : {
-    "start" : 1609292562480,
-    "stop" : 1609292564594,
-    "duration" : 2114
+    "start" : 1609293360282,
+    "stop" : 1609293362431,
+    "duration" : 2149
   },
   "description" : "Get the list of all dog breeds.",
   "descriptionHtml" : "<p>Get the list of all dog breeds.</p>\n",
@@ -15,11 +15,11 @@
   "beforeStages" : [ ],
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "epic",
-    "value" : "Dog API"
-  }, {
     "name" : "feature",
     "value" : "Data with images"
+  }, {
+    "name" : "epic",
+    "value" : "Dog API"
   }, {
     "name" : "story",
     "value" : "User tries to get all dog breeds."
@@ -28,7 +28,7 @@
     "value" : "DESKTOP-NS5O6HM"
   }, {
     "name" : "thread",
-    "value" : "8104@DESKTOP-NS5O6HM.main(1)"
+    "value" : "14044@DESKTOP-NS5O6HM.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -59,6 +59,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "789d57efb60f2896.json",
+  "source" : "240c77fed6a6988a.json",
   "parameterValues" : [ ]
 }
