@@ -9,6 +9,24 @@ Please view the javadocs [here](https://h1ddengames.github.io/Project-Template "
 
 <br>
 
+> ## **Important Notes**
+
+- Before pushing to this repository run the following commands:
+    ```bash
+    cp -a docs/allure-reports/history/. docs/allure-results/history
+    mvn clean package && allure generate docs/allure-results --clean -o docs/allure-reports
+    git add . && git commit && git push origin docs
+    ```
+
+- Why are the above commands important?
+    - The first command copies all the history files from one allure report generation task to another.
+      This allows you to see the trend tab on the home page, the history tab for all methods, and it fills all the graphs in the Graphs tab. 
+    - The second command will build the project and allure will generate a report based off the new files in docs/allure-history
+    - The third command will add all tracked and untracked files to the git history, commit all changes, then push to a side branch.
+    - Then login to github in a browser, go to this project, then create a pull request.
+
+<br>
+
 > ## **Usage**
 
 This project should be stored in Intellij by clicking on Tools > Save Project as Template. Then when a new project will be created in Intellij, use this project template under New Project > User-defined.

@@ -1,0 +1,109 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Dog API",
+    "children" : [ {
+      "name" : "Data with images",
+      "children" : [ {
+        "name" : "User tries to get all dog breeds.",
+        "children" : [ {
+          "name" : "getMultipleRandomDogImagesTest()",
+          "uid" : "bd21e9e0db2f092d",
+          "parentUid" : "93a92eb5b4c419743732f180cc3ac70b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1609293360282,
+            "stop" : 1609293362431,
+            "duration" : 2149
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getRandomDogImageTest()",
+          "uid" : "36049e86dc9160ba",
+          "parentUid" : "93a92eb5b4c419743732f180cc3ac70b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1609293362511,
+            "stop" : 1609293362746,
+            "duration" : 235
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getAllDogBreedsTest()",
+          "uid" : "c7506517d619cc52",
+          "parentUid" : "93a92eb5b4c419743732f180cc3ac70b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1609293362751,
+            "stop" : 1609293363119,
+            "duration" : 368
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "93a92eb5b4c419743732f180cc3ac70b"
+      } ],
+      "uid" : "06996ef5626bcbb6642ac8f0d2faabd9"
+    } ],
+    "uid" : "5c9e540e77c9cfbd99029b0a317734af"
+  }, {
+    "name" : "Arithmetic Operations",
+    "children" : [ {
+      "name" : "Addition and Subtraction Features",
+      "children" : [ {
+        "name" : "User tries to subtract two numbers.",
+        "children" : [ {
+          "name" : "subtraction()",
+          "uid" : "e5b806f3f058e845",
+          "parentUid" : "ea94b7628dd530f220c35e6d0ac7bd88",
+          "status" : "passed",
+          "time" : {
+            "start" : 1609293363128,
+            "stop" : 1609293363133,
+            "duration" : 5
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "ea94b7628dd530f220c35e6d0ac7bd88"
+      }, {
+        "name" : "User tries to add two numbers.",
+        "children" : [ {
+          "name" : "addition()",
+          "uid" : "6757485243808932",
+          "parentUid" : "8cabced3a71f3d03d0209abc56556493",
+          "status" : "passed",
+          "time" : {
+            "start" : 1609293363137,
+            "stop" : 1609293363138,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "8cabced3a71f3d03d0209abc56556493"
+      }, {
+        "name" : "User tries to add two numbers then subtract from a larger number.",
+        "children" : [ {
+          "name" : "integrationOfAdditionAndSubtraction()",
+          "uid" : "a213d12c645a0444",
+          "parentUid" : "8eccfe7dee5b176c5b5a2d6964776e53",
+          "status" : "passed",
+          "time" : {
+            "start" : 1609293363143,
+            "stop" : 1609293363144,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "8eccfe7dee5b176c5b5a2d6964776e53"
+      } ],
+      "uid" : "ec463904101059bb2ea737a12c238271"
+    } ],
+    "uid" : "cd63e7dc9ec44876f0263f2a28dcc035"
+  } ]
+}

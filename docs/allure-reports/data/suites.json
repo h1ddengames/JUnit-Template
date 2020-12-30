@@ -1,0 +1,85 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "api.DogAPITest",
+    "children" : [ {
+      "name" : "getMultipleRandomDogImagesTest()",
+      "uid" : "bd21e9e0db2f092d",
+      "parentUid" : "d3796ae75512cc060ae5583f2327502b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609293360282,
+        "stop" : 1609293362431,
+        "duration" : 2149
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "getRandomDogImageTest()",
+      "uid" : "36049e86dc9160ba",
+      "parentUid" : "d3796ae75512cc060ae5583f2327502b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609293362511,
+        "stop" : 1609293362746,
+        "duration" : 235
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "getAllDogBreedsTest()",
+      "uid" : "c7506517d619cc52",
+      "parentUid" : "d3796ae75512cc060ae5583f2327502b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609293362751,
+        "stop" : 1609293363119,
+        "duration" : 368
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "d3796ae75512cc060ae5583f2327502b"
+  }, {
+    "name" : "other.AppTest",
+    "children" : [ {
+      "name" : "subtraction()",
+      "uid" : "e5b806f3f058e845",
+      "parentUid" : "568acbb61986f0ed5298aebcec6ce0b2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609293363128,
+        "stop" : 1609293363133,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "addition()",
+      "uid" : "6757485243808932",
+      "parentUid" : "568acbb61986f0ed5298aebcec6ce0b2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609293363137,
+        "stop" : 1609293363138,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "integrationOfAdditionAndSubtraction()",
+      "uid" : "a213d12c645a0444",
+      "parentUid" : "568acbb61986f0ed5298aebcec6ce0b2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609293363143,
+        "stop" : 1609293363144,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "568acbb61986f0ed5298aebcec6ce0b2"
+  } ]
+}
