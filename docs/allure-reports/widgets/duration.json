@@ -1,60 +1,60 @@
 [ {
-  "uid" : "ed54b72264bf62c0",
+  "uid" : "b9530bb7108dc426",
   "name" : "addition()",
   "time" : {
-    "start" : 1609316387900,
-    "stop" : 1609316387900,
-    "duration" : 0
+    "start" : 1609317287536,
+    "stop" : 1609317287537,
+    "duration" : 1
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9e6dda5eec1ddb62",
-  "name" : "getMultipleRandomDogImagesTest()",
-  "time" : {
-    "start" : 1609316385309,
-    "stop" : 1609316387339,
-    "duration" : 2030
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2e5b0676698a3cb3",
+  "uid" : "935d500bad9318ba",
   "name" : "integrationOfAdditionAndSubtraction()",
   "time" : {
-    "start" : 1609316387906,
-    "stop" : 1609316387906,
-    "duration" : 0
+    "start" : 1609317287543,
+    "stop" : 1609317287544,
+    "duration" : 1
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "2cb93bc72336e590",
-  "name" : "getRandomDogImageTest()",
-  "time" : {
-    "start" : 1609316387419,
-    "stop" : 1609316387649,
-    "duration" : 230
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "60ad7eeed70bb404",
+  "uid" : "30d5fb1b74a7eeb",
   "name" : "subtraction()",
   "time" : {
-    "start" : 1609316387890,
-    "stop" : 1609316387895,
-    "duration" : 5
+    "start" : 1609317287524,
+    "stop" : 1609317287530,
+    "duration" : 6
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "82bfdf84990c3b9e",
+  "uid" : "1ac6e9d590b7a963",
+  "name" : "getMultipleRandomDogImagesTest()",
+  "time" : {
+    "start" : 1609317284573,
+    "stop" : 1609317286796,
+    "duration" : 2223
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fff2791ac0ff4042",
+  "name" : "getRandomDogImageTest()",
+  "time" : {
+    "start" : 1609317286886,
+    "stop" : 1609317287149,
+    "duration" : 263
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8012752919c51698",
   "name" : "getAllDogBreedsTest()",
   "time" : {
-    "start" : 1609316387654,
-    "stop" : 1609316387881,
-    "duration" : 227
+    "start" : 1609317287154,
+    "stop" : 1609317287515,
+    "duration" : 361
   },
   "status" : "passed",
   "severity" : "normal"

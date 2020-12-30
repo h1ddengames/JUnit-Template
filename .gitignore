@@ -4,8 +4,6 @@
 *.iml
 target
 target/**
-allure-results
-allure-results/**
 
 # Compiled class file
 *.class
