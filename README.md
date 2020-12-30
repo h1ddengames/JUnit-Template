@@ -1,8 +1,15 @@
+![build](https://github.com/h1ddengames/Project-Template/workflows/build/badge.svg)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 # **Project-Template**
 
 A Java 11 project template built to quick start new projects with minimal setup time.
 
+Please view the javadocs [here](https://h1ddengames.github.io/Project-Template "The javadocs for this project").
+
 <br>
+
+> ## **Usage**
 
 This project should be stored in Intellij by clicking on Tools > Save Project as Template. Then when a new project will be created in Intellij, use this project template under New Project > User-defined.
 
@@ -33,7 +40,7 @@ This project should be stored in Intellij by clicking on Tools > Save Project as
 2. Open the project using an IDE such as Intellij or Eclipse.
 3. Once the IDE has opened the project, run ```mvn test```
 4. On first run, the IDE should install all required maven dependencies, if not: run ```mvn verify```.
-5. Verify that the results show "Tests run: 3, Failures: 0, Errors: 0, Skipped: 0" and "BUILD SUCCESS"
+5. Verify that the results show "Tests run: 6, Failures: 0, Errors: 0, Skipped: 0" and "BUILD SUCCESS"
 6. Open pom.xml then update the group ID to your company domain in reverse domain name notation. (Example if your company domain is found at example.com then the reverse domain name notation would be com.example)
 7. Update the artifactId to the name of the project you are currently working on.
 8. Update the version according to your situation.
@@ -43,6 +50,51 @@ This project should be stored in Intellij by clicking on Tools > Save Project as
 12. Update the test-workflow.yml based on your needs.
 13. Add the allure folder .allure/allure-2.8.1 to your path in order to be able to call allure executable from anywhere.
 14. In order to generate reports using allure, open a command prompt in the project's main folder. Then run ```allure serve target/allure-results/```
+</details>
+
+<br>
+
+> ## **Optional Setup**
+
+<details>
+    <summary>Click to expand/collapse</summary>
+
+- If you use multiple github accounts from the same computer:
+1. Create a file named ```config``` in ```/.ssh```
+2. Create an entry like the one below for every account you use
+
+    ```bash
+    Host github.com-firstAccountUserName
+        HostName github.com
+        User git
+        IdentityFile ~/.ssh/id_for_first_user
+        IdentitiesOnly yes
+    
+    Host github.com-secondAccountUserName
+        HostName github.com
+        User git
+        IdentityFile ~/.ssh/id_for_second_user
+        IdentitiesOnly yes
+    ```
+
+3. Open the ```projectFolder/.git/config``` file.
+4. Update the line after ```[remote "origin"]``` to ```url = git@github.com-firstAccountUserName:firstAccountUserName/projectname.git```
+
+- Please note: the usual URL is ```git@github.com:firstAccountUserName/projectname.git``` 
+   but since you have multiple accounts on the same computer, you have to specify the identity file that git should use. 
+- Notice how the ```github.com-username``` matches the ```/.ssh/config``` file Host format.
+  
+<br>
+
+- If you want to host javadocs from the same repository as the java source files:
+1. Create the docs folder ```projectMainFolder/docs```
+2. Use the command line or Intellij to create javadocs. Search Everywhere > Generate JavaDoc > use default settings but specify projectMainFolder/docs as the output directory.
+3. Open Github in a browser and go to the project repository.
+4. Click on Settings and scroll down to GitHub Pages.
+5. Enable GitHub Pages by selecting the main branch then click Save.
+6. ```git add . && git commit && git push``` the newly created javadocs to your repository.
+7. Access your javadocs on github pages by going to a link similar to ```https://h1ddengames.github.io/Project-Template```
+ex: ```https://yourUserName.github.io/yourRepoName```
 </details>
 
 <br>
