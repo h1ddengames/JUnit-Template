@@ -5,37 +5,37 @@
     "name" : "api.DogAPITest",
     "children" : [ {
       "name" : "getMultipleRandomDogImagesTest",
-      "uid" : "528d0e08b4cca854",
+      "uid" : "6ab90f6f70d0a715",
       "parentUid" : "af3e8f87a58eebbc40f469f6328b2cb8",
       "status" : "passed",
       "time" : {
-        "start" : 1609317995298,
-        "stop" : 1609317997318,
-        "duration" : 2020
+        "start" : 1609318088616,
+        "stop" : 1609318090773,
+        "duration" : 2157
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "getRandomDogImageTest",
-      "uid" : "96cc035792a45b92",
+      "uid" : "3666db07f27cfa50",
       "parentUid" : "af3e8f87a58eebbc40f469f6328b2cb8",
       "status" : "passed",
       "time" : {
-        "start" : 1609317997396,
-        "stop" : 1609317997631,
-        "duration" : 235
+        "start" : 1609318090853,
+        "stop" : 1609318091089,
+        "duration" : 236
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "getAllDogBreedsTest",
-      "uid" : "b46a6edb409c202",
+      "uid" : "965a3300e4e616b1",
       "parentUid" : "af3e8f87a58eebbc40f469f6328b2cb8",
       "status" : "passed",
       "time" : {
-        "start" : 1609317997636,
-        "stop" : 1609317997858,
-        "duration" : 222
+        "start" : 1609318091094,
+        "stop" : 1609318091467,
+        "duration" : 373
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -45,36 +45,36 @@
     "name" : "other.AppTest",
     "children" : [ {
       "name" : "subtraction",
-      "uid" : "b202434537cf4a01",
+      "uid" : "2ca751a419bbb8c9",
       "parentUid" : "b9543380c30d35e9e394dd4b068c143d",
       "status" : "passed",
       "time" : {
-        "start" : 1609317997868,
-        "stop" : 1609317997875,
-        "duration" : 7
+        "start" : 1609318091476,
+        "stop" : 1609318091481,
+        "duration" : 5
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "addition",
-      "uid" : "1f33c600d70bb334",
+      "uid" : "bd48c7146f0668b8",
       "parentUid" : "b9543380c30d35e9e394dd4b068c143d",
       "status" : "passed",
       "time" : {
-        "start" : 1609317997880,
-        "stop" : 1609317997881,
-        "duration" : 1
+        "start" : 1609318091486,
+        "stop" : 1609318091486,
+        "duration" : 0
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "integrationOfAdditionAndSubtraction",
-      "uid" : "cbacb81247b4636d",
+      "uid" : "e4ea46e1de301efa",
       "parentUid" : "b9543380c30d35e9e394dd4b068c143d",
       "status" : "passed",
       "time" : {
-        "start" : 1609317997885,
-        "stop" : 1609317997885,
+        "start" : 1609318091490,
+        "stop" : 1609318091490,
         "duration" : 0
       },
       "flaky" : false,

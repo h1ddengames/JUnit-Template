@@ -18,14 +18,12 @@ Please view the Javadocs + Allure Reports [here](https://h1ddengames.github.io/P
     git add . && git commit && git push origin docs
     ```
   
-  or all at once:
+  or all at once after replacing the repo at the bottom:
   ```bash
   cp -a docs/allure-reports/history/. docs/allure-results/history && \
    mvn clean package clean && \
    allure generate docs/allure-results --clean -o docs/allure-reports && \
-   git add . && \
-   git commit && \ 
-   git push origin docs
+   git add . && git commit && git push origin docs
   ```
 
 - Why are the above commands important?

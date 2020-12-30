@@ -1,60 +1,60 @@
 [ {
-  "uid" : "b46a6edb409c202",
+  "uid" : "2ca751a419bbb8c9",
+  "name" : "subtraction()",
+  "time" : {
+    "start" : 1609318091476,
+    "stop" : 1609318091481,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "965a3300e4e616b1",
   "name" : "getAllDogBreedsTest()",
   "time" : {
-    "start" : 1609317997636,
-    "stop" : 1609317997858,
-    "duration" : 222
+    "start" : 1609318091094,
+    "stop" : 1609318091467,
+    "duration" : 373
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "96cc035792a45b92",
+  "uid" : "3666db07f27cfa50",
   "name" : "getRandomDogImageTest()",
   "time" : {
-    "start" : 1609317997396,
-    "stop" : 1609317997631,
-    "duration" : 235
+    "start" : 1609318090853,
+    "stop" : 1609318091089,
+    "duration" : 236
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "1f33c600d70bb334",
+  "uid" : "bd48c7146f0668b8",
   "name" : "addition()",
   "time" : {
-    "start" : 1609317997880,
-    "stop" : 1609317997881,
-    "duration" : 1
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "528d0e08b4cca854",
-  "name" : "getMultipleRandomDogImagesTest()",
-  "time" : {
-    "start" : 1609317995298,
-    "stop" : 1609317997318,
-    "duration" : 2020
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "cbacb81247b4636d",
-  "name" : "integrationOfAdditionAndSubtraction()",
-  "time" : {
-    "start" : 1609317997885,
-    "stop" : 1609317997885,
+    "start" : 1609318091486,
+    "stop" : 1609318091486,
     "duration" : 0
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "b202434537cf4a01",
-  "name" : "subtraction()",
+  "uid" : "6ab90f6f70d0a715",
+  "name" : "getMultipleRandomDogImagesTest()",
   "time" : {
-    "start" : 1609317997868,
-    "stop" : 1609317997875,
-    "duration" : 7
+    "start" : 1609318088616,
+    "stop" : 1609318090773,
+    "duration" : 2157
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4ea46e1de301efa",
+  "name" : "integrationOfAdditionAndSubtraction()",
+  "time" : {
+    "start" : 1609318091490,
+    "stop" : 1609318091490,
+    "duration" : 0
   },
   "status" : "passed",
   "severity" : "normal"

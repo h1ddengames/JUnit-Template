@@ -4,81 +4,81 @@
   "children" : [ {
     "name" : "DESKTOP-NS5O6HM",
     "children" : [ {
-      "name" : "9372@DESKTOP-NS5O6HM.main(1)",
+      "name" : "13020@DESKTOP-NS5O6HM.main(1)",
       "children" : [ {
         "name" : "addition()",
-        "uid" : "1f33c600d70bb334",
-        "parentUid" : "c1abd7bfabf8f6231a733c3e81fb376b",
+        "uid" : "bd48c7146f0668b8",
+        "parentUid" : "b0df6415a5855838a7899e9c1e3b6388",
         "status" : "passed",
         "time" : {
-          "start" : 1609317997880,
-          "stop" : 1609317997881,
-          "duration" : 1
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "getMultipleRandomDogImagesTest()",
-        "uid" : "528d0e08b4cca854",
-        "parentUid" : "c1abd7bfabf8f6231a733c3e81fb376b",
-        "status" : "passed",
-        "time" : {
-          "start" : 1609317995298,
-          "stop" : 1609317997318,
-          "duration" : 2020
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "integrationOfAdditionAndSubtraction()",
-        "uid" : "cbacb81247b4636d",
-        "parentUid" : "c1abd7bfabf8f6231a733c3e81fb376b",
-        "status" : "passed",
-        "time" : {
-          "start" : 1609317997885,
-          "stop" : 1609317997885,
+          "start" : 1609318091486,
+          "stop" : 1609318091486,
           "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "subtraction()",
-        "uid" : "b202434537cf4a01",
-        "parentUid" : "c1abd7bfabf8f6231a733c3e81fb376b",
+        "uid" : "2ca751a419bbb8c9",
+        "parentUid" : "b0df6415a5855838a7899e9c1e3b6388",
         "status" : "passed",
         "time" : {
-          "start" : 1609317997868,
-          "stop" : 1609317997875,
-          "duration" : 7
+          "start" : 1609318091476,
+          "stop" : 1609318091481,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "integrationOfAdditionAndSubtraction()",
+        "uid" : "e4ea46e1de301efa",
+        "parentUid" : "b0df6415a5855838a7899e9c1e3b6388",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609318091490,
+          "stop" : 1609318091490,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "getMultipleRandomDogImagesTest()",
+        "uid" : "6ab90f6f70d0a715",
+        "parentUid" : "b0df6415a5855838a7899e9c1e3b6388",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609318088616,
+          "stop" : 1609318090773,
+          "duration" : 2157
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "getRandomDogImageTest()",
-        "uid" : "96cc035792a45b92",
-        "parentUid" : "c1abd7bfabf8f6231a733c3e81fb376b",
+        "uid" : "3666db07f27cfa50",
+        "parentUid" : "b0df6415a5855838a7899e9c1e3b6388",
         "status" : "passed",
         "time" : {
-          "start" : 1609317997396,
-          "stop" : 1609317997631,
-          "duration" : 235
+          "start" : 1609318090853,
+          "stop" : 1609318091089,
+          "duration" : 236
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "getAllDogBreedsTest()",
-        "uid" : "b46a6edb409c202",
-        "parentUid" : "c1abd7bfabf8f6231a733c3e81fb376b",
+        "uid" : "965a3300e4e616b1",
+        "parentUid" : "b0df6415a5855838a7899e9c1e3b6388",
         "status" : "passed",
         "time" : {
-          "start" : 1609317997636,
-          "stop" : 1609317997858,
-          "duration" : 222
+          "start" : 1609318091094,
+          "stop" : 1609318091467,
+          "duration" : 373
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "c1abd7bfabf8f6231a733c3e81fb376b"
+      "uid" : "b0df6415a5855838a7899e9c1e3b6388"
     } ],
     "uid" : "b7d7a828ac57712be5a6ea18ad8561b6"
   } ]
