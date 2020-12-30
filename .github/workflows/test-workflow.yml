@@ -53,9 +53,9 @@ jobs:
         if: always()
         uses: peaceiris/actions-gh-pages@v2
         env:
-          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PERSONAL_TOKEN: ${{ secrets.DOCS_TOKEN }}
           PUBLISH_BRANCH: main
-          PUBLISH_DIR: allure-history
+          PUBLISH_DIR: docs/allure-history
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
