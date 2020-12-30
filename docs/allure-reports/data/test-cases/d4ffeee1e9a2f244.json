@@ -1,0 +1,141 @@
+{
+  "uid" : "d4ffeee1e9a2f244",
+  "name" : "getRandomDogImageTest()",
+  "fullName" : "api.DogAPITest.getRandomDogImageTest",
+  "historyId" : "21eefe572d00ee1f6b99e73f4298789d",
+  "time" : {
+    "start" : 1609317117123,
+    "stop" : 1609317117392,
+    "duration" : 269
+  },
+  "description" : "Get the list of all dog breeds.",
+  "descriptionHtml" : "<p>Get the list of all dog breeds.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Dog API"
+  }, {
+    "name" : "feature",
+    "value" : "Data with images"
+  }, {
+    "name" : "story",
+    "value" : "User tries to get all dog breeds."
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NS5O6HM"
+  }, {
+    "name" : "thread",
+    "value" : "6320@DESKTOP-NS5O6HM.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "api.DogAPITest"
+  }, {
+    "name" : "testClass",
+    "value" : "api.DogAPITest"
+  }, {
+    "name" : "testMethod",
+    "value" : "getRandomDogImageTest"
+  }, {
+    "name" : "suite",
+    "value" : "api.DogAPITest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e86c764c6f80477c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609316387419,
+        "stop" : 1609316387649,
+        "duration" : 230
+      }
+    }, {
+      "uid" : "3a4cf068c5d2233b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609293362511,
+        "stop" : 1609293362746,
+        "duration" : 235
+      }
+    }, {
+      "uid" : "25800c1e930cdb3a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609292597957,
+        "stop" : 1609292598189,
+        "duration" : 232
+      }
+    }, {
+      "uid" : "e95d84d2354057b1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609292564674,
+        "stop" : 1609292565043,
+        "duration" : 369
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "2cb93bc72336e590",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609316387419,
+          "stop" : 1609316387649,
+          "duration" : 230
+        }
+      }, {
+        "uid" : "36049e86dc9160ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609293362511,
+          "stop" : 1609293362746,
+          "duration" : 235
+        }
+      }, {
+        "uid" : "474995617e8d2772",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609292597957,
+          "stop" : 1609292598189,
+          "duration" : 232
+        }
+      }, {
+        "uid" : "afec556758a68ba6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609292564674,
+          "stop" : 1609292565043,
+          "duration" : 369
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d4ffeee1e9a2f244.json",
+  "parameterValues" : [ ]
+}
