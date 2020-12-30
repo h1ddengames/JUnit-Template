@@ -45,23 +45,15 @@ jobs:
         if: always()
         with:
           allure_results: docs/allure-results
-          allure_history: docs/allure-history
+          allure_history: docs/allure-results/history
           allure_report: docs/allure-report
-          gh_pages: main
-
-      - name: Deploy report to Github Pages
-        if: always()
-        uses: peaceiris/actions-gh-pages@v2
-        env:
-          PERSONAL_TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          PUBLISH_BRANCH: main
-          PUBLISH_DIR: docs/allure-history
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
           name: reports+jar
           path: |
-            target/allure-results
-            target/allure-history
+            docs/allure-results
+            docs/allure-reports
+            docs/allure-report
             output
