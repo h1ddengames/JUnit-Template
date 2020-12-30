@@ -1,60 +1,60 @@
 [ {
-  "uid" : "b9530bb7108dc426",
+  "uid" : "bd48c7146f0668b8",
   "name" : "addition()",
   "time" : {
-    "start" : 1609317287536,
-    "stop" : 1609317287537,
-    "duration" : 1
+    "start" : 1609318091486,
+    "stop" : 1609318091486,
+    "duration" : 0
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "935d500bad9318ba",
-  "name" : "integrationOfAdditionAndSubtraction()",
-  "time" : {
-    "start" : 1609317287543,
-    "stop" : 1609317287544,
-    "duration" : 1
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "30d5fb1b74a7eeb",
+  "uid" : "2ca751a419bbb8c9",
   "name" : "subtraction()",
   "time" : {
-    "start" : 1609317287524,
-    "stop" : 1609317287530,
-    "duration" : 6
+    "start" : 1609318091476,
+    "stop" : 1609318091481,
+    "duration" : 5
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "1ac6e9d590b7a963",
+  "uid" : "e4ea46e1de301efa",
+  "name" : "integrationOfAdditionAndSubtraction()",
+  "time" : {
+    "start" : 1609318091490,
+    "stop" : 1609318091490,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6ab90f6f70d0a715",
   "name" : "getMultipleRandomDogImagesTest()",
   "time" : {
-    "start" : 1609317284573,
-    "stop" : 1609317286796,
-    "duration" : 2223
+    "start" : 1609318088616,
+    "stop" : 1609318090773,
+    "duration" : 2157
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "fff2791ac0ff4042",
+  "uid" : "3666db07f27cfa50",
   "name" : "getRandomDogImageTest()",
   "time" : {
-    "start" : 1609317286886,
-    "stop" : 1609317287149,
-    "duration" : 263
+    "start" : 1609318090853,
+    "stop" : 1609318091089,
+    "duration" : 236
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "8012752919c51698",
+  "uid" : "965a3300e4e616b1",
   "name" : "getAllDogBreedsTest()",
   "time" : {
-    "start" : 1609317287154,
-    "stop" : 1609317287515,
-    "duration" : 361
+    "start" : 1609318091094,
+    "stop" : 1609318091467,
+    "duration" : 373
   },
   "status" : "passed",
   "severity" : "normal"
