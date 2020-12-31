@@ -1,5 +1,7 @@
 package factories;
 
+import annotations.API;
+import annotations.ClassMetadata;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,7 +13,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
-
+/**
+ * A factory that provides WebDrivers for Chrome and Firefox in a thread-safe way.
+ */
+@ClassMetadata(
+        author = "Shahid Karim", dateCreated = "12/29/2020",
+        currentRevision = 2, lastModified = "12/30/2020", lastModifiedBy = "Shahid Karim",
+        reviewers = {}
+)
+@API(status = API.Status.STABLE, since = "Project-Template-v2.0.0", consumers = {})
 public class DriverFactory {
     // Publicly and statically available so that if a driver's waits are changed,
     // there is an easy way to change it back to default.
@@ -41,6 +51,12 @@ public class DriverFactory {
     public WebDriver getDriver() { return driverFactory.get(); }
     public WebDriverWait getDriverWait() { return driverWaitFactory.get(); }
 
+    /**
+     * Specify the type of Driver to generate and track.
+     * @param browser The type of browser to generate -- Chrome or Firefox.
+     * @param withHeadlessBrowser Should the driver be headless -- show no GUI?
+     */
+    @API(status = API.Status.STABLE, since = "Project-Template-v2.0.0", consumers = {})
     public final void setDriver(Browser browser, boolean withHeadlessBrowser) {
         switch (browser) {
             case CHROME:
@@ -60,6 +76,11 @@ public class DriverFactory {
         }
     }
 
+    /**
+     * Close all browser windows and delete the reference to the WebDriver.
+     * @param driver The WebDriver to close and delete.
+     */
+    @API(status = API.Status.STABLE, since = "Project-Template-v2.0.0", consumers = {})
     public void cleanupDriver(WebDriver driver) {
         if(driver != null) { driver.quit(); }
         driverFactory.remove();
