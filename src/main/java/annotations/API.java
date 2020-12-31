@@ -2,7 +2,7 @@ package annotations;
 
 import java.lang.annotation.*;
 
-@Target({ElementType.TYPE, ElementType.METHOD, ElementType.CONSTRUCTOR, ElementType.FIELD})
+@Target({ ElementType.TYPE, ElementType.METHOD })
 @Documented
 public @interface API {
     API.Status status();
