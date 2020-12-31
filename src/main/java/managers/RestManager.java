@@ -1,11 +1,28 @@
 package managers;
 
+import annotations.API;
+import annotations.ClassMetadata;
 import io.restassured.RestAssured;
 import io.restassured.config.HttpClientConfig;
 import io.restassured.config.RestAssuredConfig;
 import org.apache.http.params.CoreConnectionPNames;
 
+/**
+ * Setup configuration details for RestAssured to use.
+ */
+@ClassMetadata(
+        author = "Shahid Karim", dateCreated = "12/29/2020",
+        currentRevision = 2, lastModified = "12/30/2020", lastModifiedBy = "Shahid Karim",
+        reviewers = {}
+)
+@API(status = API.Status.STABLE, since = "Project-Template-v2.0.0", consumers = {})
 public class RestManager {
+
+    /**
+     * Set a timeout for Rest API calls.
+     * @return Setup details to set Rest API call timeout to 100 seconds.
+     */
+    @API(status = API.Status.STABLE, since = "Project-Template-v2.0.0", consumers = {})
     public static RestAssuredConfig getConfig() {
         // Timeout is in milliseconds.
         // CONNECTION_TIMEOUT is 'until a connection is established'.
