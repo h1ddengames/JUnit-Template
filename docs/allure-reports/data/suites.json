@@ -2,40 +2,116 @@
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "name" : "suites",
   "children" : [ {
+    "name" : "other.OtherTest",
+    "children" : [ {
+      "name" : "e()",
+      "uid" : "3e48879532293581",
+      "parentUid" : "7350620f1c263f27142d5c6956e78204",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609463376515,
+        "stop" : 1609463376540,
+        "duration" : 25
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "f()",
+      "uid" : "886d3ba11781f4c5",
+      "parentUid" : "7350620f1c263f27142d5c6956e78204",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609466161051,
+        "stop" : 1609466161076,
+        "duration" : 25
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "t()",
+      "uid" : "15dbca836cfa8407",
+      "parentUid" : "7350620f1c263f27142d5c6956e78204",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609470248683,
+        "stop" : 1609470248710,
+        "duration" : 27
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "MetadataTests()",
+      "uid" : "f5118cf5c3e87fd3",
+      "parentUid" : "7350620f1c263f27142d5c6956e78204",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609470446980,
+        "stop" : 1609470447005,
+        "duration" : 25
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "tt()",
+      "uid" : "7c21e5abc3b15a2b",
+      "parentUid" : "7350620f1c263f27142d5c6956e78204",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609473591544,
+        "stop" : 1609473591563,
+        "duration" : 19
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TimerTests()",
+      "uid" : "eb27faea800c3b91",
+      "parentUid" : "7350620f1c263f27142d5c6956e78204",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609473838178,
+        "stop" : 1609473848767,
+        "duration" : 10589
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "7350620f1c263f27142d5c6956e78204"
+  }, {
     "name" : "api.DogAPITest",
     "children" : [ {
       "name" : "getMultipleRandomDogImagesTest()",
-      "uid" : "6ab90f6f70d0a715",
+      "uid" : "723ce4497cadb6ec",
       "parentUid" : "d3796ae75512cc060ae5583f2327502b",
       "status" : "passed",
       "time" : {
-        "start" : 1609318088616,
-        "stop" : 1609318090773,
-        "duration" : 2157
+        "start" : 1609474933863,
+        "stop" : 1609474935897,
+        "duration" : 2034
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "getRandomDogImageTest()",
-      "uid" : "3666db07f27cfa50",
+      "uid" : "e7e90f53ce7be42",
       "parentUid" : "d3796ae75512cc060ae5583f2327502b",
       "status" : "passed",
       "time" : {
-        "start" : 1609318090853,
-        "stop" : 1609318091089,
-        "duration" : 236
+        "start" : 1609474935974,
+        "stop" : 1609474936205,
+        "duration" : 231
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "getAllDogBreedsTest()",
-      "uid" : "965a3300e4e616b1",
+      "uid" : "6822454da9f85bf3",
       "parentUid" : "d3796ae75512cc060ae5583f2327502b",
       "status" : "passed",
       "time" : {
-        "start" : 1609318091094,
-        "stop" : 1609318091467,
-        "duration" : 373
+        "start" : 1609474936212,
+        "stop" : 1609474936436,
+        "duration" : 224
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -45,36 +121,36 @@
     "name" : "other.AppTest",
     "children" : [ {
       "name" : "subtraction()",
-      "uid" : "2ca751a419bbb8c9",
+      "uid" : "3e05d557a923b03d",
       "parentUid" : "568acbb61986f0ed5298aebcec6ce0b2",
       "status" : "passed",
       "time" : {
-        "start" : 1609318091476,
-        "stop" : 1609318091481,
+        "start" : 1609474936445,
+        "stop" : 1609474936450,
         "duration" : 5
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "addition()",
-      "uid" : "bd48c7146f0668b8",
+      "uid" : "da1214143e9757f1",
       "parentUid" : "568acbb61986f0ed5298aebcec6ce0b2",
       "status" : "passed",
       "time" : {
-        "start" : 1609318091486,
-        "stop" : 1609318091486,
+        "start" : 1609474936456,
+        "stop" : 1609474936456,
         "duration" : 0
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "integrationOfAdditionAndSubtraction()",
-      "uid" : "e4ea46e1de301efa",
+      "uid" : "254b58799df19167",
       "parentUid" : "568acbb61986f0ed5298aebcec6ce0b2",
       "status" : "passed",
       "time" : {
-        "start" : 1609318091490,
-        "stop" : 1609318091490,
+        "start" : 1609474936461,
+        "stop" : 1609474936461,
         "duration" : 0
       },
       "flaky" : false,

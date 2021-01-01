@@ -4,81 +4,177 @@
   "children" : [ {
     "name" : "DESKTOP-NS5O6HM",
     "children" : [ {
-      "name" : "13020@DESKTOP-NS5O6HM.main(1)",
+      "name" : "13196@DESKTOP-NS5O6HM.main(1)",
       "children" : [ {
-        "name" : "addition()",
-        "uid" : "bd48c7146f0668b8",
-        "parentUid" : "b0df6415a5855838a7899e9c1e3b6388",
+        "name" : "getRandomDogImageTest()",
+        "uid" : "e7e90f53ce7be42",
+        "parentUid" : "685e9abab335f68cd5418b6d48816462",
         "status" : "passed",
         "time" : {
-          "start" : 1609318091486,
-          "stop" : 1609318091486,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "subtraction()",
-        "uid" : "2ca751a419bbb8c9",
-        "parentUid" : "b0df6415a5855838a7899e9c1e3b6388",
-        "status" : "passed",
-        "time" : {
-          "start" : 1609318091476,
-          "stop" : 1609318091481,
-          "duration" : 5
+          "start" : 1609474935974,
+          "stop" : 1609474936205,
+          "duration" : 231
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "integrationOfAdditionAndSubtraction()",
-        "uid" : "e4ea46e1de301efa",
-        "parentUid" : "b0df6415a5855838a7899e9c1e3b6388",
+        "uid" : "254b58799df19167",
+        "parentUid" : "685e9abab335f68cd5418b6d48816462",
         "status" : "passed",
         "time" : {
-          "start" : 1609318091490,
-          "stop" : 1609318091490,
+          "start" : 1609474936461,
+          "stop" : 1609474936461,
           "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "getMultipleRandomDogImagesTest()",
-        "uid" : "6ab90f6f70d0a715",
-        "parentUid" : "b0df6415a5855838a7899e9c1e3b6388",
+        "uid" : "723ce4497cadb6ec",
+        "parentUid" : "685e9abab335f68cd5418b6d48816462",
         "status" : "passed",
         "time" : {
-          "start" : 1609318088616,
-          "stop" : 1609318090773,
-          "duration" : 2157
+          "start" : 1609474933863,
+          "stop" : 1609474935897,
+          "duration" : 2034
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
-        "name" : "getRandomDogImageTest()",
-        "uid" : "3666db07f27cfa50",
-        "parentUid" : "b0df6415a5855838a7899e9c1e3b6388",
+        "name" : "subtraction()",
+        "uid" : "3e05d557a923b03d",
+        "parentUid" : "685e9abab335f68cd5418b6d48816462",
         "status" : "passed",
         "time" : {
-          "start" : 1609318090853,
-          "stop" : 1609318091089,
-          "duration" : 236
+          "start" : 1609474936445,
+          "stop" : 1609474936450,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "addition()",
+        "uid" : "da1214143e9757f1",
+        "parentUid" : "685e9abab335f68cd5418b6d48816462",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609474936456,
+          "stop" : 1609474936456,
+          "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "getAllDogBreedsTest()",
-        "uid" : "965a3300e4e616b1",
-        "parentUid" : "b0df6415a5855838a7899e9c1e3b6388",
+        "uid" : "6822454da9f85bf3",
+        "parentUid" : "685e9abab335f68cd5418b6d48816462",
         "status" : "passed",
         "time" : {
-          "start" : 1609318091094,
-          "stop" : 1609318091467,
-          "duration" : 373
+          "start" : 1609474936212,
+          "stop" : 1609474936436,
+          "duration" : 224
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "b0df6415a5855838a7899e9c1e3b6388"
+      "uid" : "685e9abab335f68cd5418b6d48816462"
+    }, {
+      "name" : "13716@DESKTOP-NS5O6HM.main(1)",
+      "children" : [ {
+        "name" : "e()",
+        "uid" : "3e48879532293581",
+        "parentUid" : "9ac7a1797b5fc9bb2c0b2654411f00ed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609463376515,
+          "stop" : 1609463376540,
+          "duration" : 25
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9ac7a1797b5fc9bb2c0b2654411f00ed"
+    }, {
+      "name" : "18104@DESKTOP-NS5O6HM.main(1)",
+      "children" : [ {
+        "name" : "tt()",
+        "uid" : "7c21e5abc3b15a2b",
+        "parentUid" : "fc30cb7964ee59b5a576d82b1b8917be",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609473591544,
+          "stop" : 1609473591563,
+          "duration" : 19
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fc30cb7964ee59b5a576d82b1b8917be"
+    }, {
+      "name" : "14564@DESKTOP-NS5O6HM.main(1)",
+      "children" : [ {
+        "name" : "MetadataTests()",
+        "uid" : "f5118cf5c3e87fd3",
+        "parentUid" : "0ab0cb4e4e86f2ef6bbfc9c6e80bcb30",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609470446980,
+          "stop" : 1609470447005,
+          "duration" : 25
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0ab0cb4e4e86f2ef6bbfc9c6e80bcb30"
+    }, {
+      "name" : "21452@DESKTOP-NS5O6HM.main(1)",
+      "children" : [ {
+        "name" : "TimerTests()",
+        "uid" : "eb27faea800c3b91",
+        "parentUid" : "ab2e481925f9bc96adf8e1ae95109f36",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609473838178,
+          "stop" : 1609473848767,
+          "duration" : 10589
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ab2e481925f9bc96adf8e1ae95109f36"
+    }, {
+      "name" : "12320@DESKTOP-NS5O6HM.main(1)",
+      "children" : [ {
+        "name" : "t()",
+        "uid" : "15dbca836cfa8407",
+        "parentUid" : "56c8f50318043bdb87326ab13198a4a9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609470248683,
+          "stop" : 1609470248710,
+          "duration" : 27
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "56c8f50318043bdb87326ab13198a4a9"
+    }, {
+      "name" : "7536@DESKTOP-NS5O6HM.main(1)",
+      "children" : [ {
+        "name" : "f()",
+        "uid" : "886d3ba11781f4c5",
+        "parentUid" : "90bbdc8a39410d3ffe40332e5c4842b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609466161051,
+          "stop" : 1609466161076,
+          "duration" : 25
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "90bbdc8a39410d3ffe40332e5c4842b3"
     } ],
     "uid" : "b7d7a828ac57712be5a6ea18ad8561b6"
   } ]
