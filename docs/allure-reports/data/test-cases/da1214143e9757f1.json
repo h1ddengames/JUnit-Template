@@ -1,0 +1,197 @@
+{
+  "uid" : "da1214143e9757f1",
+  "name" : "addition()",
+  "fullName" : "other.AppTest.addition",
+  "historyId" : "71431720c18e3597ea23c1af199cb368",
+  "time" : {
+    "start" : 1609474936456,
+    "stop" : 1609474936456,
+    "duration" : 0
+  },
+  "description" : "Get the value of two numbers added together.",
+  "descriptionHtml" : "<p>Get the value of two numbers added together.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Addition and Subtraction Features"
+  }, {
+    "name" : "epic",
+    "value" : "Arithmetic Operations"
+  }, {
+    "name" : "story",
+    "value" : "User tries to add two numbers."
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NS5O6HM"
+  }, {
+    "name" : "thread",
+    "value" : "13196@DESKTOP-NS5O6HM.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "other.AppTest"
+  }, {
+    "name" : "testClass",
+    "value" : "other.AppTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "addition"
+  }, {
+    "name" : "suite",
+    "value" : "other.AppTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a5e84a01f0ecf00b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609474705699,
+        "stop" : 1609474705700,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f54875abb36d41ff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609474642654,
+        "stop" : 1609474642654,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "8dda3473f604bdb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609318091486,
+        "stop" : 1609318091486,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9a412a309a7de4f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609317997880,
+        "stop" : 1609317997881,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "284987763785ec56",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609317287536,
+        "stop" : 1609317287537,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4030ad6aea37e2d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609317117760,
+        "stop" : 1609317117760,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "cac7ad31e87fa188",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609316387900,
+        "stop" : 1609316387900,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5285d8cf5d9a8089",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609293363137,
+        "stop" : 1609293363138,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b80312f533669c78",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609292598440,
+        "stop" : 1609292598441,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b85f86b3d3897c15",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609292565275,
+        "stop" : 1609292565275,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "c7012105ab30c305",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609474705699,
+          "stop" : 1609474705700,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "bd48c7146f0668b8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609318091486,
+          "stop" : 1609318091486,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "1f33c600d70bb334",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609317997880,
+          "stop" : 1609317997881,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "b9530bb7108dc426",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609317287536,
+          "stop" : 1609317287537,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "fae11e43ac9640d0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609317117760,
+          "stop" : 1609317117760,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "da1214143e9757f1.json",
+  "parameterValues" : [ ]
+}
