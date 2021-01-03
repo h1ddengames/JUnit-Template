@@ -1,7 +1,6 @@
 package helpers;
 
-import annotations.API;
-import annotations.ClassMetadata;
+import annotations.*;
 
 import java.io.File;
 import java.util.Optional;

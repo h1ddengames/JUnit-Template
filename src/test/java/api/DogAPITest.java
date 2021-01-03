@@ -1,10 +1,6 @@
 package api;
 
-import api.DogAPI;
-import io.qameta.allure.Description;
-import io.qameta.allure.Epic;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Story;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.Test;
 
 @Epic("Dog API")

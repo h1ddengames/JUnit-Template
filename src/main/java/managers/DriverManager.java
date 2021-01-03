@@ -1,11 +1,9 @@
 package managers;
 
-import annotations.API;
-import annotations.ClassMetadata;
+import annotations.*;
 import factories.DriverFactory;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 
+import org.openqa.selenium.*;
 import java.io.File;
 
 /**
