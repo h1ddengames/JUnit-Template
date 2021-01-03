@@ -1,9 +1,10 @@
 package api;
 
 import annotations.*;
+import managers.RestManager;
+
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import managers.RestManager;
 
 import static io.restassured.RestAssured.given;
 
@@ -51,6 +52,7 @@ public class DogAPI {
 
     /**
      * API call to https://dog.ceo/api/breeds/image/random to get multiple images of random dogs.
+     * @param amount The amount of images to download. There is a hard limit of 50 provided by the API creator.
      * @return A RestAssured API Response containing a status code + multiple images.
      */
     @API(status = API.Status.STABLE, since = "Project-Template-v1.0.0", consumers = {"DogAPITest"})

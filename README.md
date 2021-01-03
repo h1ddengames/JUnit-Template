@@ -14,16 +14,16 @@ Please view the Javadocs + Allure Reports [here](https://h1ddengames.github.io/P
 - Before pushing to this repository run the following commands:
     ```bash
     cp -a docs/allure-reports/history/. docs/allure-results/history
-    mvn clean package && allure generate docs/allure-results --clean -o docs/allure-reports
+    mvn clean test && allure generate docs/allure-results --clean -o docs/allure-reports
     git add . && git commit && git push origin docs
     ```
   
   or all at once after replacing the repo at the bottom:
   ```bash
   cp -a docs/allure-reports/history/. docs/allure-results/history && \
-   mvn clean package clean && \
-   allure generate docs/allure-results --clean -o docs/allure-reports && \
-   git add . && git commit && git push origin docs
+  mvn clean test clean && \
+  allure generate docs/allure-results --clean -o docs/allure-reports && \
+  git add . && git commit && git push origin docs
   ```
 
 - Why are the above commands important?

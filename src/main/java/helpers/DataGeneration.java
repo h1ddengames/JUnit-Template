@@ -1,11 +1,8 @@
 package helpers;
 
-import annotations.API;
-import annotations.ClassMetadata;
+import annotations.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
@@ -13,13 +10,16 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 @ClassMetadata(
         author = "Shahid Karim", dateCreated = "12/29/2020",
-        currentRevision = 2, lastModified = "12/30/2020", lastModifiedBy = "Shahid Karim",
+        currentRevision = 2, lastModified = "1/3/2020", lastModifiedBy = "Shahid Karim",
         reviewers = {}
 )
 @API(status = API.Status.STABLE, since = "Project-Template-v2.0.0", consumers = {})
 public class DataGeneration {
+
+    public enum AcceptableValues { UPPERCASE_ONLY, LOWERCASE_ONLY, BOTH }
+
     /**
-     * A list containing 88 two character country codes.
+     * A list containing 88 countries as two character country codes.
      */
     public static final List<String> countryCodes = Arrays.asList(
         ("DZ, EG, MU, YT, MA, ZA, TN, CA, CR, MX, " +
@@ -33,7 +33,7 @@ public class DataGeneration {
         "ES, SE, CH, UA, GB, AU, NC, NZ").split(", "));
 
     /**
-     * A list containing 88 country names matching the indices of countryCodes list.
+     * A list containing 88 country names matching the indices of countryCodes list. Matches the indices of countryCodes list.
      */
     public static final List<String> countryNames = Arrays.asList(
         ("Algeria, Egypt, Mauritius, Mayotte, Morocco, South Africa, Tunisia, Canada, " +
@@ -51,7 +51,7 @@ public class DataGeneration {
     );
 
     /**
-     * A list containing the 50 state names belonging to the United States of America.
+     * A list containing the 50 states belonging to the United States of America as two letter state codes.
      */
     public static final List<String> stateCodes = Arrays.asList(
         ("AL, AK, AZ, AR, CA, CO, CT, DE, FL, GA, " +
@@ -62,7 +62,7 @@ public class DataGeneration {
     );
 
     /**
-     * A list containing the 50 two character state codes belonging to the United States of America matching the indices of stateCodes list.
+     * A list containing the full names of the 50 states belonging to the United States of America. Matches the indices of stateCodes list.
      */
     public static final List<String> stateNames = Arrays.asList(
         ("Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, " +
@@ -103,30 +103,30 @@ public class DataGeneration {
     );
 
     /**
-     * Returns a random int.
-     * @return A random int.
+     * Provides a random integer.
+     * @return A random integer.
      */
     @API(status = API.Status.STABLE, since = "Project-Template-v2.0.0", consumers = {})
     public static int getRandomInt() { return ThreadLocalRandom.current().nextInt(); }
 
     /**
-     * Returns a random int between a min and max int.
-     * @param min The minimum the int can be (inclusive)
-     * @param max The maximum the int can be (exclusive)
-     * @return A random int between the given min and max values.
+     * Provides a random integer between a min and max integer value.
+     * @param min The minimum the integer can be (inclusive)
+     * @param max The maximum the integer can be (exclusive)
+     * @return A random integer between the given min and max values.
      */
     @API(status = API.Status.STABLE, since = "Project-Template-v2.0.0", consumers = {})
     public static int getRandomInt(int min, int max) { return ThreadLocalRandom.current().nextInt(min, max); }
 
     /**
-     * Returns a random long.
-     * @return A random long.
+     * Provides a random long value.
+     * @return A random long value.
      */
     @API(status = API.Status.STABLE, since = "Project-Template-v2.0.0", consumers = {})
     public static long getRandomLong() { return ThreadLocalRandom.current().nextLong(); }
 
     /**
-     * Returns a random long between a min and max long.
+     * Provides a random long between a min and max long.
      * @param min The minimum the long can be (inclusive)
      * @param max The maximum the long can be (exclusive)
      * @return A random long between the given min and max values.
@@ -135,14 +135,14 @@ public class DataGeneration {
     public static long getRandomLong(long min, long max) { return ThreadLocalRandom.current().nextLong(min, max); }
 
     /**
-     * Returns a random double.
-     * @return A random double.
+     * Provides a random double value.
+     * @return A random double value.
      */
     @API(status = API.Status.STABLE, since = "Project-Template-v2.0.0", consumers = {})
     public static double getRandomDouble() { return ThreadLocalRandom.current().nextDouble(); }
 
     /**
-     * Returns a random double between a min and max double.
+     * Provides a random double between a min and max double.
      * @param min The minimum the double can be (inclusive)
      * @param max The maximum the double can be (exclusive)
      * @return A random double between the given min and max values.
@@ -151,14 +151,14 @@ public class DataGeneration {
     public static double getRandomDouble(double min, double max) { return ThreadLocalRandom.current().nextDouble(min, max); }
 
     /**
-     * Returns a random float.
-     * @return A random float.
+     * Provides a random float value.
+     * @return A random float value.
      */
     @API(status = API.Status.STABLE, since = "Project-Template-v2.0.0", consumers = {})
     public static float getRandomFloat() { return ThreadLocalRandom.current().nextFloat(); }
 
     /**
-     * Returns true or false randomly.
+     * Provides a boolean randomly.
      * @return True or false as a boolean.
      */
     @API(status = API.Status.STABLE, since = "Project-Template-v2.0.0", consumers = {})
@@ -192,7 +192,6 @@ public class DataGeneration {
     @API(status = API.Status.STABLE, since = "Project-Template-v2.0.0", consumers = {})
     public static <T> ArrayList<T> getRandomValuesFrom(List<T> items, int numberOfItems) {
         ArrayList<T> list = new ArrayList<T>();
-
         for (int i = 0; i < numberOfItems; i++) { list.add(getRandomValueFrom(items)); }
 
         return list;
@@ -210,30 +209,43 @@ public class DataGeneration {
         return stringBuilder.toString();
     }
 
+    private static String getAlphaString(AcceptableValues acceptableValues) {
+        switch (acceptableValues) {
+            case UPPERCASE_ONLY:
+                return "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            case LOWERCASE_ONLY:
+                return "abcdefghijklmnopqrstuvwxyz";
+            case BOTH:
+                return "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+            default:
+                return null;
+        }
+    }
+
     /**
-     * Generates a random mix of alphabetical characters by appending a random character to a String.
+     * Generates a random mix of alphabetical characters by appending random characters to a String.
      * @param length The length the random String should be.
+     * @param acceptableValues Choose between only uppercase characters, only lowercase characters, or both upper and lowercase characters.
      * @return A String containing a mix of randomly selected alphabetical characters.
      */
     @API(status = API.Status.STABLE, since = "Project-Template-v2.0.0", consumers = {})
-    public static String getRandomAlphaString(int length) {
-        String alphaString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        return getRandomString(alphaString, length);
+    public static String getRandomAlphaOnlyString(int length, AcceptableValues acceptableValues) {
+        return getRandomString(getAlphaString(acceptableValues), length);
     }
 
     /**
-     * Generate a random alpha numeric String by appending a random single character to a String.
+     * Generate a random alpha numeric String by appending random characters to a String.
      * @param length The length the random String should be.
-     * @return A String containing a mix of randomly selected alpha numeric characters.
+     * @param acceptableValues Choose between only uppercase characters, only lowercase characters, or both upper and lowercase characters.
+     * @return A String containing a mix of randomly selected alphanumeric characters.
      */
     @API(status = API.Status.STABLE, since = "Project-Template-v2.0.0", consumers = {})
-    public static String getRandomAlphaNumericString(int length) {
-        String alphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-        return getRandomString(alphaNumericString, length);
+    public static String getRandomAlphaNumericString(int length, AcceptableValues acceptableValues) {
+        return getRandomString(getAlphaString(acceptableValues) + "0123456789", length);
     }
 
     /**
-     * Generates a random number as a String by appending a random single digit to a String.
+     * Generates a random number as a String by appending random digit characters to a String.
      * @param length The length the random String should be.
      * @return A String containing a randomly generated number of the given length.
      */

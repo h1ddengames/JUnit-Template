@@ -1,0 +1,221 @@
+{
+  "uid" : "450f6a5e4e34c048",
+  "name" : "subtraction()",
+  "fullName" : "other.AppTest.subtraction",
+  "historyId" : "c5d971b44257b051e74e9f9dc982ca47",
+  "time" : {
+    "start" : 1609662674715,
+    "stop" : 1609662674721,
+    "duration" : 6
+  },
+  "description" : "Get the value of a number subtracted by another number.",
+  "descriptionHtml" : "<p>Get the value of a number subtracted by another number.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Arithmetic Operations"
+  }, {
+    "name" : "feature",
+    "value" : "Addition and Subtraction Features"
+  }, {
+    "name" : "story",
+    "value" : "User tries to subtract two numbers."
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NS5O6HM"
+  }, {
+    "name" : "thread",
+    "value" : "15328@DESKTOP-NS5O6HM.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "other.AppTest"
+  }, {
+    "name" : "testClass",
+    "value" : "other.AppTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "subtraction"
+  }, {
+    "name" : "suite",
+    "value" : "other.AppTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a679c376d086f7c8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609662582542,
+        "stop" : 1609662582549,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "77b5938421a009c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609662544173,
+        "stop" : 1609662544178,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "cb8f78683a4e46cf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609474936445,
+        "stop" : 1609474936450,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "29a336015c73abcc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609474705690,
+        "stop" : 1609474705694,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "dfdd1998c90b741d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609474642645,
+        "stop" : 1609474642649,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "a8955782ba575e27",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609318091476,
+        "stop" : 1609318091481,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "929a246951951a5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609317997868,
+        "stop" : 1609317997875,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "7a99d42026edc6bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609317287524,
+        "stop" : 1609317287530,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "d16856887c58fa92",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609317117750,
+        "stop" : 1609317117755,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "4633306087facea9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609316387890,
+        "stop" : 1609316387895,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "fc2058d458d6fc8e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609293363128,
+        "stop" : 1609293363133,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "2d418b842e27f15b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609292598429,
+        "stop" : 1609292598435,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "691194033e28eeb6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609292565265,
+        "stop" : 1609292565270,
+        "duration" : 5
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 12,
+        "unknown" : 0,
+        "total" : 12
+      },
+      "items" : [ {
+        "uid" : "eedd0c7b615c59a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609662544173,
+          "stop" : 1609662544178,
+          "duration" : 5
+        }
+      }, {
+        "uid" : "3e05d557a923b03d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609474936445,
+          "stop" : 1609474936450,
+          "duration" : 5
+        }
+      }, {
+        "uid" : "c4815963fb66b6c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609474705690,
+          "stop" : 1609474705694,
+          "duration" : 4
+        }
+      }, {
+        "uid" : "2ca751a419bbb8c9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609318091476,
+          "stop" : 1609318091481,
+          "duration" : 5
+        }
+      }, {
+        "uid" : "b202434537cf4a01",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609317997868,
+          "stop" : 1609317997875,
+          "duration" : 7
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "450f6a5e4e34c048.json",
+  "parameterValues" : [ ]
+}

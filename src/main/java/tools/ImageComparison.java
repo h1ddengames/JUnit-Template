@@ -1,7 +1,6 @@
 package tools;
 
-import annotations.API;
-import annotations.ClassMetadata;
+import annotations.*;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

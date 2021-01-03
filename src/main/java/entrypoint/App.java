@@ -1,7 +1,6 @@
 package entrypoint;
 
-import annotations.API;
-import annotations.ClassMetadata;
+import annotations.*;
 
 /**
  * The entrypoint of this application. Currently is acting as a simple calculator.

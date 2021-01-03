@@ -1,7 +1,6 @@
 package helpers;
 
-import annotations.API;
-import annotations.ClassMetadata;
+import annotations.*;
 
 /**
  * A helper class that provides simple stopwatch functionality.
