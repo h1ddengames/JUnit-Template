@@ -123,6 +123,42 @@
         </configuration>
       </plugin>
 
+      <!-- Runs after tests have been completed -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.0.0</version>
+        <executions>
+          <execution>
+            <id>Copy history files</id>
+            <phase>clean</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <executable>"C:\Program Files\Git\bin\bash.exe"</executable>
+              <arguments>
+                <argument>scripts/backup-history.sh</argument>
+              </arguments>
+            </configuration>
+          </execution>
+
+          <execution>
+            <id>Generate reports</id>
+            <phase>test</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <executable>"C:\Program Files\Git\bin\bash.exe"</executable>
+              <arguments>
+                <argument>scripts/generate-reports.sh</argument>
+              </arguments>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
       <!-- Used in order to run tests within this project during the test phase of maven execution. -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -159,11 +195,7 @@
             <artifactId>aspectjweaver</artifactId>
             <version>${aspectj.version}</version>
           </dependency>
-<!--          <dependency>-->
-<!--            <groupId>org.junit.platform</groupId>-->
-<!--            <artifactId>junit-platform-surefire-provider</artifactId>-->
-<!--            <version>${junit-platform-surefire-provider.version}</version>-->
-<!--          </dependency>-->
+
           <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
