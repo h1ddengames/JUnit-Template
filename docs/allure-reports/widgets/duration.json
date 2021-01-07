@@ -1,85 +1,15 @@
 [ {
-  "uid" : "21d1fc54e1636438",
-  "name" : "addition()",
+  "uid" : "6adb97703f817c03",
+  "name" : "getAllDogBreedsTest()",
   "time" : {
-    "start" : 1609662674727,
-    "stop" : 1609662674727,
-    "duration" : 0
+    "start" : 1609990807475,
+    "stop" : 1609990807694,
+    "duration" : 219
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "947abd959e22afd5",
-  "name" : "integrationOfAdditionAndSubtraction()",
-  "time" : {
-    "start" : 1609662674732,
-    "stop" : 1609662674732,
-    "duration" : 0
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b787193299935ed1",
-  "name" : "getRandomDogImageTest()",
-  "time" : {
-    "start" : 1609662674197,
-    "stop" : 1609662674475,
-    "duration" : 278
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7d478e3a96c50dc4",
-  "name" : "f()",
-  "time" : {
-    "start" : 1609466161051,
-    "stop" : 1609466161076,
-    "duration" : 25
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "cd3825413d0a1688",
-  "name" : "t()",
-  "time" : {
-    "start" : 1609470248683,
-    "stop" : 1609470248710,
-    "duration" : 27
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "450f6a5e4e34c048",
-  "name" : "subtraction()",
-  "time" : {
-    "start" : 1609662674715,
-    "stop" : 1609662674721,
-    "duration" : 6
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "23f78e9d975cd83a",
-  "name" : "getMultipleRandomDogImagesTest()",
-  "time" : {
-    "start" : 1609662671857,
-    "stop" : 1609662674109,
-    "duration" : 2252
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4a11998107737dec",
-  "name" : "TimerTests()",
-  "time" : {
-    "start" : 1609473838178,
-    "stop" : 1609473848767,
-    "duration" : 10589
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "560b184de29842e7",
+  "uid" : "7032322e018a9c0c",
   "name" : "e()",
   "time" : {
     "start" : 1609463376515,
@@ -89,17 +19,17 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ca56d3e0f5ea4e86",
-  "name" : "MetadataTests()",
+  "uid" : "bf184e67cc63bb09",
+  "name" : "subtraction()",
   "time" : {
-    "start" : 1609470446980,
-    "stop" : 1609470447005,
-    "duration" : 25
+    "start" : 1609990807703,
+    "stop" : 1609990807710,
+    "duration" : 7
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "7fc9ba29d3de7b6b",
+  "uid" : "75806e856f43e2c6",
   "name" : "tt()",
   "time" : {
     "start" : 1609473591544,
@@ -109,12 +39,82 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "5f9e1b698488c88e",
-  "name" : "getAllDogBreedsTest()",
+  "uid" : "e3ba55622c1d8409",
+  "name" : "getMultipleRandomDogImagesTest()",
   "time" : {
-    "start" : 1609662674480,
-    "stop" : 1609662674704,
-    "duration" : 224
+    "start" : 1609990804023,
+    "stop" : 1609990806130,
+    "duration" : 2107
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bb203c06a2c94cbd",
+  "name" : "TimerTests()",
+  "time" : {
+    "start" : 1609473838178,
+    "stop" : 1609473848767,
+    "duration" : 10589
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c718fdb91ece6e8f",
+  "name" : "f()",
+  "time" : {
+    "start" : 1609466161051,
+    "stop" : 1609466161076,
+    "duration" : 25
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2d88b26eea3b1f59",
+  "name" : "MetadataTests()",
+  "time" : {
+    "start" : 1609470446980,
+    "stop" : 1609470447005,
+    "duration" : 25
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3444fb8e0c5420f9",
+  "name" : "t()",
+  "time" : {
+    "start" : 1609470248683,
+    "stop" : 1609470248710,
+    "duration" : 27
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f95d03df686eba20",
+  "name" : "addition()",
+  "time" : {
+    "start" : 1609990807715,
+    "stop" : 1609990807715,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7541b98d5e2fc6fa",
+  "name" : "getRandomDogImageTest()",
+  "time" : {
+    "start" : 1609990806224,
+    "stop" : 1609990807470,
+    "duration" : 1246
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3022248299f1ed97",
+  "name" : "integrationOfAdditionAndSubtraction()",
+  "time" : {
+    "start" : 1609990807719,
+    "stop" : 1609990807720,
+    "duration" : 1
   },
   "status" : "passed",
   "severity" : "normal"

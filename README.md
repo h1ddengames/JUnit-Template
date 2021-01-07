@@ -11,30 +11,31 @@ Please view the Javadocs + Allure Reports [here](https://h1ddengames.github.io/P
 
 > ## **Important Notes**
 
+- Git Bash is required to run the report generating scripts.
+  - If your Git Bash was installed in a different location: update the pom.xml exec-maven-plugin to point to your install location.
+
 - Before pushing to this repository run the following commands:
     ```bash
-    cp -a docs/allure-reports/history/. docs/allure-results/history
-    mvn clean test && allure generate docs/allure-results --clean -o docs/allure-reports
-    git add . && git commit && git push origin docs
+    mvn clean test
+    git add . && git commit && git push origin branchName
     ```
-  
-  or all at once after replacing the repo at the bottom:
+
+- or combine the commands into one line :
   ```bash
-  cp -a docs/allure-reports/history/. docs/allure-results/history && \
-  mvn clean test clean && \
-  allure generate docs/allure-results --clean -o docs/allure-reports && \
-  git add . && git commit && git push origin docs
+  mvn clean test && \
+  git add . && git commit && git push origin branchName
   ```
 
 - Why are the above commands important?
-    - The first command copies all the history files from one allure report generation task to another.
+    - ```mvn clean``` command copies all the history files from one allure report generation task to another.
       This allows you to see the trend tab on the home page, the history tab for all methods, and it fills all the graphs in the Graphs tab. 
-    - The second command will build the project and allure will generate a report based off the new files in docs/allure-history
-    - The third command will add all tracked and untracked files to the git history, commit all changes, then push to a side branch.
-    - Then login to github in a browser, go to this project, then create a pull request.
+    - ```mvn test``` command will build the project, run all test files, and allure will generate a report based off the new files in docs/allure-history directory
+    - The ```git add . && git commit && git push origin branchName``` commands will add all tracked and untracked files to the git history, commit all changes, then push to a side branch.
 
+- Once the above commands have been run: login to github in a browser, go to this project, then create a pull request.
 
-- If the reports are not displaying recent data, open the dev console in your browser and clear cache (local and session storage)
+- **Please note: ```mvn clean test``` has been modified through the exec-maven-plugin in pom.xml to do the tasks above.**
+- **Please note: If the reports are not displaying recent data, open the dev console in your browser and clear cache (local and session storage)**
 
 <br>
 
@@ -49,10 +50,10 @@ This project should be stored in Intellij by clicking on Tools > Save Project as
 <details>
     <summary>Click to expand/collapse</summary>
 
-- JUnit - Testing Framework
-- Allure - Reporting Framework
-- Slf4j - Logging Framework
-- Selenium - Browser Automation Framework
+- JUnit 5 - Testing Framework
+- Allure 2 - Reporting Framework
+- Slf4j 12 - Logging Framework
+- Selenium 3 - Browser Automation Framework
 - WebDriverManager - Setup drivers for Selenium
 - Rest-Assured - Rest API Framework
 - Jackson-Databind - JSON Manipulation Framework
@@ -67,7 +68,7 @@ This project should be stored in Intellij by clicking on Tools > Save Project as
 
 1. Download the project from this page by clicking on Code > Download ZIP or with the provided HTTPS or SSH options.
 2. Open the project using an IDE such as Intellij or Eclipse.
-3. Once the IDE has opened the project, run ```mvn test```
+3. Once the IDE has opened the project, run ```mvn clean test```
 4. On first run, the IDE should install all required maven dependencies, if not: run ```mvn verify```.
 5. Verify that the results show "Tests run: 6, Failures: 0, Errors: 0, Skipped: 0" and "BUILD SUCCESS"
 6. Open pom.xml then update the group ID to your company domain in reverse domain name notation. (Example if your company domain is found at example.com then the reverse domain name notation would be com.example)
@@ -135,7 +136,8 @@ ex: ```https://yourUserName.github.io/yourRepoName```
 
 - maven-compiler-plugin: sets the java version.
 - maven-surefire-plugin: runs junit tests and provides results to allure for reporting.
-- maven-jar-plugin: supresses generation of the default jar that is created during the package phase.
+- maven-jar-plugin: suppresses generation of the default jar that is created during the package phase.
+- exec-maven-plugin: generates a backup of allure history and report.
 - maven-assembly-plugin: generates a jar with dependencies packed in (fat jar) with the name: ${project.artifactId}-${project.version}.jar (Example: Project-Template-1.0.0.jar)
 - .github/workflows/test-workflow.yml will: 
     - run on push to main branch, on pull request to main branch, and at 00:00 on Sunday.
@@ -145,6 +147,6 @@ ex: ```https://yourUserName.github.io/yourRepoName```
     - build the project with maven using the following command ```mvn -B package --file pom.xml```
     - copy the generated jar file to a directory called output
     - generate allure results as json and html files.
-    - package the allure results and the jar file into a zip file called reports+jar that will be put in the artifacts section of the Actions tab on github under "Java CI".
+    - package the allure results with the jar file into a zip file called reports+jar that will be put in the artifacts section of the Actions tab on github under "Java CI".
 
 </details>
