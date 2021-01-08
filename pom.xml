@@ -20,6 +20,7 @@
       </activation>
 
       <properties>
+        <print.working.directory.command>bash</print.working.directory.command>
         <copy.history.files.command>bash</copy.history.files.command>
         <generate.report.command>bash</generate.report.command>
       </properties>
@@ -35,6 +36,7 @@
       </activation>
 
       <properties>
+        <print.working.directory.command>bash</print.working.directory.command>
         <copy.history.files.command>bash</copy.history.files.command>
         <generate.report.command>bash</generate.report.command>
       </properties>
@@ -49,6 +51,7 @@
       </activation>
 
       <properties>
+        <print.working.directory.command>"C:\Program Files\Git\bin\bash.exe"</print.working.directory.command>
         <copy.history.files.command>"C:\Program Files\Git\bin\bash.exe"</copy.history.files.command>
         <generate.report.command>"C:\Program Files\Git\bin\bash.exe"</generate.report.command>
       </properties>
@@ -184,6 +187,29 @@
         <version>3.0.0</version>
 
         <executions>
+          <execution>
+            <id>Print working directory</id>
+            <phase>clean</phase>
+
+            <goals>
+              <goal>exec</goal>
+            </goals>
+
+            <!-- Prints the working directory for debugging purposes. -->
+            <!--
+            Please note: in order to have working bash commands on Windows,
+            the format:
+            "C:\Program Files\Git\bin\bash.exe" some-bash-script.sh
+            needs to be used. Otherwise, there will be a "cannot execute binary file" error.
+            -->
+            <configuration>
+              <executable>${print.working.directory.command}</executable>
+              <arguments>
+                <argument>scripts/get-working-directory.sh</argument>
+              </arguments>
+            </configuration>
+          </execution>
+
           <!-- Copies all history files from previous Allure reports in order to display previous data in new Allure report. -->
           <execution>
             <id>Copy history files</id>
