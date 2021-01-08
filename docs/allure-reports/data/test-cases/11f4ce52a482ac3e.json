@@ -1,0 +1,65 @@
+{
+  "uid" : "11f4ce52a482ac3e",
+  "name" : "integrationOfAdditionAndSubtraction()",
+  "fullName" : "other.AppTest.integrationOfAdditionAndSubtraction",
+  "historyId" : "f7ded43b41b0a6321faf2317c71a4c34",
+  "time" : {
+    "start" : 1610066540353,
+    "stop" : 1610066540353,
+    "duration" : 0
+  },
+  "description" : "Get the value of a number subtracted by two numbers added together.",
+  "descriptionHtml" : "<p>Get the value of a number subtracted by two numbers added together.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Arithmetic Operations"
+  }, {
+    "name" : "feature",
+    "value" : "Addition and Subtraction Features"
+  }, {
+    "name" : "story",
+    "value" : "User tries to add two numbers then subtract from a larger number."
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NS5O6HM"
+  }, {
+    "name" : "thread",
+    "value" : "8752@DESKTOP-NS5O6HM.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "other.AppTest"
+  }, {
+    "name" : "testClass",
+    "value" : "other.AppTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "integrationOfAdditionAndSubtraction"
+  }, {
+    "name" : "suite",
+    "value" : "other.AppTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "11f4ce52a482ac3e.json",
+  "parameterValues" : [ ]
+}
