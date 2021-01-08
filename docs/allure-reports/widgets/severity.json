@@ -1,105 +1,5 @@
 [ {
-  "uid" : "3444fb8e0c5420f9",
-  "name" : "t()",
-  "time" : {
-    "start" : 1609470248683,
-    "stop" : 1609470248710,
-    "duration" : 27
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "75806e856f43e2c6",
-  "name" : "tt()",
-  "time" : {
-    "start" : 1609473591544,
-    "stop" : 1609473591563,
-    "duration" : 19
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "bf184e67cc63bb09",
-  "name" : "subtraction()",
-  "time" : {
-    "start" : 1609990807703,
-    "stop" : 1609990807710,
-    "duration" : 7
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7032322e018a9c0c",
-  "name" : "e()",
-  "time" : {
-    "start" : 1609463376515,
-    "stop" : 1609463376540,
-    "duration" : 25
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c718fdb91ece6e8f",
-  "name" : "f()",
-  "time" : {
-    "start" : 1609466161051,
-    "stop" : 1609466161076,
-    "duration" : 25
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3022248299f1ed97",
-  "name" : "integrationOfAdditionAndSubtraction()",
-  "time" : {
-    "start" : 1609990807719,
-    "stop" : 1609990807720,
-    "duration" : 1
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e3ba55622c1d8409",
-  "name" : "getMultipleRandomDogImagesTest()",
-  "time" : {
-    "start" : 1609990804023,
-    "stop" : 1609990806130,
-    "duration" : 2107
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f95d03df686eba20",
-  "name" : "addition()",
-  "time" : {
-    "start" : 1609990807715,
-    "stop" : 1609990807715,
-    "duration" : 0
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7541b98d5e2fc6fa",
-  "name" : "getRandomDogImageTest()",
-  "time" : {
-    "start" : 1609990806224,
-    "stop" : 1609990807470,
-    "duration" : 1246
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "bb203c06a2c94cbd",
-  "name" : "TimerTests()",
-  "time" : {
-    "start" : 1609473838178,
-    "stop" : 1609473848767,
-    "duration" : 10589
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2d88b26eea3b1f59",
+  "uid" : "6f7863c5038ea6f9",
   "name" : "MetadataTests()",
   "time" : {
     "start" : 1609470446980,
@@ -109,12 +9,112 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "6adb97703f817c03",
+  "uid" : "7635621457b3a08f",
+  "name" : "getMultipleRandomDogImagesTest()",
+  "time" : {
+    "start" : 1610064483215,
+    "stop" : 1610064485308,
+    "duration" : 2093
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "591443d5b171aac1",
+  "name" : "e()",
+  "time" : {
+    "start" : 1609463376515,
+    "stop" : 1609463376540,
+    "duration" : 25
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e37987d1eb9b16",
+  "name" : "addition()",
+  "time" : {
+    "start" : 1610064485850,
+    "stop" : 1610064485851,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8d28e33f26fda47",
   "name" : "getAllDogBreedsTest()",
   "time" : {
-    "start" : 1609990807475,
-    "stop" : 1609990807694,
-    "duration" : 219
+    "start" : 1610064485614,
+    "stop" : 1610064485830,
+    "duration" : 216
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2072d8a8d2a3f41d",
+  "name" : "tt()",
+  "time" : {
+    "start" : 1609473591544,
+    "stop" : 1609473591563,
+    "duration" : 19
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c168db790eb345ce",
+  "name" : "getRandomDogImageTest()",
+  "time" : {
+    "start" : 1610064485385,
+    "stop" : 1610064485609,
+    "duration" : 224
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a07e0b898673157",
+  "name" : "subtraction()",
+  "time" : {
+    "start" : 1610064485838,
+    "stop" : 1610064485845,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "affdd932a17ddd96",
+  "name" : "t()",
+  "time" : {
+    "start" : 1609470248683,
+    "stop" : 1609470248710,
+    "duration" : 27
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d1afb027da830e39",
+  "name" : "f()",
+  "time" : {
+    "start" : 1609466161051,
+    "stop" : 1609466161076,
+    "duration" : 25
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dd7edba5bd08b761",
+  "name" : "integrationOfAdditionAndSubtraction()",
+  "time" : {
+    "start" : 1610064485855,
+    "stop" : 1610064485855,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b408b3ac61d1e49f",
+  "name" : "TimerTests()",
+  "time" : {
+    "start" : 1609473838178,
+    "stop" : 1609473848767,
+    "duration" : 10589
   },
   "status" : "passed",
   "severity" : "normal"

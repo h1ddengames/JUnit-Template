@@ -4,10 +4,58 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+  <!-- Please update these three properties then delete this comment. -->
   <groupId>xyz.hiddengames</groupId>
   <artifactId>Project-Template</artifactId>
   <version>2.0.0</version>
 
+  <!-- Sets a profile based on the current Operating System to set specific properties. -->
+  <profiles>
+    <profile>
+      <id>mac</id>
+      <activation>
+        <os>
+          <family>mac</family>
+        </os>
+      </activation>
+
+      <properties>
+        <copy.history.files.command>bash</copy.history.files.command>
+        <generate.report.command>bash</generate.report.command>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>unix</id>
+      <activation>
+        <os>
+          <family>unix</family>
+          <name>Linux</name>
+        </os>
+      </activation>
+
+      <properties>
+        <copy.history.files.command>bash</copy.history.files.command>
+        <generate.report.command>bash</generate.report.command>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>windows</id>
+      <activation>
+        <os>
+          <family>windows</family>
+        </os>
+      </activation>
+
+      <properties>
+        <copy.history.files.command>"C:\Program Files\Git\bin\bash.exe"</copy.history.files.command>
+        <generate.report.command>"C:\Program Files\Git\bin\bash.exe"</generate.report.command>
+      </properties>
+    </profile>
+  </profiles>
+
+  <!-- Set specific versions here to make it easier to update libraries when required. -->
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>11</java.version>
@@ -57,7 +105,7 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- Used to automate web browsers for UI testing.       -->
+    <!-- Used to automate web browsers for UI testing. -->
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
@@ -65,7 +113,7 @@
       <version>${selenium.version}</version>
     </dependency>
 
-    <!-- Used to manage chrome and firefox drivers/versions.       -->
+    <!-- Used to manage chrome and firefox drivers/versions. -->
     <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
     <dependency>
       <groupId>io.github.bonigarcia</groupId>
@@ -73,7 +121,7 @@
       <version>${webdrivermanager.version}</version>
     </dependency>
 
-    <!-- Used to send API calls for API testing.       -->
+    <!-- Used to send API calls for API testing. -->
     <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
     <dependency>
       <groupId>io.rest-assured</groupId>
@@ -81,7 +129,7 @@
       <version>${rest-assured.version}</version>
     </dependency>
 
-    <!-- Used to convert between Map and JSON.       -->
+    <!-- Used to work with JSON data. -->
     <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
@@ -91,66 +139,79 @@
   </dependencies>
 
   <build>
+    <!-- Specify folders that should be included in the final JAR. -->
     <resources>
       <resource>
         <directory>src/main/resources</directory>
       </resource>
+
       <resource>
         <directory>src/main/resources/configurations</directory>
       </resource>
+
       <resource>
         <directory>src/test/resources</directory>
       </resource>
+
       <resource>
         <directory>src/test/resources/configurations</directory>
       </resource>
     </resources>
 
     <plugins>
+      <!-- Tells Maven to create allure reports. -->
       <plugin>
         <groupId>io.qameta.allure</groupId>
         <artifactId>allure-maven</artifactId>
         <version>${allure-maven.version}</version>
       </plugin>
 
-      <!-- Used in order to set the language level of Java. -->
+      <!-- Sets Java version. -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>${maven-compiler-plugin.version}</version>
+
         <configuration>
           <release>${java.version}</release>
         </configuration>
       </plugin>
 
-      <!-- Runs after tests have been completed -->
+      <!-- Runs commands during the specified phases of the Maven lifecycle. -->
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
         <version>3.0.0</version>
+
         <executions>
+          <!-- Copies all history files from previous Allure reports in order to display previous data in new Allure report. -->
           <execution>
             <id>Copy history files</id>
             <phase>clean</phase>
+
             <goals>
               <goal>exec</goal>
             </goals>
+
             <configuration>
-              <executable>"C:\Program Files\Git\bin\bash.exe"</executable>
+              <executable>${copy.history.files.command}</executable>
               <arguments>
                 <argument>scripts/backup-history.sh</argument>
               </arguments>
             </configuration>
           </execution>
 
+          <!-- Generates Allure report. -->
           <execution>
-            <id>Generate reports</id>
+            <id>Generate report</id>
             <phase>test</phase>
+
             <goals>
               <goal>exec</goal>
             </goals>
+
             <configuration>
-              <executable>"C:\Program Files\Git\bin\bash.exe"</executable>
+              <executable>${generate.report.command}</executable>
               <arguments>
                 <argument>scripts/generate-reports.sh</argument>
               </arguments>
@@ -164,6 +225,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>${maven-surefire-plugin.version}</version>
+
         <configuration>
           <properties>
             <property>
@@ -171,24 +233,31 @@
               <value>io.qameta.allure.junit5.AllureJunit5</value>
             </property>
           </properties>
+
+          <!-- Only runs files matching the below regex in the src/test/java directory. -->
           <includes>
             <include>**/*Test*.java</include>
           </includes>
+
           <argLine>
             -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
           </argLine>
+
           <systemProperties>
             <property>
               <name>allure.results.directory</name>
               <value>${project.basedir}/docs/allure-results</value>
             </property>
+
             <property>
               <name>junit.jupiter.extensions.autodetection.enabled</name>
               <value>true</value>
             </property>
           </systemProperties>
+
           <reportFormat>plain</reportFormat>
         </configuration>
+
         <dependencies>
           <dependency>
             <groupId>org.aspectj</groupId>
@@ -209,6 +278,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>${maven-jar-plugin.version}</version>
+
         <executions>
           <execution>
             <id>default-jar</id>
@@ -223,18 +293,22 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>
         <version>${maven-assembly-plugin.version}</version>
+
         <configuration>
           <archive>
             <manifest>
               <mainClass>entrypoint.App</mainClass>
             </manifest>
           </archive>
+
           <descriptorRefs>
             <descriptorRef>jar-with-dependencies</descriptorRef>
           </descriptorRefs>
+
           <finalName>${project.artifactId}-${project.version}</finalName>
           <appendAssemblyId>false</appendAssemblyId>
         </configuration>
+
         <executions>
           <execution>
             <id>make-assembly</id>
