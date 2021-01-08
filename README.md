@@ -16,6 +16,9 @@ The diagram above is in the [drawio file](docs/Project-Template%20Infrastructure
 
 > ## **Important Notes**
 
+<details>
+    <summary>Click to expand/collapse</summary>
+
 - **WINDOWS ONLY REQUIREMENT:** Git Bash is required to run the report generating scripts.
   - If your Git Bash was installed in a different location: update the pom.xml profiles/profile/id=windows/properties to point to your install location.
 
@@ -42,13 +45,20 @@ The diagram above is in the [drawio file](docs/Project-Template%20Infrastructure
 - **Please note: both ```mvn clean``` and ```mvn test``` has been modified through the exec-maven-plugin in pom.xml to do the tasks above.**
 - **Please note: If the reports are not displaying recent data, open the dev console in your browser and clear cache (local and session storage)**
 
+</details>
+
 <br>
 
 > ## **Usage**
 
+<details>
+    <summary>Click to expand/collapse</summary>
+
 This project should be stored in Intellij by clicking on Tools > Save Project as Template. Then when a new project will be created in Intellij, use this project template under New Project > User-defined.
 
 This project can also be used by clicking on the "Use this template" button near the top of this page. This will create a github repository with the same folder structure and files found in this repository.
+
+</details>
 
 <br>
 
@@ -157,3 +167,5 @@ ex: ```https://yourUserName.github.io/yourRepoName```
     - ~~package the allure results with the jar file into a zip file called reports+jar that will be put in the artifacts section of the Actions tab on github under "Java CI".~~
 - Github Actions has been commented out until further notice.
 </details>
+
+<br>
