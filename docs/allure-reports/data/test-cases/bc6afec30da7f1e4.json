@@ -1,0 +1,55 @@
+{
+  "uid" : "bc6afec30da7f1e4",
+  "name" : "TimerTests()",
+  "fullName" : "other.OtherTest.TimerTests",
+  "historyId" : "fd3702c504dbd6a254e7088cd8f6c3c1",
+  "time" : {
+    "start" : 1609471927156,
+    "stop" : 1609471932459,
+    "duration" : 5303
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "DESKTOP-NS5O6HM"
+  }, {
+    "name" : "thread",
+    "value" : "14420@DESKTOP-NS5O6HM.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "other.OtherTest"
+  }, {
+    "name" : "testClass",
+    "value" : "other.OtherTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "TimerTests"
+  }, {
+    "name" : "suite",
+    "value" : "other.OtherTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bc6afec30da7f1e4.json",
+  "parameterValues" : [ ]
+}
