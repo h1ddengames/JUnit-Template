@@ -1,0 +1,65 @@
+{
+  "uid" : "8855163d4657170f",
+  "name" : "subtraction()",
+  "fullName" : "other.AppTest.subtraction",
+  "historyId" : "c5d971b44257b051e74e9f9dc982ca47",
+  "time" : {
+    "start" : 1609989288656,
+    "stop" : 1609989288661,
+    "duration" : 5
+  },
+  "description" : "Get the value of a number subtracted by another number.",
+  "descriptionHtml" : "<p>Get the value of a number subtracted by another number.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Arithmetic Operations"
+  }, {
+    "name" : "feature",
+    "value" : "Addition and Subtraction Features"
+  }, {
+    "name" : "story",
+    "value" : "User tries to subtract two numbers."
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NS5O6HM"
+  }, {
+    "name" : "thread",
+    "value" : "15896@DESKTOP-NS5O6HM.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "other.AppTest"
+  }, {
+    "name" : "testClass",
+    "value" : "other.AppTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "subtraction"
+  }, {
+    "name" : "suite",
+    "value" : "other.AppTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8855163d4657170f.json",
+  "parameterValues" : [ ]
+}

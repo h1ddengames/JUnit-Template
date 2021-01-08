@@ -1,0 +1,65 @@
+{
+  "uid" : "d5efb9e121412780",
+  "name" : "addition()",
+  "fullName" : "other.AppTest.addition",
+  "historyId" : "71431720c18e3597ea23c1af199cb368",
+  "time" : {
+    "start" : 1610069018085,
+    "stop" : 1610069018085,
+    "duration" : 0
+  },
+  "description" : "Get the value of two numbers added together.",
+  "descriptionHtml" : "<p>Get the value of two numbers added together.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Arithmetic Operations"
+  }, {
+    "name" : "feature",
+    "value" : "Addition and Subtraction Features"
+  }, {
+    "name" : "story",
+    "value" : "User tries to add two numbers."
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NS5O6HM"
+  }, {
+    "name" : "thread",
+    "value" : "9860@DESKTOP-NS5O6HM.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "other.AppTest"
+  }, {
+    "name" : "testClass",
+    "value" : "other.AppTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "addition"
+  }, {
+    "name" : "suite",
+    "value" : "other.AppTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d5efb9e121412780.json",
+  "parameterValues" : [ ]
+}
