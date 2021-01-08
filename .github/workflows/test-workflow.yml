@@ -35,7 +35,7 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
 
       - name: Build with Maven
-        run: mvn -B package --file pom.xml
+        run: mvn -B clean test --file pom.xml
 
       - name: Copy JAR files to new Directory  
         run: mkdir output && cp target/$(grep -o "<artifactId>.*</artifactId>" pom.xml | head -1 | sed "s#<artifactId>###\g" | sed "s#</artifactId>###\g")-$(grep -o "<version>.*</version>" pom.xml | head -1 | sed "s#<version>###\g" | sed "s#</version>###\g").jar output
