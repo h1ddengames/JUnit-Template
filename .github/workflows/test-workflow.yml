@@ -6,8 +6,8 @@ name: build
 on:
   push:
     branches: [ main ]
-#  pull_request:
-#    branches: [ main ]
+  pull_request:
+    branches: [ main ]
   schedule:
     #- cron: '*/5 * * * *' # Every 5 minutes
     - cron: '0 0 * * 0' # At 00:00 on Sunday.
@@ -21,11 +21,18 @@ jobs:
         with:
           lfs: true
 
+#      - name: Set up JDK 11
+#        uses: actions/setup-java@v1.4.3
+#        with:
+#          java-package: jdk
+#          java-version: 11.0.6
+
       - name: Set up JDK 11
-        uses: actions/setup-java@v1.4.3
-        with:
-          java-package: jdk
-          java-version: 11.0.6
+        run: wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add - && \
+        sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/ && \
+        sudo apt update && \
+        sudo apt install -y adoptopenjdk-11-hotspot && \
+        which java
 
       - name: Cache Maven packages
         uses: actions/cache@v2
