@@ -1,0 +1,65 @@
+{
+  "uid" : "5996d35d166d3901",
+  "name" : "getRandomDogImageTest()",
+  "fullName" : "api.DogAPITest.getRandomDogImageTest",
+  "historyId" : "21eefe572d00ee1f6b99e73f4298789d",
+  "time" : {
+    "start" : 1609292564674,
+    "stop" : 1609292565043,
+    "duration" : 369
+  },
+  "description" : "Get the list of all dog breeds.",
+  "descriptionHtml" : "<p>Get the list of all dog breeds.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Dog API"
+  }, {
+    "name" : "feature",
+    "value" : "Data with images"
+  }, {
+    "name" : "story",
+    "value" : "User tries to get all dog breeds."
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NS5O6HM"
+  }, {
+    "name" : "thread",
+    "value" : "8104@DESKTOP-NS5O6HM.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "api.DogAPITest"
+  }, {
+    "name" : "testClass",
+    "value" : "api.DogAPITest"
+  }, {
+    "name" : "testMethod",
+    "value" : "getRandomDogImageTest"
+  }, {
+    "name" : "suite",
+    "value" : "api.DogAPITest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5996d35d166d3901.json",
+  "parameterValues" : [ ]
+}
