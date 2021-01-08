@@ -7,14 +7,19 @@ A Java 11 project template built to quick start new projects with minimal setup 
 
 Please view the Javadocs + Allure Reports [here](https://h1ddengames.github.io/Project-Template "The javadocs for this project").
 
+![Project Outline](docs/images/Project-Template-Infrastructure.png "The project outline")
+[A larger version of the above image can be found here](docs/infrastructure.html "To infrastructure.html")
+
+The diagram above is in the [drawio file](docs/Project-Template%20Infrastructure.drawio "To the drawio file") which can be opened using: [the draw.io app](https://app.diagrams.net/ "The draw.io app")
+
 <br>
 
 > ## **Important Notes**
 
-- Git Bash is required to run the report generating scripts.
-  - If your Git Bash was installed in a different location: update the pom.xml exec-maven-plugin to point to your install location.
+- **WINDOWS ONLY REQUIREMENT:** Git Bash is required to run the report generating scripts.
+  - If your Git Bash was installed in a different location: update the pom.xml profiles/profile/id=windows/properties to point to your install location.
 
-- Before pushing to this repository run the following commands:
+- Before pushing to this repository run the following commands: (update branchName with the actual branch name you wish to push to)
     ```bash
     mvn clean test
     git add . && git commit && git push origin branchName
@@ -34,7 +39,7 @@ Please view the Javadocs + Allure Reports [here](https://h1ddengames.github.io/P
 
 - Once the above commands have been run: login to github in a browser, go to this project, then create a pull request.
 
-- **Please note: ```mvn clean test``` has been modified through the exec-maven-plugin in pom.xml to do the tasks above.**
+- **Please note: both ```mvn clean``` and ```mvn test``` has been modified through the exec-maven-plugin in pom.xml to do the tasks above.**
 - **Please note: If the reports are not displaying recent data, open the dev console in your browser and clear cache (local and session storage)**
 
 <br>
@@ -42,6 +47,8 @@ Please view the Javadocs + Allure Reports [here](https://h1ddengames.github.io/P
 > ## **Usage**
 
 This project should be stored in Intellij by clicking on Tools > Save Project as Template. Then when a new project will be created in Intellij, use this project template under New Project > User-defined.
+
+This project can also be used by clicking on the "Use this template" button near the top of this page. This will create a github repository with the same folder structure and files found in this repository.
 
 <br>
 
@@ -78,7 +85,7 @@ This project should be stored in Intellij by clicking on Tools > Save Project as
 10. Add or remove libraries according to your needs.
 11. If you are using a main class that is not entrypoint.App.java then update the pom.xml build/plugin section of the maven-assembly-plugin to the new main class. Then update the final name as required.
 12. Update the test-workflow.yml based on your needs.
-13. Add the allure folder .allure/allure-2.8.1 to your path in order to be able to call allure executable from anywhere.
+13. Add the allure folder .allure/allure-2.13.8 to your path in order to be able to call allure executable from anywhere.
 14. In order to generate reports using allure, open a command prompt in the project's main folder. Then run ```allure serve target/allure-results/```
 </details>
 
@@ -139,14 +146,14 @@ ex: ```https://yourUserName.github.io/yourRepoName```
 - maven-jar-plugin: suppresses generation of the default jar that is created during the package phase.
 - exec-maven-plugin: generates a backup of allure history and report.
 - maven-assembly-plugin: generates a jar with dependencies packed in (fat jar) with the name: ${project.artifactId}-${project.version}.jar (Example: Project-Template-1.0.0.jar)
-- .github/workflows/test-workflow.yml will: 
-    - run on push to main branch, on pull request to main branch, and at 00:00 on Sunday.
-    - checkout your code to a ubuntu server running the latest version of ubuntu.
-    - setup JDK 11.0.6
-    - cache all required maven packages based on pom.xml
-    - build the project with maven using the following command ```mvn -B package --file pom.xml```
-    - copy the generated jar file to a directory called output
-    - generate allure results as json and html files.
-    - package the allure results with the jar file into a zip file called reports+jar that will be put in the artifacts section of the Actions tab on github under "Java CI".
-
+- ~~.github/workflows/test-workflow.yml will:~~
+    - ~~run on push to main branch, on pull request to main branch, and at 00:00 on Sunday.~~
+    - ~~checkout your code to a ubuntu server running the latest version of ubuntu.~~
+    - ~~setup JDK 11.0.9~~
+    - ~~cache all required maven packages based on pom.xml~~
+    - ~~build the project with maven using the following command~~ ```mvn -B clean test package --file pom.xml```
+    - ~~copy the generated jar file to a directory called output~~
+    - ~~generate allure results as json and html files.~~
+    - ~~package the allure results with the jar file into a zip file called reports+jar that will be put in the artifacts section of the Actions tab on github under "Java CI".~~
+- Github Actions has been commented out until further notice.
 </details>
