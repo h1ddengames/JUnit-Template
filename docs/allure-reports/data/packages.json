@@ -7,7 +7,7 @@
       "name" : "OtherTest",
       "children" : [ {
         "name" : "e",
-        "uid" : "29128fc9b9b681c1",
+        "uid" : "a28383d603992209",
         "parentUid" : "03b3a87ed5cde952d5f1dca59e201309",
         "status" : "passed",
         "time" : {
@@ -20,7 +20,7 @@
         "parameters" : [ ]
       }, {
         "name" : "f",
-        "uid" : "4e44acb1dc81f1f4",
+        "uid" : "65545e2f8f2a8599",
         "parentUid" : "03b3a87ed5cde952d5f1dca59e201309",
         "status" : "passed",
         "time" : {
@@ -33,7 +33,7 @@
         "parameters" : [ ]
       }, {
         "name" : "t",
-        "uid" : "bc95a6d70731ddb4",
+        "uid" : "1b6de4e216ebfbd6",
         "parentUid" : "03b3a87ed5cde952d5f1dca59e201309",
         "status" : "passed",
         "time" : {
@@ -46,7 +46,7 @@
         "parameters" : [ ]
       }, {
         "name" : "MetadataTests",
-        "uid" : "86d3bb3a806cf577",
+        "uid" : "23e37cc1dc072294",
         "parentUid" : "03b3a87ed5cde952d5f1dca59e201309",
         "status" : "passed",
         "time" : {
@@ -59,7 +59,7 @@
         "parameters" : [ ]
       }, {
         "name" : "tt",
-        "uid" : "bb99e93758a7d4ff",
+        "uid" : "7e985015704a74e6",
         "parentUid" : "03b3a87ed5cde952d5f1dca59e201309",
         "status" : "passed",
         "time" : {
@@ -72,7 +72,7 @@
         "parameters" : [ ]
       }, {
         "name" : "TimerTests",
-        "uid" : "ccc16b9a104e6da4",
+        "uid" : "b10b03f4107b8e19",
         "parentUid" : "03b3a87ed5cde952d5f1dca59e201309",
         "status" : "passed",
         "time" : {
@@ -89,25 +89,25 @@
       "name" : "AppTest",
       "children" : [ {
         "name" : "subtraction",
-        "uid" : "d84efa197f49eac2",
+        "uid" : "5de19ff5f8c7af38",
         "parentUid" : "b9543380c30d35e9e394dd4b068c143d",
         "status" : "passed",
         "time" : {
-          "start" : 1610070139741,
-          "stop" : 1610070139749,
-          "duration" : 8
+          "start" : 1610072743727,
+          "stop" : 1610072743734,
+          "duration" : 7
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "addition",
-        "uid" : "949063051657e5f6",
+        "uid" : "6166de2c8b53ac89",
         "parentUid" : "b9543380c30d35e9e394dd4b068c143d",
         "status" : "passed",
         "time" : {
-          "start" : 1610070139753,
-          "stop" : 1610070139754,
+          "start" : 1610072743739,
+          "stop" : 1610072743740,
           "duration" : 1
         },
         "flaky" : false,
@@ -115,12 +115,12 @@
         "parameters" : [ ]
       }, {
         "name" : "integrationOfAdditionAndSubtraction",
-        "uid" : "f1f5cf3e23659379",
+        "uid" : "160c0c97417410d3",
         "parentUid" : "b9543380c30d35e9e394dd4b068c143d",
         "status" : "passed",
         "time" : {
-          "start" : 1610070139758,
-          "stop" : 1610070139758,
+          "start" : 1610072743745,
+          "stop" : 1610072743745,
           "duration" : 0
         },
         "flaky" : false,
@@ -134,39 +134,39 @@
     "name" : "api.DogAPITest",
     "children" : [ {
       "name" : "getMultipleRandomDogImagesTest",
-      "uid" : "9ea21f255c9c679e",
+      "uid" : "65db04a0ce3a9ed0",
       "parentUid" : "af3e8f87a58eebbc40f469f6328b2cb8",
       "status" : "passed",
       "time" : {
-        "start" : 1610070137080,
-        "stop" : 1610070139150,
-        "duration" : 2070
+        "start" : 1610072740688,
+        "stop" : 1610072743138,
+        "duration" : 2450
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "getRandomDogImageTest",
-      "uid" : "d93e6b6c824a10e2",
+      "uid" : "a6f02ccf8ae38eea",
       "parentUid" : "af3e8f87a58eebbc40f469f6328b2cb8",
       "status" : "passed",
       "time" : {
-        "start" : 1610070139227,
-        "stop" : 1610070139498,
-        "duration" : 271
+        "start" : 1610072743229,
+        "stop" : 1610072743482,
+        "duration" : 253
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "getAllDogBreedsTest",
-      "uid" : "9e424c643f138836",
+      "uid" : "bb69b338cb2c6815",
       "parentUid" : "af3e8f87a58eebbc40f469f6328b2cb8",
       "status" : "passed",
       "time" : {
-        "start" : 1610070139503,
-        "stop" : 1610070139733,
-        "duration" : 230
+        "start" : 1610072743486,
+        "stop" : 1610072743718,
+        "duration" : 232
       },
       "flaky" : false,
       "newFailed" : false,
