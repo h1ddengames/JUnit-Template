@@ -1,5 +1,5 @@
 [ {
-  "uid" : "6f7863c5038ea6f9",
+  "uid" : "80b5783eaa8db9e5",
   "name" : "MetadataTests()",
   "time" : {
     "start" : 1609470446980,
@@ -9,47 +9,7 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "7635621457b3a08f",
-  "name" : "getMultipleRandomDogImagesTest()",
-  "time" : {
-    "start" : 1610064483215,
-    "stop" : 1610064485308,
-    "duration" : 2093
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "591443d5b171aac1",
-  "name" : "e()",
-  "time" : {
-    "start" : 1609463376515,
-    "stop" : 1609463376540,
-    "duration" : 25
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3e37987d1eb9b16",
-  "name" : "addition()",
-  "time" : {
-    "start" : 1610064485850,
-    "stop" : 1610064485851,
-    "duration" : 1
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8d28e33f26fda47",
-  "name" : "getAllDogBreedsTest()",
-  "time" : {
-    "start" : 1610064485614,
-    "stop" : 1610064485830,
-    "duration" : 216
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2072d8a8d2a3f41d",
+  "uid" : "d204a5821052e03b",
   "name" : "tt()",
   "time" : {
     "start" : 1609473591544,
@@ -59,27 +19,47 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c168db790eb345ce",
-  "name" : "getRandomDogImageTest()",
+  "uid" : "bfa9d7b909ed35fa",
+  "name" : "e()",
   "time" : {
-    "start" : 1610064485385,
-    "stop" : 1610064485609,
-    "duration" : 224
+    "start" : 1609463376515,
+    "stop" : 1609463376540,
+    "duration" : 25
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "3a07e0b898673157",
-  "name" : "subtraction()",
+  "uid" : "73801eba932dff7",
+  "name" : "getAllDogBreedsTest()",
   "time" : {
-    "start" : 1610064485838,
-    "stop" : 1610064485845,
-    "duration" : 7
+    "start" : 1610066200995,
+    "stop" : 1610066201268,
+    "duration" : 273
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "affdd932a17ddd96",
+  "uid" : "7a8aea1466417812",
+  "name" : "integrationOfAdditionAndSubtraction()",
+  "time" : {
+    "start" : 1610066201291,
+    "stop" : 1610066201291,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a7f4e5b75a49c063",
+  "name" : "getMultipleRandomDogImagesTest()",
+  "time" : {
+    "start" : 1610066198584,
+    "stop" : 1610066200681,
+    "duration" : 2097
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b97aa02d516dfbc3",
   "name" : "t()",
   "time" : {
     "start" : 1609470248683,
@@ -89,7 +69,17 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d1afb027da830e39",
+  "uid" : "da3a1c9d3e7fb196",
+  "name" : "getRandomDogImageTest()",
+  "time" : {
+    "start" : 1610066200752,
+    "stop" : 1610066200990,
+    "duration" : 238
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6aadf9908c732b6b",
   "name" : "f()",
   "time" : {
     "start" : 1609466161051,
@@ -99,22 +89,32 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "dd7edba5bd08b761",
-  "name" : "integrationOfAdditionAndSubtraction()",
+  "uid" : "bf2e0fae4bb826fe",
+  "name" : "subtraction()",
   "time" : {
-    "start" : 1610064485855,
-    "stop" : 1610064485855,
-    "duration" : 0
+    "start" : 1610066201277,
+    "stop" : 1610066201281,
+    "duration" : 4
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "b408b3ac61d1e49f",
+  "uid" : "e43aa69518a0318a",
   "name" : "TimerTests()",
   "time" : {
     "start" : 1609473838178,
     "stop" : 1609473848767,
     "duration" : 10589
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b43edf70ad171bc7",
+  "name" : "addition()",
+  "time" : {
+    "start" : 1610066201286,
+    "stop" : 1610066201287,
+    "duration" : 1
   },
   "status" : "passed",
   "severity" : "normal"
