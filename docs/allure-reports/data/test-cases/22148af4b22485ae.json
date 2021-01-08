@@ -1,0 +1,55 @@
+{
+  "uid" : "22148af4b22485ae",
+  "name" : "f()",
+  "fullName" : "other.OtherTest.f",
+  "historyId" : "56c5a689d472bebcebef17abafde72ba",
+  "time" : {
+    "start" : 1609466014413,
+    "stop" : 1609466014439,
+    "duration" : 26
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "DESKTOP-NS5O6HM"
+  }, {
+    "name" : "thread",
+    "value" : "5588@DESKTOP-NS5O6HM.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "other.OtherTest"
+  }, {
+    "name" : "testClass",
+    "value" : "other.OtherTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "f"
+  }, {
+    "name" : "suite",
+    "value" : "other.OtherTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "22148af4b22485ae.json",
+  "parameterValues" : [ ]
+}

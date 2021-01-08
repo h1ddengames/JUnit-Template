@@ -1,65 +1,15 @@
 [ {
-  "uid" : "160c0c97417410d3",
-  "name" : "integrationOfAdditionAndSubtraction()",
-  "time" : {
-    "start" : 1610072743745,
-    "stop" : 1610072743745,
-    "duration" : 0
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "bb69b338cb2c6815",
+  "uid" : "8394a217b2232771",
   "name" : "getAllDogBreedsTest()",
   "time" : {
-    "start" : 1610072743486,
-    "stop" : 1610072743718,
-    "duration" : 232
+    "start" : 1610073952430,
+    "stop" : 1610073952656,
+    "duration" : 226
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "65db04a0ce3a9ed0",
-  "name" : "getMultipleRandomDogImagesTest()",
-  "time" : {
-    "start" : 1610072740688,
-    "stop" : 1610072743138,
-    "duration" : 2450
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6166de2c8b53ac89",
-  "name" : "addition()",
-  "time" : {
-    "start" : 1610072743739,
-    "stop" : 1610072743740,
-    "duration" : 1
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a28383d603992209",
-  "name" : "e()",
-  "time" : {
-    "start" : 1609463376515,
-    "stop" : 1609463376540,
-    "duration" : 25
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5de19ff5f8c7af38",
-  "name" : "subtraction()",
-  "time" : {
-    "start" : 1610072743727,
-    "stop" : 1610072743734,
-    "duration" : 7
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "23e37cc1dc072294",
+  "uid" : "ce2fac444df66199",
   "name" : "MetadataTests()",
   "time" : {
     "start" : 1609470446980,
@@ -69,17 +19,7 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "65545e2f8f2a8599",
-  "name" : "f()",
-  "time" : {
-    "start" : 1609466161051,
-    "stop" : 1609466161076,
-    "duration" : 25
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b10b03f4107b8e19",
+  "uid" : "2d6d59d59ec553b8",
   "name" : "TimerTests()",
   "time" : {
     "start" : 1609473838178,
@@ -89,7 +29,27 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "7e985015704a74e6",
+  "uid" : "6a89630a57add82",
+  "name" : "subtraction()",
+  "time" : {
+    "start" : 1610073952665,
+    "stop" : 1610073952671,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8f596dfbcd983316",
+  "name" : "integrationOfAdditionAndSubtraction()",
+  "time" : {
+    "start" : 1610073952680,
+    "stop" : 1610073952681,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "459c980403037c9",
   "name" : "tt()",
   "time" : {
     "start" : 1609473591544,
@@ -99,17 +59,57 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a6f02ccf8ae38eea",
-  "name" : "getRandomDogImageTest()",
+  "uid" : "ea0bdf888013ca87",
+  "name" : "e()",
   "time" : {
-    "start" : 1610072743229,
-    "stop" : 1610072743482,
-    "duration" : 253
+    "start" : 1609463376515,
+    "stop" : 1609463376540,
+    "duration" : 25
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "1b6de4e216ebfbd6",
+  "uid" : "eb51eeb7c64fc5fc",
+  "name" : "f()",
+  "time" : {
+    "start" : 1609466161051,
+    "stop" : 1609466161076,
+    "duration" : 25
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bc25ac8c1e80acf0",
+  "name" : "getMultipleRandomDogImagesTest()",
+  "time" : {
+    "start" : 1610073950071,
+    "stop" : 1610073952098,
+    "duration" : 2027
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6b7ea8b7c447e652",
+  "name" : "getRandomDogImageTest()",
+  "time" : {
+    "start" : 1610073952175,
+    "stop" : 1610073952425,
+    "duration" : 250
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "840dfcf28eafaa10",
+  "name" : "addition()",
+  "time" : {
+    "start" : 1610073952676,
+    "stop" : 1610073952676,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3b4915812387adb0",
   "name" : "t()",
   "time" : {
     "start" : 1609470248683,

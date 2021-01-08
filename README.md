@@ -1,4 +1,4 @@
-![build](https://github.com/h1ddengames/Project-Template/workflows/build/badge.svg)
+[comment]: <> (![build]&#40;https://github.com/h1ddengames/Project-Template/workflows/build/badge.svg&#41;)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 # **Project-Template**
