@@ -1,0 +1,195 @@
+{
+  "uid" : "54fc111f64733a5d",
+  "name" : "t()",
+  "fullName" : "other.OtherTest.t",
+  "historyId" : "3a3f931c7271ab22aa8f1e26e05bb056",
+  "time" : {
+    "start" : 1609470248683,
+    "stop" : 1609470248710,
+    "duration" : 27
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "DESKTOP-NS5O6HM"
+  }, {
+    "name" : "thread",
+    "value" : "12320@DESKTOP-NS5O6HM.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "other.OtherTest"
+  }, {
+    "name" : "testClass",
+    "value" : "other.OtherTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "t"
+  }, {
+    "name" : "suite",
+    "value" : "other.OtherTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "902ca742e40f874b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609468981160,
+        "stop" : 1609468981184,
+        "duration" : 24
+      }
+    }, {
+      "uid" : "a7043a18b284dae0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609468776460,
+        "stop" : 1609468776486,
+        "duration" : 26
+      }
+    }, {
+      "uid" : "3a130c045ba8e71e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609468765329,
+        "stop" : 1609468765356,
+        "duration" : 27
+      }
+    }, {
+      "uid" : "483fc61ad303e16d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609467614390,
+        "stop" : 1609467614415,
+        "duration" : 25
+      }
+    }, {
+      "uid" : "a2389e08fe83b814",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609467600087,
+        "stop" : 1609467600112,
+        "duration" : 25
+      }
+    }, {
+      "uid" : "3438e626b2f61282",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609467590026,
+        "stop" : 1609467590050,
+        "duration" : 24
+      }
+    }, {
+      "uid" : "c75e592cf581b2f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609467579458,
+        "stop" : 1609467579484,
+        "duration" : 26
+      }
+    }, {
+      "uid" : "5539191c7094b1e3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609467570027,
+        "stop" : 1609467570053,
+        "duration" : 26
+      }
+    }, {
+      "uid" : "304ea80646f89687",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609458589647,
+        "stop" : 1609458589671,
+        "duration" : 24
+      }
+    }, {
+      "uid" : "ca5c09e86bf49da6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609458518617,
+        "stop" : 1609458518641,
+        "duration" : 24
+      }
+    }, {
+      "uid" : "3c732b170127684d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609458502392,
+        "stop" : 1609458502415,
+        "duration" : 23
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 19,
+        "unknown" : 0,
+        "total" : 19
+      },
+      "items" : [ {
+        "uid" : "b97aa02d516dfbc3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609470248683,
+          "stop" : 1609470248710,
+          "duration" : 27
+        }
+      }, {
+        "uid" : "dd58d7f8f0a4b406",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609470248683,
+          "stop" : 1609470248710,
+          "duration" : 27
+        }
+      }, {
+        "uid" : "1d7bf467a4370559",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609470248683,
+          "stop" : 1609470248710,
+          "duration" : 27
+        }
+      }, {
+        "uid" : "8b4d822cf8300541",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609470248683,
+          "stop" : 1609470248710,
+          "duration" : 27
+        }
+      }, {
+        "uid" : "285504835dba90b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609470248683,
+          "stop" : 1609470248710,
+          "duration" : 27
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "54fc111f64733a5d.json",
+  "parameterValues" : [ ]
+}
