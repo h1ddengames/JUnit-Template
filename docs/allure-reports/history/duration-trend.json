@@ -1,6 +1,46 @@
 [ {
   "data" : {
-    "duration" : 861273577
+    "duration" : 943468463
+  }
+}, {
+  "data" : {
+    "duration" : 943049155
+  }
+}, {
+  "data" : {
+    "duration" : 942222272
+  }
+}, {
+  "data" : {
+    "duration" : 942083778
+  }
+}, {
+  "data" : {
+    "duration" : 941965049
+  }
+}, {
+  "data" : {
+    "duration" : 941634460
+  }
+}, {
+  "data" : {
+    "duration" : 941574196
+  }
+}, {
+  "data" : {
+    "duration" : 941391729
+  }
+}, {
+  "data" : {
+    "duration" : 941274219
+  }
+}, {
+  "data" : {
+    "duration" : 941165529
+  }
+}, {
+  "data" : {
+    "duration" : 940906055
   }
 }, {
   "data" : {
@@ -37,45 +77,5 @@
 }, {
   "data" : {
     "duration" : 605669273
-  }
-}, {
-  "data" : {
-    "duration" : 605641576
-  }
-}, {
-  "data" : {
-    "duration" : 604888721
-  }
-}, {
-  "data" : {
-    "duration" : 604422644
-  }
-}, {
-  "data" : {
-    "duration" : 603722092
-  }
-}, {
-  "data" : {
-    "duration" : 603163838
-  }
-}, {
-  "data" : {
-    "duration" : 602824776
-  }
-}, {
-  "data" : {
-    "duration" : 602801596
-  }
-}, {
-  "data" : {
-    "duration" : 602698886
-  }
-}, {
-  "data" : {
-    "duration" : 602681287
-  }
-}, {
-  "data" : {
-    "duration" : 602654208
   }
 } ]

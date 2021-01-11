@@ -140,6 +140,12 @@
       <artifactId>jackson-databind</artifactId>
       <version>${jackson-databind.version}</version>
     </dependency>
+
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-javadoc-plugin</artifactId>
+      <version>3.2.0</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -294,6 +300,35 @@
             <version>${junit.version}</version>
           </dependency>
         </dependencies>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.2.0</version>
+
+        <configuration>
+          <outputDirectory>${project.build.directory}/javadocs</outputDirectory>
+          <reportOutputDirectory>${project.build.directory}/javadocs</reportOutputDirectory>
+          <author>true</author>
+          <quiet>true</quiet>
+<!--          <header>This is the header.</header>-->
+<!--          <footer>This is the footer.</footer>-->
+          <top>Project Name: ${project.name}  |  Project Version: ${project.version}</top>
+          <bottom>Created by: Shahid Karim</bottom>
+          <version>true</version>
+        </configuration>
+
+        <executions>
+          <execution>
+            <id>make-assembly</id>
+            <phase>package</phase>
+
+            <goals>
+              <goal>javadoc</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
 
       <!-- Used to skip creating the default jar during the package phase of maven execution. -->
