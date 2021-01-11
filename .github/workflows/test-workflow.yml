@@ -35,7 +35,7 @@ jobs:
 
       - name: Download and install Allure executable
         run: |
-          sudo wget https://github.com/allure-framework/allure2/rel13.8/allure_2.13.8-1_all.deb
+          sudo wget https://github.com/allure-framework/allure2/releases/download/2.13.8/allure_2.13.8-1_all.deb
           sudo dpkg -i allure_2.13.8-1_all.deb
 
       - name: Cache Maven packages
