@@ -1,65 +1,5 @@
 [ {
-  "uid" : "fe17ebcefe265ff3",
-  "name" : "e()",
-  "time" : {
-    "start" : 1609463376515,
-    "stop" : 1609463376540,
-    "duration" : 25
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6546810179eba838",
-  "name" : "getRandomDogImageTest()",
-  "time" : {
-    "start" : 1610089855834,
-    "stop" : 1610089856111,
-    "duration" : 277
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "289cda92dda1f204",
-  "name" : "subtraction()",
-  "time" : {
-    "start" : 1610089856353,
-    "stop" : 1610089856358,
-    "duration" : 5
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "addf5883dea5964d",
-  "name" : "tt()",
-  "time" : {
-    "start" : 1609473591544,
-    "stop" : 1609473591563,
-    "duration" : 19
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4c709e877bae2b13",
-  "name" : "getMultipleRandomDogImagesTest()",
-  "time" : {
-    "start" : 1610089853421,
-    "stop" : 1610089855749,
-    "duration" : 2328
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f31ba272c0dbfbc",
-  "name" : "integrationOfAdditionAndSubtraction()",
-  "time" : {
-    "start" : 1610089856368,
-    "stop" : 1610089856368,
-    "duration" : 0
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "78105effb63580a2",
+  "uid" : "538f1b8ee5f16958",
   "name" : "f()",
   "time" : {
     "start" : 1609466161051,
@@ -69,37 +9,67 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "43c8406d0edf5d2e",
-  "name" : "TimerTests()",
-  "time" : {
-    "start" : 1609473838178,
-    "stop" : 1609473848767,
-    "duration" : 10589
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b55bfb2037225671",
+  "uid" : "4ce75c25a639f23a",
   "name" : "getAllDogBreedsTest()",
   "time" : {
-    "start" : 1610089856116,
-    "stop" : 1610089856343,
-    "duration" : 227
+    "start" : 1610324649834,
+    "stop" : 1610324650067,
+    "duration" : 233
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "cf28c82a818abb22",
-  "name" : "addition()",
+  "uid" : "d6645431ed21e25f",
+  "name" : "t()",
   "time" : {
-    "start" : 1610089856363,
-    "stop" : 1610089856364,
-    "duration" : 1
+    "start" : 1609470248683,
+    "stop" : 1609470248710,
+    "duration" : 27
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "490448b533a3339",
+  "uid" : "ba62dac1186429a1",
+  "name" : "getMultipleRandomDogImagesTest()",
+  "time" : {
+    "start" : 1610324646986,
+    "stop" : 1610324649363,
+    "duration" : 2377
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2db42427dcac3c6b",
+  "name" : "integrationOfAdditionAndSubtraction()",
+  "time" : {
+    "start" : 1610324650092,
+    "stop" : 1610324650092,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "98cb8e20dad7e599",
+  "name" : "e()",
+  "time" : {
+    "start" : 1609463376515,
+    "stop" : 1609463376540,
+    "duration" : 25
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eb6a6619a545b5b2",
+  "name" : "subtraction()",
+  "time" : {
+    "start" : 1610324650076,
+    "stop" : 1610324650081,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a07e4577e9e7311",
   "name" : "MetadataTests()",
   "time" : {
     "start" : 1609470446980,
@@ -109,12 +79,42 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "8cc7034cd29d5787",
-  "name" : "t()",
+  "uid" : "823cad948d88665e",
+  "name" : "TimerTests()",
   "time" : {
-    "start" : 1609470248683,
-    "stop" : 1609470248710,
-    "duration" : 27
+    "start" : 1609473838178,
+    "stop" : 1609473848767,
+    "duration" : 10589
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9f4a905850dc0133",
+  "name" : "getRandomDogImageTest()",
+  "time" : {
+    "start" : 1610324649442,
+    "stop" : 1610324649828,
+    "duration" : 386
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "59d07a368edb0d71",
+  "name" : "tt()",
+  "time" : {
+    "start" : 1609473591544,
+    "stop" : 1609473591563,
+    "duration" : 19
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6da8b6418709198b",
+  "name" : "addition()",
+  "time" : {
+    "start" : 1610324650087,
+    "stop" : 1610324650087,
+    "duration" : 0
   },
   "status" : "passed",
   "severity" : "normal"

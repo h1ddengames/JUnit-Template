@@ -3,7 +3,7 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "e()",
-    "uid" : "fe17ebcefe265ff3",
+    "uid" : "98cb8e20dad7e599",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -16,7 +16,7 @@
     "parameters" : [ ]
   }, {
     "name" : "f()",
-    "uid" : "78105effb63580a2",
+    "uid" : "538f1b8ee5f16958",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -29,7 +29,7 @@
     "parameters" : [ ]
   }, {
     "name" : "t()",
-    "uid" : "8cc7034cd29d5787",
+    "uid" : "d6645431ed21e25f",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -42,7 +42,7 @@
     "parameters" : [ ]
   }, {
     "name" : "MetadataTests()",
-    "uid" : "490448b533a3339",
+    "uid" : "9a07e4577e9e7311",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -55,7 +55,7 @@
     "parameters" : [ ]
   }, {
     "name" : "tt()",
-    "uid" : "addf5883dea5964d",
+    "uid" : "59d07a368edb0d71",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -68,7 +68,7 @@
     "parameters" : [ ]
   }, {
     "name" : "TimerTests()",
-    "uid" : "43c8406d0edf5d2e",
+    "uid" : "823cad948d88665e",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -87,39 +87,39 @@
         "name" : "User tries to get all dog breeds.",
         "children" : [ {
           "name" : "getMultipleRandomDogImagesTest()",
-          "uid" : "4c709e877bae2b13",
+          "uid" : "ba62dac1186429a1",
           "parentUid" : "93a92eb5b4c419743732f180cc3ac70b",
           "status" : "passed",
           "time" : {
-            "start" : 1610089853421,
-            "stop" : 1610089855749,
-            "duration" : 2328
+            "start" : 1610324646986,
+            "stop" : 1610324649363,
+            "duration" : 2377
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "getRandomDogImageTest()",
-          "uid" : "6546810179eba838",
+          "uid" : "9f4a905850dc0133",
           "parentUid" : "93a92eb5b4c419743732f180cc3ac70b",
           "status" : "passed",
           "time" : {
-            "start" : 1610089855834,
-            "stop" : 1610089856111,
-            "duration" : 277
+            "start" : 1610324649442,
+            "stop" : 1610324649828,
+            "duration" : 386
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "getAllDogBreedsTest()",
-          "uid" : "b55bfb2037225671",
+          "uid" : "4ce75c25a639f23a",
           "parentUid" : "93a92eb5b4c419743732f180cc3ac70b",
           "status" : "passed",
           "time" : {
-            "start" : 1610089856116,
-            "stop" : 1610089856343,
-            "duration" : 227
+            "start" : 1610324649834,
+            "stop" : 1610324650067,
+            "duration" : 233
           },
           "flaky" : false,
           "newFailed" : false,
@@ -138,12 +138,12 @@
         "name" : "User tries to subtract two numbers.",
         "children" : [ {
           "name" : "subtraction()",
-          "uid" : "289cda92dda1f204",
+          "uid" : "eb6a6619a545b5b2",
           "parentUid" : "ea94b7628dd530f220c35e6d0ac7bd88",
           "status" : "passed",
           "time" : {
-            "start" : 1610089856353,
-            "stop" : 1610089856358,
+            "start" : 1610324650076,
+            "stop" : 1610324650081,
             "duration" : 5
           },
           "flaky" : false,
@@ -155,13 +155,13 @@
         "name" : "User tries to add two numbers.",
         "children" : [ {
           "name" : "addition()",
-          "uid" : "cf28c82a818abb22",
+          "uid" : "6da8b6418709198b",
           "parentUid" : "8cabced3a71f3d03d0209abc56556493",
           "status" : "passed",
           "time" : {
-            "start" : 1610089856363,
-            "stop" : 1610089856364,
-            "duration" : 1
+            "start" : 1610324650087,
+            "stop" : 1610324650087,
+            "duration" : 0
           },
           "flaky" : false,
           "newFailed" : false,
@@ -172,12 +172,12 @@
         "name" : "User tries to add two numbers then subtract from a larger number.",
         "children" : [ {
           "name" : "integrationOfAdditionAndSubtraction()",
-          "uid" : "f31ba272c0dbfbc",
+          "uid" : "2db42427dcac3c6b",
           "parentUid" : "8eccfe7dee5b176c5b5a2d6964776e53",
           "status" : "passed",
           "time" : {
-            "start" : 1610089856368,
-            "stop" : 1610089856368,
+            "start" : 1610324650092,
+            "stop" : 1610324650092,
             "duration" : 0
           },
           "flaky" : false,
