@@ -35,7 +35,7 @@ jobs:
 
       - name: Set environment variable for time (ex. 01-11-2021--05:09:52PM)
         run: |
-          export TIME=$(date +"%m-%d-%Y--%r" | tr -d "[:space:]")
+          export TIME=$(date +"%m-%d-%Y--%r" | tr -d "[:space:]" | sed 's/:/./g')
           echo $TIME
 
       - name: Download and install Allure executable
