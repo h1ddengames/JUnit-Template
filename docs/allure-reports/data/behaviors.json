@@ -1,9 +1,8 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
-  "name" : "behaviors",
   "children" : [ {
     "name" : "e()",
-    "uid" : "f40093e17a52af50",
+    "uid" : "8eb9b4d9e9d760b9",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -16,7 +15,7 @@
     "parameters" : [ ]
   }, {
     "name" : "f()",
-    "uid" : "7cc11d887c18267",
+    "uid" : "1870571ab14a17f3",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -29,7 +28,7 @@
     "parameters" : [ ]
   }, {
     "name" : "t()",
-    "uid" : "87c80f7a0a513eb1",
+    "uid" : "fe6ee71ccd693cbd",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -42,7 +41,7 @@
     "parameters" : [ ]
   }, {
     "name" : "MetadataTests()",
-    "uid" : "65e05a8e1c4b92b5",
+    "uid" : "42652e5f1c4ac7f1",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -55,7 +54,7 @@
     "parameters" : [ ]
   }, {
     "name" : "tt()",
-    "uid" : "f060b0db270db3cb",
+    "uid" : "78fa713882d5215a",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -68,7 +67,7 @@
     "parameters" : [ ]
   }, {
     "name" : "TimerTests()",
-    "uid" : "f9e37d57f49f1f29",
+    "uid" : "704a7c61d79c639",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -80,71 +79,37 @@
     "newFailed" : false,
     "parameters" : [ ]
   }, {
-    "name" : "Dog API",
+    "name" : "Arithmetic Operations",
     "children" : [ {
-      "name" : "Data with images",
+      "name" : "Addition and Subtraction Features",
       "children" : [ {
-        "name" : "User tries to get all dog breeds.",
+        "name" : "User tries to add two numbers then subtract from a larger number.",
         "children" : [ {
-          "name" : "getMultipleRandomDogImagesTest()",
-          "uid" : "a8779c65801e104c",
-          "parentUid" : "93a92eb5b4c419743732f180cc3ac70b",
+          "name" : "integrationOfAdditionAndSubtraction()",
+          "uid" : "a813b4ac55018c27",
+          "parentUid" : "8eccfe7dee5b176c5b5a2d6964776e53",
           "status" : "passed",
           "time" : {
-            "start" : 1610406842388,
-            "stop" : 1610406844404,
-            "duration" : 2016
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "getRandomDogImageTest()",
-          "uid" : "7a7a683f6072dd5a",
-          "parentUid" : "93a92eb5b4c419743732f180cc3ac70b",
-          "status" : "passed",
-          "time" : {
-            "start" : 1610406844482,
-            "stop" : 1610406844726,
-            "duration" : 244
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "getAllDogBreedsTest()",
-          "uid" : "1022ad281c3aca2",
-          "parentUid" : "93a92eb5b4c419743732f180cc3ac70b",
-          "status" : "passed",
-          "time" : {
-            "start" : 1610406844731,
-            "stop" : 1610406844956,
-            "duration" : 225
+            "start" : 1610419344116,
+            "stop" : 1610419344154,
+            "duration" : 38
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         } ],
-        "uid" : "93a92eb5b4c419743732f180cc3ac70b"
-      } ],
-      "uid" : "06996ef5626bcbb6642ac8f0d2faabd9"
-    } ],
-    "uid" : "5c9e540e77c9cfbd99029b0a317734af"
-  }, {
-    "name" : "Arithmetic Operations",
-    "children" : [ {
-      "name" : "Addition and Subtraction Features",
-      "children" : [ {
+        "uid" : "8eccfe7dee5b176c5b5a2d6964776e53"
+      }, {
         "name" : "User tries to subtract two numbers.",
         "children" : [ {
           "name" : "subtraction()",
-          "uid" : "3e56f6d1d1038bf0",
+          "uid" : "3e40d2107e66d478",
           "parentUid" : "ea94b7628dd530f220c35e6d0ac7bd88",
           "status" : "passed",
           "time" : {
-            "start" : 1610406844964,
-            "stop" : 1610406844969,
-            "duration" : 5
+            "start" : 1610419344116,
+            "stop" : 1610419344154,
+            "duration" : 38
           },
           "flaky" : false,
           "newFailed" : false,
@@ -155,39 +120,74 @@
         "name" : "User tries to add two numbers.",
         "children" : [ {
           "name" : "addition()",
-          "uid" : "7951c185c576831",
+          "uid" : "e56599efa6f1dbb0",
           "parentUid" : "8cabced3a71f3d03d0209abc56556493",
           "status" : "passed",
           "time" : {
-            "start" : 1610406844974,
-            "stop" : 1610406844974,
-            "duration" : 0
+            "start" : 1610419344116,
+            "stop" : 1610419344154,
+            "duration" : 38
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         } ],
         "uid" : "8cabced3a71f3d03d0209abc56556493"
-      }, {
-        "name" : "User tries to add two numbers then subtract from a larger number.",
+      } ],
+      "uid" : "ec463904101059bb2ea737a12c238271"
+    } ],
+    "uid" : "cd63e7dc9ec44876f0263f2a28dcc035"
+  }, {
+    "name" : "Dog API",
+    "children" : [ {
+      "name" : "Data with images",
+      "children" : [ {
+        "name" : "User tries to get all dog breeds.",
         "children" : [ {
-          "name" : "integrationOfAdditionAndSubtraction()",
-          "uid" : "c6342d6be0958396",
-          "parentUid" : "8eccfe7dee5b176c5b5a2d6964776e53",
+          "name" : "getAllDogBreedsTest()",
+          "uid" : "b059e2bc95af09f0",
+          "parentUid" : "93a92eb5b4c419743732f180cc3ac70b",
           "status" : "passed",
           "time" : {
-            "start" : 1610406844978,
-            "stop" : 1610406844978,
-            "duration" : 0
+            "start" : 1610419344116,
+            "stop" : 1610419346200,
+            "duration" : 2084
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getMultipleRandomDogImagesTest()",
+          "uid" : "80ffaeb1cf698b31",
+          "parentUid" : "93a92eb5b4c419743732f180cc3ac70b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1610419344116,
+            "stop" : 1610419346207,
+            "duration" : 2091
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getRandomDogImageTest()",
+          "uid" : "607f9c97b3033f92",
+          "parentUid" : "93a92eb5b4c419743732f180cc3ac70b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1610419344116,
+            "stop" : 1610419346200,
+            "duration" : 2084
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         } ],
-        "uid" : "8eccfe7dee5b176c5b5a2d6964776e53"
+        "uid" : "93a92eb5b4c419743732f180cc3ac70b"
       } ],
-      "uid" : "ec463904101059bb2ea737a12c238271"
+      "uid" : "06996ef5626bcbb6642ac8f0d2faabd9"
     } ],
-    "uid" : "cd63e7dc9ec44876f0263f2a28dcc035"
-  } ]
+    "uid" : "5c9e540e77c9cfbd99029b0a317734af"
+  } ],
+  "name" : "behaviors"
 }

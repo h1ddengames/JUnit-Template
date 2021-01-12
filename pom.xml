@@ -91,6 +91,13 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- Required to avoid "Unsupported version of junit:junit" error -->
+    <dependency>
+      <groupId>org.junit.vintage</groupId>
+      <artifactId>junit-vintage-engine</artifactId>
+      <version>${junit.version}</version>
+    </dependency>
+
     <!-- Used to generate test reports. -->
     <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-junit5 -->
     <dependency>

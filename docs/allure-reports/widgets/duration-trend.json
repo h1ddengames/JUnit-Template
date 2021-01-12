@@ -1,5 +1,25 @@
 [ {
   "data" : {
+    "duration" : 955969692
+  }
+}, {
+  "data" : {
+    "duration" : 955896212
+  }
+}, {
+  "data" : {
+    "duration" : 955492263
+  }
+}, {
+  "data" : {
+    "duration" : 954732326
+  }
+}, {
+  "data" : {
+    "duration" : 954701296
+  }
+}, {
+  "data" : {
     "duration" : 943468463
   }
 }, {
@@ -57,25 +77,5 @@
 }, {
   "data" : {
     "duration" : 609367230
-  }
-}, {
-  "data" : {
-    "duration" : 609326395
-  }
-}, {
-  "data" : {
-    "duration" : 606763243
-  }
-}, {
-  "data" : {
-    "duration" : 606420369
-  }
-}, {
-  "data" : {
-    "duration" : 605928893
-  }
-}, {
-  "data" : {
-    "duration" : 605669273
   }
 } ]
