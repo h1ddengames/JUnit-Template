@@ -33,11 +33,6 @@ jobs:
           echo $JAVA_HOME
           java --version
 
-      - name: Set environment variable for time (ex. 01-11-2021--05:09:52PM)
-        run: |
-          export TIME=$(date +"%m-%d-%Y--%r" | tr -d "[:space:]" | sed 's/:/./g')
-          echo $TIME
-
       - name: Download and install Allure executable
         run: |
           sudo wget https://github.com/allure-framework/allure2/releases/download/2.13.8/allure_2.13.8-1_all.deb
@@ -56,19 +51,19 @@ jobs:
       - name: Build with Maven
         run: mvn -B clean test package --file pom.xml
 
+      # Recently created environment variables do not persist through new run statements.
       # Create required directories
-      - name: Create required directories
+      # Copies the jar file in target directory matching artifactId-version.jar (ex: Project-Template-2.0.0.jar)
+      - name: Set environment variable for time (ex. 01-11-2021--05:09:52PM)
         run: |
+          export TIME=$(date +"%m-%d-%Y--%r" | tr -d "[:space:]" | sed 's/:/./g')
+          echo $TIME
+          echo $TIME > output/time.txt
+          ls -al output
           mkdir -p output/${TIME}/jars
           mkdir -p output/${TIME}/javadocs
           mkdir -p output/${TIME}/reports
           mkdir -p output/${TIME}/results
-          echo $TIME > output/time.txt
-          ls -al output
-
-      # Copies the jar file in target directory matching artifactId-version.jar (ex: Project-Template-2.0.0.jar)
-      - name: Copy files that need to be archived into output directory
-        run: |
           cp target/$(grep -o "<artifactId>.*</artifactId>" pom.xml | head -1 | sed "s#<artifactId>###\g" | sed "s#</artifactId>###\g")-$(grep -o "<version>.*</version>" pom.xml | head -1 | sed "s#<version>###\g" | sed "s#</version>###\g").jar output/$TIME/jars
           cp -R target/javadocs/apidocs/* output/${TIME}/javadocs
           cp -R docs/allure-reports/* output/${TIME}/reports
