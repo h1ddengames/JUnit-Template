@@ -36,6 +36,7 @@ jobs:
       - name: Set environment variable for time (ex. 01-11-2021--05:09:52PM)
         run: |
           export TIME=$(date +"%m-%d-%Y--%r" | tr -d "[:space:]")
+          echo $TIME
 
       - name: Download and install Allure executable
         run: |
@@ -62,6 +63,7 @@ jobs:
           mkdir -p output/$TIME/javadocs
           mkdir -p output/$TIME/reports
           mkdir -p output/$TIME/results
+          ls -al output
 
       # Copies the jar file in target directory matching artifactId-version.jar (ex: Project-Template-2.0.0.jar)
       - name: Copy files that need to be archived into output directory
@@ -76,4 +78,4 @@ jobs:
         with:
           name: reports+jar
           path: |
-            output
+            output/$TIME
