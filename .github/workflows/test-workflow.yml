@@ -59,10 +59,13 @@ jobs:
       # Create required directories
       - name: Create required directories
         run: |
-          mkdir -p output/$TIME/jars
-          mkdir -p output/$TIME/javadocs
-          mkdir -p output/$TIME/reports
-          mkdir -p output/$TIME/results
+          mkdir output
+          mkdir output/$TIME
+          mkdir output/$TIME/jars
+          mkdir output/$TIME/javadocs
+          mkdir output/$TIME/reports
+          mkdir output/$TIME/results
+          echo $TIME > time.txt
           ls -al output
 
       # Copies the jar file in target directory matching artifactId-version.jar (ex: Project-Template-2.0.0.jar)
