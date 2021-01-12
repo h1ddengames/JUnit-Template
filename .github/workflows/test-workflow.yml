@@ -54,19 +54,19 @@ jobs:
       # Copies the jar file in target directory matching artifactId-version.jar (ex: Project-Template-2.0.0.jar)
       - name: Copy JAR files to new directory
         run: |
-          mkdir output
-          cp target/$(grep -o "<artifactId>.*</artifactId>" pom.xml | head -1 | sed "s#<artifactId>###\g" | sed "s#</artifactId>###\g")-$(grep -o "<version>.*</version>" pom.xml | head -1 | sed "s#<version>###\g" | sed "s#</version>###\g").jar output
+          mkdir output output/jars
+          cp target/$(grep -o "<artifactId>.*</artifactId>" pom.xml | head -1 | sed "s#<artifactId>###\g" | sed "s#</artifactId>###\g")-$(grep -o "<version>.*</version>" pom.xml | head -1 | sed "s#<version>###\g" | sed "s#</version>###\g").jar output/jars
 
       - name: Copy javadocs to new directory
         run: |
           mkdir output/javadocs
-          cp -R target/javadocs/apidocs output/javadocs
+          cp -R target/javadocs/apidocs/* output/javadocs
 
       - name: Copy reports to new directory
         run: |
           mkdir output/reports output/results
-          cp -R docs/allure-reports output/reports
-          cp -R docs/allure-results output/results
+          cp -R docs/allure-reports/* output/reports
+          cp -R docs/allure-results/* output/results
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
