@@ -58,8 +58,6 @@ jobs:
         run: |
           export TIME=$(date +"%m-%d-%Y--%r" | tr -d "[:space:]" | sed 's/:/./g')
           echo $TIME
-          echo $TIME > output/time.txt
-          ls -al output
           mkdir -p output/${TIME}/jars
           mkdir -p output/${TIME}/javadocs
           mkdir -p output/${TIME}/reports
@@ -68,6 +66,8 @@ jobs:
           cp -R target/javadocs/apidocs/* output/${TIME}/javadocs
           cp -R docs/allure-reports/* output/${TIME}/reports
           cp -R docs/allure-results/* output/${TIME}/results
+          echo $TIME > output/time.txt
+          ls -al output
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
