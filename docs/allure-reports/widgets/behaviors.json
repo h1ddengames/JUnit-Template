@@ -1,8 +1,8 @@
 {
   "total" : 8,
   "items" : [ {
-    "uid" : "5c9e540e77c9cfbd99029b0a317734af",
-    "name" : "Dog API",
+    "uid" : "cd63e7dc9ec44876f0263f2a28dcc035",
+    "name" : "Arithmetic Operations",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -12,8 +12,8 @@
       "total" : 1
     }
   }, {
-    "uid" : "cd63e7dc9ec44876f0263f2a28dcc035",
-    "name" : "Arithmetic Operations",
+    "uid" : "5c9e540e77c9cfbd99029b0a317734af",
+    "name" : "Dog API",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

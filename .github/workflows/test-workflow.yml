@@ -1,72 +1,76 @@
 # This workflow will build a Java project with Maven
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
-#name: build
-#
-#on:
-#  push:
-#    branches: [ main ]
-#  pull_request:
-#    branches: [ main ]
-#  schedule:
-#    #- cron: '*/5 * * * *' # Every 5 minutes
-#    - cron: '0 0 * * 0' # At 00:00 on Sunday.
-#
-#jobs:
-#  build:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: Checkout code
-#        uses: actions/checkout@v2
-#        with:
-#          lfs: true
-#
-#      #      - name: Set up JDK 11
-#      #        run: |
-#      #          wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
-#      #          sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
-#      #          sudo apt update
-#      #          sudo apt install -y adoptopenjdk-11-hotspot
-#      #          which java
-#
-#      - name: Set up JDK 11
-#        uses: actions/setup-java@v1.4.3
-#        with:
-#          java-package: jdk
-#          java-version: 11.0.9
-#
-#      - name: Set Java_HOME to JDK 11
-#        run: |
-#          export JAVA_HOME=/usr/bin/java
-#          echo $JAVA_HOME
-#          java --version
-#
-#      - name: Cache Maven packages
-#        uses: actions/cache@v2
-#        with:
-#          path: ~/.m2
-#          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-#          restore-keys: ${{ runner.os }}-m2
-#
-#      - name: Build with Maven
-#        run: mvn -B clean test package --file pom.xml
-#
-#      - name: Copy JAR files to new Directory
-#        run: mkdir output && cp target/$(grep -o "<artifactId>.*</artifactId>" pom.xml | head -1 | sed "s#<artifactId>###\g" | sed "s#</artifactId>###\g")-$(grep -o "<version>.*</version>" pom.xml | head -1 | sed "s#<version>###\g" | sed "s#</version>###\g").jar output
-#
-##      - name: Generate Allure Report
-##        uses: simple-elf/allure-report-action@master
-##        if: always()
-##        with:
-##          allure_results: docs/allure-results
-##          allure_history: docs/allure-results/history
-##          allure_report: docs/allure-report
-#
-#      - name: Upload artifact
-#        uses: actions/upload-artifact@v2
-#        with:
-#          name: reports+jar
-#          path: |
-#            docs/allure-results
-#            docs/allure-reports
-#            output
+name: build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    #- cron: '*/5 * * * *' # Every 5 minutes
+    - cron: '0 0 * * 0' # At 00:00 on Sunday.
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          lfs: true
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v1.4.3
+        with:
+          java-package: jdk
+          java-version: 11.0.9
+
+      - name: Set Java_HOME to JDK 11
+        run: |
+          export JAVA_HOME=/usr/bin/java
+          echo $JAVA_HOME
+          java --version
+
+      - name: Download and install Allure executable
+        run: |
+          sudo wget https://github.com/allure-framework/allure2/releases/download/2.13.8/allure_2.13.8-1_all.deb
+          sudo dpkg -i allure_2.13.8-1_all.deb
+
+      - name: Cache Maven packages
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-m2
+
+      # mvn clean has been modified in the pom.xml file to backup allure-results history files
+      # mvn test has been modified in the pom.xml file to generate allure reports from allure-results history + current test results.
+      # mvn package has been modified in the pom.xml file to generate javadocs in target/javadocs/apidocs
+      - name: Build with Maven
+        run: mvn -B clean test package --file pom.xml
+
+      # Recently created environment variables do not persist through new run statements.
+      # Create required directories
+      # Copies the jar file in target directory matching artifactId-version.jar (ex: Project-Template-2.0.0.jar)
+      - name: Set environment variable for time (ex. 01-11-2021--05:09:52PM)
+        run: |
+          export TIME=$(TZ='America/Tijuana' date +"%m-%d-%Y--%r" | tr -d "[:space:]" | sed 's/:/./g')
+          echo $TIME
+          mkdir -p output/${TIME}/jars
+          mkdir -p output/${TIME}/javadocs
+          mkdir -p output/${TIME}/reports
+          mkdir -p output/${TIME}/results
+          cp target/$(grep -o "<artifactId>.*</artifactId>" pom.xml | head -1 | sed "s#<artifactId>###\g" | sed "s#</artifactId>###\g")-$(grep -o "<version>.*</version>" pom.xml | head -1 | sed "s#<version>###\g" | sed "s#</version>###\g").jar output/$TIME/jars
+          cp -R target/javadocs/apidocs/* output/${TIME}/javadocs
+          cp -R docs/allure-reports/* output/${TIME}/reports
+          cp -R docs/allure-results/* output/${TIME}/results
+          ls -al output
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: reports+jar
+          path: |
+            output

@@ -12,8 +12,8 @@
       "total" : 6
     }
   }, {
-    "uid" : "d3796ae75512cc060ae5583f2327502b",
-    "name" : "api.DogAPITest",
+    "uid" : "568acbb61986f0ed5298aebcec6ce0b2",
+    "name" : "other.AppTest",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -23,8 +23,8 @@
       "total" : 3
     }
   }, {
-    "uid" : "568acbb61986f0ed5298aebcec6ce0b2",
-    "name" : "other.AppTest",
+    "uid" : "d3796ae75512cc060ae5583f2327502b",
+    "name" : "api.DogAPITest",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
