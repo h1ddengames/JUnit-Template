@@ -4,9 +4,26 @@
 *.iml
 target
 target/**
+*.pem
+*.dll
+*.exe
+
+# Terraform
+.terraform/.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+*.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
 
 # Compiled class file
 *.class
+
 
 # Log file
 *.log

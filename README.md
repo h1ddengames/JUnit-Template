@@ -7,6 +7,8 @@ A Java 11 project template built to quick start new projects with minimal setup 
 
 Please view the Javadocs + Allure Reports [here](https://h1ddengames.github.io/Project-Template "The javadocs for this project").
 
+Please view the Readme explaining how to setup a CI-CD pipeline [here](Setting%20up%20CI-CD.md)
+
 ![Project Outline](docs/images/Project-Template-Infrastructure.png "The project outline")
 [A larger version of the above image can be found here](docs/infrastructure.html "To infrastructure.html")
 
