@@ -19,6 +19,9 @@ EXPOSE 80
 EXPOSE 443
 EXPOSE 8080
 
+# Add the website folder to the image.
+ADD website /tmp
+
 # Setup Apache, PHP, Java 11, Jenkins, and Maven.
 # 1. Install required software dependencies + Apache, PHP.
 # 2. Add repository for Jenkins and AdoptOpenJDK.
@@ -41,7 +44,7 @@ rm -rf /var/lib/apt/lists/* && \
 apt-get update && \
 apt-get -y install adoptopenjdk-11-hotspot openjdk-11-jre-headless git maven && \
 apt-get -y install jenkins && \
-mkdir /var/www/html/javadocs /var/www/html/reports /var/www/html/jar && \
+cp -R /tmp/website/* /var/www/html && \
 wget https://github.com/allure-framework/allure2/releases/download/2.13.8/allure_2.13.8-1_all.deb && \
 dpkg -i allure_2.13.8-1_all.deb
 
