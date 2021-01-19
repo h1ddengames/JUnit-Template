@@ -1,0 +1,11 @@
+This is the regex to target the dynamic content that should be updated in javadocs/index.html and reports/index.html:
+
+<!-- Start of Dynamic Content -->[\w\W\s\S]*<!-- End of Dynamic Content -->
+
+
+
+
+
+Content replacing jar usage:
+
+java -jar HTMLChanger-1.0.0.jar index.html

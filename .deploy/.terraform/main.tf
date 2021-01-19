@@ -27,10 +27,16 @@ provisioner "file" {
   destination = "/tmp/Dockerfile"
 }
 
-# Copies the website from .website to the new EC2 instance.
+# Copies the website directory from .website to the new EC2 instance.
 provisioner "file" {
   source      = "../.website"
   destination = "/tmp/website"
+}
+
+# Copies the tools directory from .tools to the new EC2 instance.
+provisioner "file" {
+  source      = "../.tools"
+  destination = "/tmp/tools"
 }
 
 # With Ubuntu 20.04 AMI and a t2.micro (1 vCPU + 1 GB RAM) server.
