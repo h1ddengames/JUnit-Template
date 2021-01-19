@@ -9,7 +9,7 @@ target/**
 *.exe
 
 # Terraform
-.terraform/.terraform/
+.deploy/.terraform/.terraform/
 *.tfstate
 *.tfstate.backup
 *.tfstate.lock.info

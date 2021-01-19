@@ -54,7 +54,12 @@ jobs:
       # Recently created environment variables do not persist through new run statements.
       # Create required directories
       # Copies the jar file in target directory matching artifactId-version.jar (ex: Project-Template-2.0.0.jar)
-      - name: Set environment variable for time (ex. 01-11-2021--05:09:52PM)
+      # The variable TIME is set by doing the following:
+        # 1. Get the current time in America/Tijuana ~ close enough to California
+        # 2. Convert the time obtained from the previous step to month-day-year--time (ex: 01-11-2021--05:09:52 PM)
+        # 3. Remove any whitespace from the previous step (ex 01-11-2021--05:09:52PM)
+        # 4. Replace all : with - so that the filename can be valid within all filesystems (ex: 01-11-2021-05.09.52PM)
+      - name: Set environment variable for time (ex. 01-11-2021--05.09.52PM)
         run: |
           export TIME=$(TZ='America/Tijuana' date +"%m-%d-%Y--%r" | tr -d "[:space:]" | sed 's/:/./g')
           echo $TIME

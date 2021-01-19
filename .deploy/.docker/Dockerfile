@@ -8,7 +8,7 @@ RunCommand="docker run --name server -dit -p 80:80 -p 443:443 -p 8080:8080 h1dde
 ExecCommand="docker exec -it server /bin/bash" \
 BuildTime="382 seconds ~ 6.3 minutes" \
 BuildSize="940.44 MB" \
-Version="1.0.0"
+Version="2.0.0"
 
 # Start in /tmp folder.
 WORKDIR /tmp
@@ -20,7 +20,9 @@ EXPOSE 443
 EXPOSE 8080
 
 # Add the website folder to the image.
+# Add the tools folder to the image.
 ADD website /tmp
+ADD tools /tmp
 
 # Setup Apache, PHP, Java 11, Jenkins, and Maven.
 # 1. Install required software dependencies + Apache, PHP.
