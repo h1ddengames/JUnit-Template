@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="compare.js"></script>
+</head>
+
+<body>
+
+    <h1 class="text-center">Compare Images</h1>
+
+    <p class="text-center">Click and drag the slider to compare two images:</p>
+
+
+    <!-- <div class="img-comp-container">
+        <div class="img-comp-img">
+            <img src="test1.png" width="500" height="300">
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+            <img src="test2.png" width="500" height="300">
+        </div>
+    </div> -->
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-5 text-center">
+                <div class="img-comp-container">
+                    <div class="img-comp-img">
+                        <img src="test1.png" width="500" height="300">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                        <img src="test2.png" width="500" height="300">
+                    </div>
+                </div>
+           </div>
+        </div>
+
+        <div class="h-100"></div>
+
+        <div class="row">
+            <div class="col">
+                <h3 class="text-center">Baseline Image: </h3>
+                <img src="test1.png" width="300" height="200">
+            </div>
+
+            <div class="col">
+                <h3 class="text-center">Actual Image: </h3>
+                <img src="test2.png" width="300" height="200">
+            </div>
+
+            <div class="col">
+                <h3 class="text-center">Highlighted Difference: </h3>
+                <img src="test2.png" width="300" height="200">
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center">Difference Percentage: 25%</p>
+        </div>
+    </footer>
+    
+
+    <script>
+        /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+        initComparisons();
+    </script>
+
+</body>
+
+</html>
