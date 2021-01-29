@@ -1,0 +1,22 @@
+FROM jenkins/jenkins:lts-jdk11
+LABEL \
+    Maintainer="Shahid Karim <skarim3000@gmail.com>" \
+    Description="Jenkins using AdoptOpenJDK 11 running on Ubuntu with Maven and Allure" \
+    Version="1.0.0"
+
+WORKDIR /tmp
+USER root
+RUN \
+    export DEBIAN_FRONTEND=noninteractive && \
+    echo "PS1=\"\[\033[38;5;81m\]\u\[$(tput sgr0)\]\[\033[38;5;14m\]@:\[$(tput sgr0)\]\[\033[38;5;6m\][\w]\[$(tput sgr0)\]\[\033[38;5;214m\]>\[$(tput sgr0)\] \[$(tput sgr0)\]\"" >> /etc/bash.bashrc && \
+    apt-get -y update && \
+    apt-get -y install git maven && \
+    curl -L -o allure.deb https://github.com/allure-framework/allure2/releases/download/2.13.8/allure_2.13.8-1_all.deb && \
+    dpkg -i allure.deb && \
+    mkdir /web && \
+    chown jenkins /usr/bin/allure && \
+    chown jenkins /web && \
+    rm -rf /var/lib/apt/lists/*
+
+USER jenkins
+WORKDIR /

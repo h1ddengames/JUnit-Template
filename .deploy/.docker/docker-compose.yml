@@ -1,0 +1,71 @@
+version: '3.9'
+
+# Usage:
+  ## Start up all services:
+    ### docker-compose -f docker/docker-compose.yml up -d
+      ## -f is used to specify the file that docker-compose command should use if it's in another directory.
+      ## -d is used to detach the container's output from the terminal so you can keep using the same terminal.
+  ## Turn off all services:
+    ### docker-compose -f docker/docker-compose.yml down
+      ## -f is used to specify the file that docker-compose command should use if it's in another directory.
+services:
+  jenkins:
+    container_name: jenkins-server
+    build:
+      context: .
+      dockerfile: Dockerfile-Jenkins
+    image: h1ddengames/jenkins-server:1.0.0
+    depends_on:
+      - apache
+    volumes:
+      # Backing up data.
+      # The location on disk is relative to this docker-compose file so using "../" means going up 1 directory.
+      - ../mount/jenkins:/var/jenkins_home/
+      - ../mount/apache:/web
+    ports:
+      - target: 50000
+        published: 50000
+        protocol: tcp
+        mode: host
+      - target: 8080
+        published: 8080
+        protocol: tcp
+        mode: host
+    deploy:
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8080" ]
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  apache:
+    container_name: apache-web
+    build:
+      context: .
+      dockerfile: Dockerfile-Httpd
+    image: h1ddengames/web-server:1.0.0
+    volumes:
+      - ../mount/apache/htdocs:/usr/local/apache2/htdocs
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+        mode: host
+      - target: 443
+        published: 443
+        protocol: tcp
+        mode: host
+    deploy:
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost" ]
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
