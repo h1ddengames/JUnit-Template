@@ -55,13 +55,13 @@ jobs:
       # Create required directories
       # Copies the jar file in target directory matching artifactId-version.jar (ex: Project-Template-2.0.0.jar)
       # The variable TIME is set by doing the following:
-        # 1. Get the current time in America/Tijuana ~ close enough to California
+        # 1. Get the current time in America/Los_Angeles
         # 2. Convert the time obtained from the previous step to month-day-year--time (ex: 01-11-2021--05:09:52 PM)
         # 3. Remove any whitespace from the previous step (ex 01-11-2021--05:09:52PM)
         # 4. Replace all : with - so that the filename can be valid within all filesystems (ex: 01-11-2021-05.09.52PM)
       - name: Set environment variable for time (ex. 01-11-2021--05.09.52PM)
         run: |
-          export TIME=$(TZ='America/Tijuana' date +"%m-%d-%Y--%r" | tr -d "[:space:]" | sed 's/:/./g')
+          export TIME=$(TZ='America/Los_Angeles' date +"%m-%d-%Y--%r" | tr -d "[:space:]" | sed 's/:/./g')
           echo $TIME
           mkdir -p output/${TIME}/jars
           mkdir -p output/${TIME}/javadocs

@@ -21,10 +21,10 @@ resource "aws_key_pair" "ssh-key" {
   public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDqIFNG2vUc91G/feuPIFwuxg09aO170ztgJKA+E3jdtDFk6I26QzIQ31kzr5TBowaH2989jLaGV41A7Tx85kfX/dvOXoExQU7eQy6IYFXuD+rErsDMhDAdfLUqoI2YB59owypO+zItk/jl7bLcu3t0C2Fts+NeKlyXVc0/R9oFfNxJSDKeTsiidDLxiZ5qz4aKeUryrM0XXZQnnWPTcBhBfqyPcjY9uUXRinwWwdhxFquh+BdsQSeRFjHUFrGbGOoDWT+poYiaD5uhwIdr7VJFNrj56ZgpbMX4BUSUQETdVTz6U1hjsljguiseLeuGOufDRV6mQjd0huVqDL8D/eKnDIwz6PIv7pap2+FUcZdFtldN5ZadE5wIOCs+H79uel501uGyVFN6Wqfe4jH8nOVfV9OLbP12GV6fkHJUUIf44XtwN9EDn6jhXxMdO/ztOGcHQxthTKbulnzKf/pWJOb6vphblLhDd3zk8b2u+vK0ERrHPq8G0MuFvFXALw3F3lE= hiddengames@DESKTOP-NS5O6HM"
 }
 
-# Copies the Dockerfile in the .docker directory to the new EC2 instance.
+# Copies the docker directory from .docker to the new EC2 instance.
 provisioner "file" {
-  source      = "../.docker/Dockerfile"
-  destination = "/tmp/Dockerfile"
+  source      = "../.docker"
+  destination = "/tmp/docker"
 }
 
 # Copies the website directory from .website to the new EC2 instance.
@@ -76,7 +76,7 @@ resource "aws_default_security_group" "default-security-group" {
   vpc_id = aws_default_vpc.default-vpc.id
 
   ingress {
-    description = "HTTPS from VPC"
+    description = "SSH from VPC"
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
