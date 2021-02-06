@@ -283,7 +283,7 @@
           <systemProperties>
             <property>
               <name>allure.results.directory</name>
-              <value>${project.basedir}/docs/allure-results</value>
+              <value>${project.basedir}/artifacts/allure-results</value>
             </property>
 
             <property>

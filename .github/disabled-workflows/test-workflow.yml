@@ -69,8 +69,8 @@ jobs:
           mkdir -p output/${TIME}/results
           cp target/$(grep -o "<artifactId>.*</artifactId>" pom.xml | head -1 | sed "s#<artifactId>###\g" | sed "s#</artifactId>###\g")-$(grep -o "<version>.*</version>" pom.xml | head -1 | sed "s#<version>###\g" | sed "s#</version>###\g").jar output/$TIME/jars
           cp -R target/javadocs/apidocs/* output/${TIME}/javadocs
-          cp -R docs/allure-reports/* output/${TIME}/reports
-          cp -R docs/allure-results/* output/${TIME}/results
+          cp -R artifacts/allure-reports/* output/${TIME}/reports
+          cp -R artifacts/allure-results/* output/${TIME}/results
           ls -al output
 
       - name: Upload artifact
