@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-allure generate docs/allure-results --clean -o docs/allure-reports && echo "[INFO] GENERATED ALLURE REPORT."
+allure generate artifacts/allure-results --clean -o artifacts/allure-reports && echo "[INFO] GENERATED ALLURE REPORT."

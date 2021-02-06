@@ -1,7 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Dog API test","Get random dog image test","SUCCESS","2021-01-05T21:35:17.5827527-08:00[America/Los_Angeles]","0.0","1.62"
-"Dog API test","Get all dog breeds test","SUCCESS","2021-01-05T21:35:17.6307526-08:00[America/Los_Angeles]","0.0","1.58"
-"Dog API test","Get multiple random dog images test","SUCCESS","2021-01-05T21:35:17.6327525-08:00[America/Los_Angeles]","0.0","1.53"
-"App test","Calculate Addition Of 5 And 15 Is 20","SUCCESS","2021-01-05T21:35:20.2065552-08:00[America/Los_Angeles]","0.0","0.28"
-"App test","Calculate subtraction of15 and5 is10","SUCCESS","2021-01-05T21:35:20.2075552-08:00[America/Los_Angeles]","0.0","0.28"
-"App test","Integration of addition and subtraction","SUCCESS","2021-01-05T21:35:20.2095551-08:00[America/Los_Angeles]","0.0","0.28"
