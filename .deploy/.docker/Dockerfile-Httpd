@@ -1,0 +1,17 @@
+FROM httpd:2.4
+LABEL \
+    Maintainer="Shahid Karim <skarim3000@gmail.com>" \
+    Description="Apache Httpd running on Debian" \
+    Version="1.0.0"
+
+# COPY ./server.crt ./server.key /usr/local/apache2/conf
+
+# RUN sed -i \
+#        -e 's/^#\(Include .*httpd-ssl.conf\)/\1/' \
+#        -e 's/^#\(LoadModule .*mod_ssl.so\)/\1/' \
+#        -e 's/^#\(LoadModule .*mod_socache_shmcb.so\)/\1/' \
+#        conf/httpd.conf
+
+RUN \
+    echo "PS1=\"\[\033[38;5;81m\]\u\[$(tput sgr0)\]\[\033[38;5;14m\]@:\[$(tput sgr0)\]\[\033[38;5;6m\][\w]\[$(tput sgr0)\]\[\033[38;5;214m\]>\[$(tput sgr0)\] \[$(tput sgr0)\]\"" >> /etc/bash.bashrc && \
+    echo "PS1=\"\[\033[38;5;81m\]\u\[$(tput sgr0)\]\[\033[38;5;14m\]@:\[$(tput sgr0)\]\[\033[38;5;6m\][\w]\[$(tput sgr0)\]\[\033[38;5;214m\]>\[$(tput sgr0)\] \[$(tput sgr0)\]\"" >> /root/profile

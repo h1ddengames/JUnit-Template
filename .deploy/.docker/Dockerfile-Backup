@@ -1,0 +1,31 @@
+# Multi-stage build
+# First stage: Use maven to build the Java project
+FROM maven:3.6.3-adoptopenjdk-11 as build
+
+WORKDIR /tmp
+
+
+# Second stage: Use OpenJDK11 to run the JAR file from the first stage.
+FROM adoptopenjdk/openjdk11:jdk-11.0.9.1_1 as run
+
+# Expose the usual ports that are used in apps that utilize browsers for UI.
+EXPOSE 80
+EXPOSE 443
+EXPOSE 8080
+
+# Create a unprivileged user to avoid security issues.
+RUN \
+groupadd -g 10001 usergroup && \
+useradd -u 10002 -g usergroup -s /bin/sh --home-dir /home/ubuntu ubuntu
+
+# Switch from root to the created user.
+USER ubuntu
+
+# Set the starting directory to be the created user's home.
+WORKDIR /home/ubuntu
+
+# Move the built jar file from the previous build to this build.
+COPY --from=build /tmp/target/*.jar /home/ubuntu/
+
+# Using /bin/bash run java -jar app.jar
+CMD ["java", "-jar", "app.jar"]
