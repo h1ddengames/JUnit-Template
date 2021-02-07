@@ -18,6 +18,7 @@ artifacts/**
 *.tfstate
 *.tfstate.backup
 *.tfstate.lock.info
+*.tfstate.lock.hcl
 *.tfvars
 override.tf
 override.tf.json
