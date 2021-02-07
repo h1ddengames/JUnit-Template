@@ -18,25 +18,7 @@ provider "aws" {
 # Connect to the instance with: ssh -i ssh-key ubuntu@public_ip_address_here
 resource "aws_key_pair" "ssh-key" {
   key_name   = "ssh-key"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDqIFNG2vUc91G/feuPIFwuxg09aO170ztgJKA+E3jdtDFk6I26QzIQ31kzr5TBowaH2989jLaGV41A7Tx85kfX/dvOXoExQU7eQy6IYFXuD+rErsDMhDAdfLUqoI2YB59owypO+zItk/jl7bLcu3t0C2Fts+NeKlyXVc0/R9oFfNxJSDKeTsiidDLxiZ5qz4aKeUryrM0XXZQnnWPTcBhBfqyPcjY9uUXRinwWwdhxFquh+BdsQSeRFjHUFrGbGOoDWT+poYiaD5uhwIdr7VJFNrj56ZgpbMX4BUSUQETdVTz6U1hjsljguiseLeuGOufDRV6mQjd0huVqDL8D/eKnDIwz6PIv7pap2+FUcZdFtldN5ZadE5wIOCs+H79uel501uGyVFN6Wqfe4jH8nOVfV9OLbP12GV6fkHJUUIf44XtwN9EDn6jhXxMdO/ztOGcHQxthTKbulnzKf/pWJOb6vphblLhDd3zk8b2u+vK0ERrHPq8G0MuFvFXALw3F3lE= hiddengames@DESKTOP-NS5O6HM"
-}
-
-# Copies the docker directory from .docker to the new EC2 instance.
-provisioner "file" {
-  source      = "../.docker"
-  destination = "/tmp/docker"
-}
-
-# Copies the website directory from .website to the new EC2 instance.
-provisioner "file" {
-  source      = "../.website"
-  destination = "/tmp/website"
-}
-
-# Copies the tools directory from .tools to the new EC2 instance.
-provisioner "file" {
-  source      = "../.tools"
-  destination = "/tmp/tools"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCmNV9dIIgnBGG7px0c7V9b0zs14UazrqaNYOaDPDMa6iqMfX/FSKyhvY2lU7DTjUxyHodMt0raQjKoa0Et9C14KxEiEnTwb7cXHNXrIKNckaq19gmVwFcnQLTzdqrXxYJDkcFv8em9X6pP+UcwJ14rrgRQCUZ9ZtMTOBmR0zEwgZebVjDc3gJIPcNP5SVTcH39ZgO8vDMP/izvb7At04mKJMm2BjMXkF97aUP/AUqnc0fb75nBb7pkFsEY2v0Xa5U9NGULD6D9xNLKE/U0tV+ZLihPz9pev8T/22zcE54D+F/kH3wN0+6AJgemO8frfFqNajVBUS0I2OwU5sJLy/djMqZqz5c+zuSp1JEoeNYDncCTceHP9fFPOvj8j/JEqRKe/2SmJdy5PeVzZBmU0dPiTAOsQopaorKP6R9/SUAw8EeEkgh0aBARPJE6yXAiQO/T7NcWywSoF7Je4RG0XsCjUpr3po94kUgsGVZEVQO2xSEgf5QS2Q1CgRPfZM2PQD8= hiddengames@DESKTOP-NS5O6HM"
 }
 
 # With Ubuntu 20.04 AMI and a t2.micro (1 vCPU + 1 GB RAM) server.
@@ -51,6 +33,45 @@ resource "aws_instance" "CI-CD" {
   }
 
   key_name = "ssh-key"
+
+  # Copies the docker directory from .docker to the new EC2 instance.
+  provisioner "file" {
+    source      = "../.docker"
+    destination = "/tmp/docker"
+
+    connection {
+      type        = "ssh"
+      user        = "ubuntu"
+      private_key = file("~/.ssh/ssh-key")
+      host        = self.public_dns
+    }
+  }
+
+  # Copies the website directory from .website to the new EC2 instance.
+  provisioner "file" {
+    source      = "../.website"
+    destination = "/tmp/website"
+
+    connection {
+      type        = "ssh"
+      user        = "ubuntu"
+      private_key = file("~/.ssh/ssh-key")
+      host        = self.public_dns
+    }
+  }
+
+  # Copies the tools directory from .tools to the new EC2 instance.
+  provisioner "file" {
+    source      = "../.tools"
+    destination = "/tmp/tools"
+
+    connection {
+      type        = "ssh"
+      user        = "ubuntu"
+      private_key = file("~/.ssh/ssh-key")
+      host        = self.public_dns
+    }
+  }
 }
 
 # Use the default vpc defined by AWS.
