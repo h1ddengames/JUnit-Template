@@ -20,8 +20,8 @@ services:
     volumes:
       # Backing up data.
       # The location on disk is relative to this docker-compose file so using "../" means going up 1 directory.
-      - /tmp/mount/jenkins:/var/jenkins_home
-      - /tmp/mount/apache:/var/jenkins_home/web
+      - /home/ubuntu/mount/jenkins:/var/jenkins_home
+      - /home/ubuntu/mount/apache:/var/jenkins_home/web
     ports:
       - target: 50000
         published: 50000
@@ -39,7 +39,7 @@ services:
       dockerfile: Dockerfile-Apache
     image: h1ddengames/web-server:1.0.0
     volumes:
-      - /tmp/mount/apache:/var/www/html
+      - /home/ubuntu/mount/apache:/var/www/html
     ports:
       - target: 80
         published: 80

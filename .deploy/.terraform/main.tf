@@ -37,7 +37,7 @@ resource "aws_instance" "CI-CD" {
   # Copies the docker directory from .docker to the new EC2 instance.
   provisioner "file" {
     source      = "../.docker"
-    destination = "/tmp/docker"
+    destination = "/home/ubuntu/docker"
 
     connection {
       type        = "ssh"
@@ -50,7 +50,7 @@ resource "aws_instance" "CI-CD" {
   # Copies the website directory from .website to the new EC2 instance.
   provisioner "file" {
     source      = "../.website"
-    destination = "/tmp/website"
+    destination = "/home/ubuntu/website"
 
     connection {
       type        = "ssh"
@@ -63,7 +63,7 @@ resource "aws_instance" "CI-CD" {
   # Copies the tools directory from .tools to the new EC2 instance.
   provisioner "file" {
     source      = "../.tools"
-    destination = "/tmp/tools"
+    destination = "/home/ubuntu/tools"
 
     connection {
       type        = "ssh"

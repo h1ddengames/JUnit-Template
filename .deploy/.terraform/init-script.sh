@@ -5,10 +5,10 @@ sudo apt-get update
 sudo apt-get -y upgrade
 
 # Create directories for Docker volume mounts.
-mkdir -p /tmp/mount/jenkins /tmp/mount/apache/
+mkdir -p /home/ubuntu/mount/jenkins /home/ubuntu/mount/apache/
 
 # Set ownership from root to ubuntu so that 'Wrong volume permissions?' error does not happen.
-sudo chown -R ubuntu /tmp/mount
+sudo chown -R ubuntu /home/ubuntu/mount
 
 # Install Docker dependencies.
 sudo apt-get -y install \
@@ -41,7 +41,7 @@ DESTINATION=/usr/local/bin/docker-compose
 sudo curl -L https://github.com/docker/compose/releases/download/${VERSION}/docker-compose-$(uname -s)-$(uname -m) -o $DESTINATION
 sudo chmod 755 $DESTINATION
 
-sudo docker-compose -f /tmp/docker/docker-compose.yml up -d
+sudo docker-compose -f /home/ubuntu/docker/docker-compose.yml up -d
 
 
 
