@@ -1,0 +1,54 @@
+version: '3.9'
+
+# Usage:
+  ## Start up all services:
+    ### docker-compose -f docker/docker-compose.yml up -d
+      ## -f is used to specify the file that docker-compose command should use if it's in another directory.
+      ## -d is used to detach the container's output from the terminal so you can keep using the same terminal.
+  ## Turn off all services:
+    ### docker-compose -f docker/docker-compose.yml down
+      ## -f is used to specify the file that docker-compose command should use if it's in another directory.
+services:
+  hello-node:
+    container_name: hello-node
+    build:
+      context: app1
+      dockerfile: Dockerfile
+    image: h1ddengames/hello-node:1.0.0
+    depends_on:
+      - web-node
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+        mode: host
+
+  goodbye-node:
+    container_name: goodbye-node
+    build:
+      context: app2
+      dockerfile: Dockerfile
+    image: h1ddengames/goodbye-node:1.0.0
+    depends_on:
+      - web-node
+    ports:
+      - target: 3001
+        published: 3001
+        protocol: tcp
+        mode: host
+
+  web-node:
+    container_name: web-node
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: h1ddengames/web-node:1.0.0
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+        mode: host
+      - target: 443
+        published: 443
+        protocol: tcp
+        mode: host
