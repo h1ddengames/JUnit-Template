@@ -1,13 +1,13 @@
 version: '3.9'
 
-# Usage:
+  # Usage:
   ## Start up all services:
-    ### docker-compose -f docker/docker-compose.yml up -d
-      ## -f is used to specify the file that docker-compose command should use if it's in another directory.
-      ## -d is used to detach the container's output from the terminal so you can keep using the same terminal.
+  ### docker-compose -f docker/docker-compose.yml up -d
+  ## -f is used to specify the file that docker-compose command should use if it's in another directory.
+  ## -d is used to detach the container's output from the terminal so you can keep using the same terminal.
   ## Turn off all services:
-    ### docker-compose -f docker/docker-compose.yml down
-      ## -f is used to specify the file that docker-compose command should use if it's in another directory.
+  ### docker-compose -f docker/docker-compose.yml down
+## -f is used to specify the file that docker-compose command should use if it's in another directory.
 services:
   hello-node:
     container_name: hello-node
@@ -34,6 +34,26 @@ services:
     ports:
       - target: 3001
         published: 3001
+        protocol: tcp
+        mode: host
+
+  jenkins-node:
+    container_name: jenkins-node
+    build:
+      context: jenkins
+      dockerfile: Dockerfile
+    image: h1ddengames/jenkins-node:1.0.0
+    depends_on:
+      - web-node
+    volumes:
+      - ./jenkins/volume:/var/jenkins_home
+    ports:
+      - target: 8080
+        published: 8080
+        protocol: tcp
+        mode: host
+      - target: 50000
+        published: 50000
         protocol: tcp
         mode: host
 
