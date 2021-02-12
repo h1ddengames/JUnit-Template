@@ -63,6 +63,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>11</java.version>
     <maven.compiler.release>11</maven.compiler.release>
+    <main.class>entrypoint.App</main.class>
 
     <junit.version>5.7.0</junit.version>
     <allure.version>2.13.6</allure.version>
@@ -282,7 +283,7 @@
           <systemProperties>
             <property>
               <name>allure.results.directory</name>
-              <value>${project.basedir}/docs/allure-results</value>
+              <value>${project.basedir}/artifacts/allure-results</value>
             </property>
 
             <property>
@@ -362,7 +363,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>entrypoint.App</mainClass>
+              <mainClass>${main.class}</mainClass>
             </manifest>
           </archive>
 

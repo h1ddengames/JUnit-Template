@@ -5,14 +5,15 @@
 
 A Java 11 project template built to quick start new projects with minimal setup time.
 
-Please view the Javadocs + Allure Reports [here](https://h1ddengames.github.io/Project-Template "The javadocs for this project").
-
-Please view the Readme explaining how to setup a CI-CD pipeline [here](Setting%20up%20CI-CD.md)
+- Please view the Javadocs [here.](http://www.hiddengames.site/project-template/javadocs "The javadocs for this project")
+- Please view the Allure Reports [here.](http://www.hiddengames.site/project-template/reports "The reports for this project")
+- Please view the JAR files [here.](http://www.hiddengames.site/project-template/reports "The jars for this project")
+- Please view the README explaining how to set up a CI-CD pipeline [here](docs/markdown/Setting_up_CI-CD.md)
 
 ![Project Outline](docs/images/Project-Template-Infrastructure.png "The project outline")
-[A larger version of the above image can be found here](docs/infrastructure.html "To infrastructure.html")
+[A larger version of the above image can be found here](docs/infrastructure/infrastructure.html "To infrastructure.html")
 
-The diagram above is in the [drawio file](docs/Project-Template%20Infrastructure.drawio "To the drawio file") which can be opened using: [the draw.io app](https://app.diagrams.net/ "The draw.io app")
+The diagram above is in the [drawio file](docs/Project-Template-Infrastructure.drawio "To the drawio file") which can be opened using: [the draw.io app](https://app.diagrams.net/ "The draw.io app")
 
 <br>
 

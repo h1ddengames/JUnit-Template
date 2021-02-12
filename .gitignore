@@ -1,18 +1,24 @@
-.DS_Store
-.idea
-.idea/**
 *.iml
-target
-target/**
 *.pem
 *.dll
 *.exe
+
+.DS_Store
+
+.idea
+.idea/**
+
+target
+target/**
+artifacts
+artifacts/**
 
 # Terraform
 .deploy/.terraform/.terraform/
 *.tfstate
 *.tfstate.backup
 *.tfstate.lock.info
+*.tfstate.lock.hcl
 *.tfvars
 override.tf
 override.tf.json
@@ -23,7 +29,6 @@ terraform.rc
 
 # Compiled class file
 *.class
-
 
 # Log file
 *.log
