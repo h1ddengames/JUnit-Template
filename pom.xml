@@ -7,7 +7,7 @@
   <!-- Please update these three properties then delete this comment. -->
   <groupId>xyz.hiddengames</groupId>
   <artifactId>Project-Template</artifactId>
-  <version>2.0.0</version>
+  <version>3.0.0</version>
 
   <!-- Sets a profile based on the current Operating System to set specific properties. -->
   <profiles>
