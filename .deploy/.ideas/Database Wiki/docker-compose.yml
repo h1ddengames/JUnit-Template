@@ -1,0 +1,66 @@
+version: '3.9'
+
+# Usage:
+  ## Start up all services:
+    ### docker-compose -f docker/docker-compose.yml up -d
+      ## -f is used to specify the file that docker-compose command should use if it's in another directory.
+      ## -d is used to detach the container's output from the terminal so you can keep using the same terminal.
+  ## Turn off all services:
+    ### docker-compose -f docker/docker-compose.yml down
+      ## -f is used to specify the file that docker-compose command should use if it's in another directory.
+services:
+  db-node:
+    container_name: db-node
+    image: mysql:5.7
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: wiki
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_USER: wikijs
+      MYSQL_PASSWORD: password
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+      - ./mysql/init:/docker-entrypoint-initdb.d
+    ports:
+      - target: 3306
+        published: 3306
+        protocol: tcp
+        mode: host
+
+  wiki-node:
+    container_name: wiki-node
+    image: requarks/wiki:2
+    depends_on:
+      - db-node
+    restart: unless-stopped
+    environment:
+      DB_TYPE: mysql
+      DB_HOST: db-node
+      DB_PORT: 3306
+      DB_USER: wikijs
+      DB_PASS: password
+      DB_NAME: wiki
+    volumes:
+      - ./wiki/backup:/home/node/backup
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+        mode: host
+
+  phpmyadmin-node:
+    depends_on:
+      - db-node
+    container_name: phpmyadmin-node
+    image: phpmyadmin/phpmyadmin:5.0.0
+    restart: always
+    environment:
+      PMA_HOST: db-node
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - target: 80
+        published: 8080
+        protocol: tcp
+        mode: host

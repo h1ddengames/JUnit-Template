@@ -1,0 +1,72 @@
+version: '3.9'
+
+# Usage:
+  ## Start up all services:
+    ### docker-compose -f docker/docker-compose.yml up -d
+      ## -f is used to specify the file that docker-compose command should use if it's in another directory.
+      ## -d is used to detach the container's output from the terminal so you can keep using the same terminal.
+  ## Turn off all services:
+    ### docker-compose -f docker/docker-compose.yml down
+      ## -f is used to specify the file that docker-compose command should use if it's in another directory.
+services:
+  db-node:
+    container_name: db-node
+    image: mysql:5.7
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_USER: strapi
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: strapi
+    volumes:
+      - ./mysql:/var/lib/mysql
+    ports:
+      - target: 3306
+        published: 3306
+        protocol: tcp
+        mode: host
+  
+  strapi-node:
+    depends_on:
+      - db-node
+    container_name: strapi-node
+    image: strapi/strapi
+    restart: always
+    environment:
+      DATABASE_CLIENT: mysql
+      DATABASE_NAME: strapi
+      DATABASE_HOST: db-node
+      DATABASE_PORT: 3306
+      DATABASE_USERNAME: strapi
+      DATABASE_PASSWORD: password
+    # Volumes usually us the format:
+    # Location_On_Host : Location_On_Container
+    # If you put just:
+    # Location_On_Container
+    # You can avoid having node_modules folder from
+    # being on the host machine.
+    volumes:
+      - ./strapi:/srv/app
+      - /srv/app/node_modules/
+    ports:
+      - target: 1337
+        published: 1337
+        protocol: tcp
+        mode: host
+
+  phpmyadmin-node:
+    depends_on:
+      - db-node
+    container_name: phpmyadmin-node
+    image: phpmyadmin/phpmyadmin:5.0.0
+    restart: always
+    environment:
+      PMA_HOST: db-node
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - target: 80
+        published: 8080
+        protocol: tcp
+        mode: host
