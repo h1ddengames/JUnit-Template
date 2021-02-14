@@ -7,11 +7,11 @@ import java.util.Map;
 
 /**
  * Given a DNA strand, return its RNA complement (per RNA transcription). <br>
- * DNA -> RNA <br>
- * G -> C <br>
- * C -> G <br>
- * T -> A <br>
- * A -> U <br>
+ * DNA -&gt; RNA <br>
+ * G -&gt; C <br>
+ * C -&gt; G <br>
+ * T -&gt; A <br>
+ * A -&gt; U <br>
  */
 @ClassMetadata(
         author = "Shahid Karim", dateCreated = "2/13/2021",
