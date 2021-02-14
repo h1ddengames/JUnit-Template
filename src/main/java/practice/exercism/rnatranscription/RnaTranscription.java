@@ -1,8 +1,20 @@
 package practice.exercism.rnatranscription;
 
+import annotations.API;
+import annotations.ClassMetadata;
+
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Given a DNA strand, return its RNA complement (per RNA transcription).
+ */
+@ClassMetadata(
+        author = "Shahid Karim", dateCreated = "2/13/2021",
+        currentRevision = 1, lastModified = "2/13/2021", lastModifiedBy = "Shahid Karim",
+        reviewers = {}
+)
+@API(status = API.Status.STABLE, since = "Project-Template-v3.0.0", consumers = { "RnaTranscriptionTest" })
 class RnaTranscription {
 
     Map<Character, Character> dnaToRna = new HashMap<>() {{

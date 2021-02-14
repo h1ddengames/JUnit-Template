@@ -11,7 +11,7 @@ import annotations.ClassMetadata;
         currentRevision = 1, lastModified = "2/13/2021", lastModifiedBy = "Shahid Karim",
         reviewers = {}
 )
-@API(status = API.Status.STABLE, since = "Project-Template-v3.0.0", consumers = {})
+@API(status = API.Status.STABLE, since = "Project-Template-v3.0.0", consumers = { "Twofer" })
 public class Twofer {
     public String twofer(String name) {
         if(name == null || name.contentEquals("")) {
