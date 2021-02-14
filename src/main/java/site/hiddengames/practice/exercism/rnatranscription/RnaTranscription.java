@@ -6,7 +6,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Given a DNA strand, return its RNA complement (per RNA transcription).
+ * Given a DNA strand, return its RNA complement (per RNA transcription). <br>
+ * DNA -> RNA <br>
+ * G -> C <br>
+ * C -> G <br>
+ * T -> A <br>
+ * A -> U <br>
  */
 @ClassMetadata(
         author = "Shahid Karim", dateCreated = "2/13/2021",
