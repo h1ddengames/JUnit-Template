@@ -1,8 +1,6 @@
 package site.hiddengames.practice.exercism.grains;
 
-import site.hiddengames.annotations.API;
-import site.hiddengames.annotations.ClassMetadata;
-
+import site.hiddengames.annotations.*;
 import java.math.BigInteger;
 
 /**
