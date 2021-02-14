@@ -1,5 +1,6 @@
-package api;
+package site.hiddengames.api;
 
+import api.DogAPI;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.Test;
 

@@ -1,7 +1,8 @@
-package practice.exercism.twofer;
+package site.hiddengames.practice.exercism.twofer;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import practice.exercism.twofer.Twofer;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

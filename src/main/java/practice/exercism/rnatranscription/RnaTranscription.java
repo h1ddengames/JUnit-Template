@@ -15,7 +15,7 @@ import java.util.Map;
         reviewers = {}
 )
 @API(status = API.Status.STABLE, since = "Project-Template-v3.0.0", consumers = { "RnaTranscriptionTest" })
-class RnaTranscription {
+public class RnaTranscription {
 
     Map<Character, Character> dnaToRna = new HashMap<>() {{
         put('G', 'C');
@@ -24,7 +24,7 @@ class RnaTranscription {
         put('A', 'U');
     }};
 
-    String transcribe(String dnaStrand) {
+    public String transcribe(String dnaStrand) {
         if(dnaStrand == null || dnaStrand.contentEquals("")) { return ""; }
 
         char[] dnaStrandAsChars = dnaStrand.toCharArray();

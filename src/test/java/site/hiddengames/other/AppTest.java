@@ -1,4 +1,4 @@
-package other;
+package site.hiddengames.other;
 
 import entrypoint.App;
 import io.qameta.allure.*;
