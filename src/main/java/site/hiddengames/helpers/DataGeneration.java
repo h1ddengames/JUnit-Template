@@ -1,6 +1,6 @@
-package helpers;
+package site.hiddengames.helpers;
 
-import annotations.*;
+import site.hiddengames.annotations.*;
 
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;

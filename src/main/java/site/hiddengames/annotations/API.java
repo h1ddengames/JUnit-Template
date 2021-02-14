@@ -1,4 +1,4 @@
-package annotations;
+package site.hiddengames.annotations;
 
 import java.lang.annotation.*;
 

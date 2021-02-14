@@ -2,8 +2,6 @@ package site.hiddengames.practice.exercism.rnatranscription;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import practice.exercism.rnatranscription.RnaTranscription;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RnaTranscriptionTest {

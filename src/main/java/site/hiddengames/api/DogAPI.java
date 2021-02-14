@@ -1,7 +1,7 @@
-package api;
+package site.hiddengames.api;
 
-import annotations.*;
-import managers.RestManager;
+import site.hiddengames.annotations.*;
+import site.hiddengames.managers.RestManager;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;

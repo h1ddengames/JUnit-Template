@@ -1,9 +1,9 @@
 package site.hiddengames.other;
 
-import entrypoint.App;
+import site.hiddengames.entrypoint.App;
+
 import io.qameta.allure.*;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Epic("Arithmetic Operations")

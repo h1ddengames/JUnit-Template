@@ -1,6 +1,6 @@
-package helpers;
+package site.hiddengames.helpers;
 
-import annotations.*;
+import site.hiddengames.annotations.*;
 
 import java.io.File;
 import java.util.Optional;

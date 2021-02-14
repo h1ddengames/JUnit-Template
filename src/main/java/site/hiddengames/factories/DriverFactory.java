@@ -1,6 +1,6 @@
-package factories;
+package site.hiddengames.factories;
 
-import annotations.*;
+import site.hiddengames.annotations.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.*;

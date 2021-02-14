@@ -1,7 +1,6 @@
-package practice.exercism.rnatranscription;
+package site.hiddengames.practice.exercism.rnatranscription;
 
-import annotations.API;
-import annotations.ClassMetadata;
+import site.hiddengames.annotations.*;
 
 import java.util.HashMap;
 import java.util.Map;

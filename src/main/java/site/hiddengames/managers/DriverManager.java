@@ -1,7 +1,7 @@
-package managers;
+package site.hiddengames.managers;
 
-import annotations.*;
-import factories.DriverFactory;
+import site.hiddengames.annotations.*;
+import site.hiddengames.factories.DriverFactory;
 
 import org.openqa.selenium.*;
 import java.io.File;

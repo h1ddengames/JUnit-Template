@@ -1,6 +1,6 @@
-package entrypoint;
+package site.hiddengames.entrypoint;
 
-import annotations.*;
+import site.hiddengames.annotations.*;
 
 /**
  * The entrypoint of this application. Currently is acting as a simple calculator.

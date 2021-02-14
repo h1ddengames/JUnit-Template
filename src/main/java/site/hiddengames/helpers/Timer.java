@@ -1,6 +1,6 @@
-package helpers;
+package site.hiddengames.helpers;
 
-import annotations.*;
+import site.hiddengames.annotations.*;
 
 /**
  * A helper class that provides simple stopwatch functionality.

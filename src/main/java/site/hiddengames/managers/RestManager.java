@@ -1,6 +1,6 @@
-package managers;
+package site.hiddengames.managers;
 
-import annotations.*;
+import site.hiddengames.annotations.*;
 
 import io.restassured.config.*;
 import io.restassured.RestAssured;

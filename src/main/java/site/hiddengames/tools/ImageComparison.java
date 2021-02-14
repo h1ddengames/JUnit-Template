@@ -1,6 +1,6 @@
-package tools;
+package site.hiddengames.tools;
 
-import annotations.*;
+import site.hiddengames.annotations.*;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
