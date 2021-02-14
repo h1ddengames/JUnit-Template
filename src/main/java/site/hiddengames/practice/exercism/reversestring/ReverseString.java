@@ -1,7 +1,6 @@
 package site.hiddengames.practice.exercism.reversestring;
 
-import site.hiddengames.annotations.API;
-import site.hiddengames.annotations.ClassMetadata;
+import site.hiddengames.annotations.*;
 
 /**
  * Reverse a string.
